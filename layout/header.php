@@ -36,7 +36,7 @@
 	
 	
 	
-	<div id="mainHeaderWrapper"><!-- Open mainHeader -->
+	<!-- Open mainHeader -->
 	<header id="mainHeader" class="row collapse">
 	  	<div class="hide-for-small-only medium-4 large-3 columns">
 		  	<a href="index.php"><img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="headerLogo"></a>
@@ -82,7 +82,7 @@
 		  	
 	  	</nav>
   	</header>
-	</div><!-- Close mainHeader -->
+	<!-- Close mainHeader -->
   	
 	
 	<!--CLOSE HEADER CONTENT HERE-->

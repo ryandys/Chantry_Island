@@ -9,11 +9,11 @@ include_once("layout/header.php");
     
     
 <!--start homeRotatorCon-->
-<div class="row expanded homeRotatorCon">
-	<div class="homeRotatorImg">
-		<div class="homeRotatorInfo small-12 columns">
+<div id="homeRotatorCon">
+	<div class="row">
+		<div class="small-12 medium-5 columns" id="homeRotatorText">
 			<h2 class="heading whiteTxt">Marine Heritage Society</h2>
-			<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The objective of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
+	<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The objective of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
 		</div>
 	</div>
 </div>
