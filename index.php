@@ -75,15 +75,59 @@ include_once("layout/header.php");
 <!--end video-->
 
 <!--start donate-->
-<div class="row expanded donateCon">
-	<div class="donateImg">
-		<div class="donateInfo small-12 columns">
-			<h2 class="heading whiteTxt">Donations are Greatly Appreciated</h2>
-			<p class="paragraph whiteTxt">Since 1997 we have had a tremendous amount of support through donations. Thank you to our past and future donors, you truly make a difference.</p>
+<div id="donateCon">
+	<div class="row">
+		<div class="small-12 columns">
+			<h2 class="donateTitle whiteTxt">Donations are Greatly Appreciated</h2>
+		</div>
+		<div class="small-12 medium-8 small-centered columns">
+			<p class="donateInfo whiteTxt">Since 1997 we have had a tremendous amount of support through donations. Thank you to our past and future donors, you truly make a difference.</p>
+		</div>
+		<div id="donateButCon">
+			<a id="donateBut" href="#">Donate Today</a>
 		</div>
 	</div>
 </div>
 <!--end donate-->
+
+<!--start affiliates-->
+<div id="affiliatesConFull">
+	<div class="affiliatesCon row" data-equalizer>
+		<h2 class="heading redTxt">Affiliate Partners</h2>
+
+		<div class="small-12 medium-4 columns">
+			<img src="images/saugeen_shores.png">
+			<div class="affiliatesInfo" data-equalizer-watch>
+				<h3 class="paragraph redTxt">Saugeen Shores</h3>
+				<p class="paragraph blackTxt">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce.</p>
+			</div>
+		</div>
+
+		<div class="small-12 medium-4 columns show-for-medium">
+			<img src="images/bruce_county_museum.png">
+			<div class="affiliatesInfo" data-equalizer-watch>
+				<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
+				<p class="paragraph blackTxt">Offering a journey through thousands of years of natural and human history.</p>
+			</div>
+		</div>
+
+		<div class="small-12 medium-4 columns show-for-medium">
+			<img src="images/bruce_coast_lighthouse_tour.png">
+			<div class="affiliatesInfo" data-equalizer-watch>
+				<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
+				<p class="paragraph blackTxt">Enjoy the Bruce Coast Lighthouse tour.</p>
+			</div>
+		</div>
+	</div>
+
+<div class="selectors">
+	<div class="selector1"></div>
+	<div class="selector2"></div>
+	<div class="selector3"></div>
+</div>
+	
+</div>
+<!--end affiliates-->
     
     
     <!--CLOSE BODY CONTENT HERE-->
