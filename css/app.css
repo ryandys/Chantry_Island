@@ -47,27 +47,20 @@
 }
 
 /*-----Home-----*/
-.homeRotatorCon {
-	position: relative;
-	overflow: hidden;
-}
-
-.homeRotatorImg {
+#homeRotatorCon
+{
+	background-color: #8eabc9;
 	background-image: url(../images/home_rotator_1.jpg);
+	background-position: center center;
 	background-repeat: no-repeat;
-    background-position: top right;
-    background-size: cover;
-    width: 100%;
-    min-height: 300px;
+	background-size: cover;
+	padding: 30px 10px;
 }
 
-.homeRotatorInfo {
-	position: absolute;
-	background-color: rgba(15,15,15,0.35);
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+#homeRotatorText
+{
+	background-color: rgba(0,0,0,0.3);
+	padding: 12px;
 }
 
 /*-----BookingBar-----*/
@@ -213,11 +206,6 @@
 	opacity: .8;
 }
 
-#mainHeaderWrapper {
-	background-color: #fff;
-	height: 38px;
-}
-
 .title-bar {
 	background: transparent;
 	padding-right: 0rem;
@@ -343,64 +331,65 @@
 
 
 @media (min-width: 40em) {
-/*-----General-----*/
-.heading {
-	font-size: 1.5em;
-	font-weight: 700;
-	text-align: left;
-}
-
-.subHeading {
-	font-size: 1.125em;
-	font-weight: 300;
-	text-align: left;
-}
-
-.paragraph {
-	font-size: 1em;
-	font-weight: 400;
-	text-align: left;
-}
-
-/*-----Home-----*/
-.homeRotatorImg {
-	min-height: 350px;
-}
-
-.homeRotatorInfo {
-	top: 40px;
-	left: 50px;
-	width: 400px;
-	height: inherit;
-}
-
-/*-----BookingBar-----*/
-#bookATour {
-	font-size: 2em;
-	font-weight: 300;
-}
-
-#dontWait {
-	font-size: 2.5em;
-	font-weight: 700;
-	margin-top: -20px;
-}
-
-#bookingInfo {
-	border-left: solid 2px #650f11;
-}
-
-#bookingCon {
-	border: none;
-}
-
-#bookingInfo p {
-	font-size: 1em;
-}
-
-#bookingInfo a {
-	font-size: 1.25em;
-}
+	
+	/*-----General-----*/
+	.heading {
+		font-size: 1.5em;
+		font-weight: 700;
+		text-align: left;
+	}
+	
+	.subHeading {
+		font-size: 1.125em;
+		font-weight: 300;
+		text-align: left;
+	}
+	
+	.paragraph {
+		font-size: 1em;
+		font-weight: 400;
+		text-align: left;
+	}
+	
+	/*-----Home-----*/
+	.homeRotatorImg {
+		min-height: 350px;
+	}
+	
+	.homeRotatorInfo {
+		top: 40px;
+		left: 50px;
+		width: 400px;
+		height: inherit;
+	}
+	
+	/*-----BookingBar-----*/
+	#bookATour {
+		font-size: 2em;
+		font-weight: 300;
+	}
+	
+	#dontWait {
+		font-size: 2.5em;
+		font-weight: 700;
+		margin-top: -20px;
+	}
+	
+	#bookingInfo {
+		border-left: solid 2px #650f11;
+	}
+	
+	#bookingCon {
+		border: none;
+	}
+	
+	#bookingInfo p {
+		font-size: 1em;
+	}
+	
+	#bookingInfo a {
+		font-size: 1.25em;
+	}
 
 	/*-----General-----*/
 	.heading {
@@ -429,10 +418,6 @@
 		
 	#topNavBar h1 {
 		font-size: .75em;
-	}
-	
-	#mainHeaderWrapper {
-		height: 85px;
 	}
 	
 	#mobileNav {
@@ -515,7 +500,7 @@
 }
 
 
-@media (min-width: 48.125em)
+@media screen and (min-width: 48.125em)
 {
 	
 	#headerLogo {
@@ -526,6 +511,8 @@
 	#mobileNav li a {
 		font-size: 1.2em;
 	}
+	
+}
 
 @media screen and (min-width: 64em)
 {
