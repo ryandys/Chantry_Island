@@ -22,13 +22,13 @@ include_once("layout/header.php");
 <!--start bookingBar-->
 <div id="bookingBarFull">
 	<div class="bookingBar row">
-		<div class="small-6 medium-5 medium-offset-1 columns" id="bookingCon">
+		<div class="small-6 medium-6 medium-offset-0 large-5 large-offset-1 columns" id="bookingCon">
 			<h3 id="bookATour">Book a Tour</h3>
 			<h3 id="dontWait">DON'T WAIT</h3>
 		</div>
-		<div class="small-6 medium-5 columns end" id="bookingInfo">
+		<div class="small-6 medium-6 large-5 columns end" id="bookingInfo">
 			<p class="whiteTxt show-for-medium">We offer tours throughout the summer season from late May to mid-September. During June and July, we offer the tour daily.</p>
-			<a href="#" class="whiteTxt">BOOK NOW</a>
+			<a href="booking.php" class="whiteTxt">BOOK NOW</a>
 		</div>
 	</div>
 </div>
@@ -85,7 +85,7 @@ include_once("layout/header.php");
 			<p class="donateInfo whiteTxt">Since 1997 we have had a tremendous amount of support through donations. Thank you to our past and future donors, you truly make a difference.</p>
 		</div>
 		<div id="donateButCon">
-			<a id="donateBut" href="#">Donate Today</a>
+			<a id="donateBut" href="donate.php">Donate Today</a>
 		</div>
 	</div>
 </div>
