@@ -1,4 +1,14 @@
 /*-----General-----*/
+::selection
+{
+  background: #981b1e;
+}
+
+::-moz-selection
+{
+  background: #981b1e;
+}
+
 body {
 	font-family: 'Overpass', sans-serif;
 }
@@ -47,5 +57,3 @@ body {
 		font-size: 1.313em;
 		font-weight: 400;
 	}
-
-}
