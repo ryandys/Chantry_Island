@@ -138,8 +138,12 @@
 	margin-bottom: 50px;
 }
 
-#donateCon
-{
+.donateCon {
+	position: relative;
+	overflow: hidden;
+}
+
+#donateCon {
 	background-color: #8eabc9;
 	background-image: url(../images/water.jpg);
 	background-position: center center;
@@ -273,7 +277,7 @@
 .title-bar {
 	background: transparent;
 	padding-right: 0rem;
-	padding: 10px 0px;
+	padding: 10px 0px 6px 0px;
 }
 
 .menu-icon::after {
@@ -301,7 +305,7 @@
 #mobileNav li {
 	padding: 10px 0px;
 	margin-right: 20px;
-	background-color: rgba(255,255,255,.8);
+	background-color: #e5e5e5;
 	margin-bottom: 1px;
 	transition: .2s ease-in-out all;
 }
@@ -341,7 +345,6 @@
 
 #hamburgLogoCon {
 	margin: 20px 20px 0px 20px;
-	background-color: rgba(255,255,255,.8);
 }
 
 #hamburgLogo {
@@ -359,7 +362,7 @@
 #extraHamburgLinks li {
 	padding: 10px 0px;
 	margin-right: 20px;
-	background-color: rgba(255,255,255,.8);
+	background-color: #e5e5e5;
 	margin-bottom: 1px;
 	transition: .2s ease-in-out all;
 }
@@ -381,10 +384,145 @@
 	color: #252525;
 }
 
-@media (min-width: 64em) {
-	.iconCon h3, .iconCon p {
-		text-align: left;
-	}
+/*-----Footer-----*/
+#mainFooterWrapper {
+	background-color: #fff;
+	border-top: 8px solid #252525;
+	padding: 30px 0px;
+}
+
+#footerContactInfoBox
+{
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+}
+
+#mainFooter h2 {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #981b1e;
+}
+
+#mainFooter p {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
+	font-size: .875em;
+	color: #252525;
+	margin: 0;
+	padding: 0;
+}
+
+#mainFooter span
+{
+	color: #757575;
+}
+
+#mainFooter ul {
+	list-style: none;
+	margin: 0;
+}
+
+#mainFooter li {
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+#mainFooter li a {
+	color: #252525;
+	transition: .3s ease-in-out all;
+}
+
+#mainFooter li a:hover {
+	color: #981b1e;
+}
+
+#lowerFooterWrapper {
+	background-color: #252525;
+	padding: 10px 0px;
+}
+
+#lowerFooterWrapper p {
+	color: #fff;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: .875em;
+	margin: 0;
+	padding: 0;
+}
+
+#lowerFooterWrapper a {
+	color: #808080;
+	transition: .3s ease-in-out all;
+}
+
+#lowerFooterWrapper a:hover {
+	color: #981b1e;
+}
+
+#lowerFooterLeft {
+	text-align: center;
+}
+
+#lowerFooterRight {
+	text-align: right;
+}
+
+#footerLock {
+	max-width: 8px;
+	float: right;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+label {
+	color: #757575;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+}
+
+.address {
+	display: none;
+}
+
+#inputfName, #inputlName, #inputEmail, #inputPhone, #inputAddress {
+	border: 0px;
+	height: 35px;
+	background-color: #cccccc;
+	margin-bottom: 8px;
+}
+
+#inputfName, #inputlName, #inputEmail, #inputPhone, #inputAddress:focus {
+	box-shadow: none;
+}
+
+textarea {
+	height: 55px;
+	border: 0px;
+	background-color: #cccccc;
+}
+
+textarea:focus {
+	background-color: #cccccc;
+	border: none;
+	box-shadow: none;
+}
+
+#submit {
+	float: right;
+	border: 0px;
+	background-color: transparent;
+	color: #981b1e;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	transition: .2s ease-in-out all;
+}
+
+#submit:hover {
+	color: #252525;
 }
 
 
@@ -433,7 +571,6 @@
 		height: inherit;
 	}
 	
-	/*-----BookingBar-----*/
 	#bookATour {
 		font-size: 2em;
 		font-weight: 300;
@@ -566,6 +703,12 @@
 	#extraHamburgLinks {
 		display: none;
 	}
+	
+	/*-----Footer-----*/
+	
+	#lowerFooterLeft {
+		text-align: left;
+	}
 
 }
 
@@ -587,9 +730,11 @@
 @media screen and (min-width: 64em)
 {
 	/*-----Header-----*/
-	
 	#mobileNav li:first-child a {
 		padding-left: 40px;
 	}
+  
+  .iconCon h3, .iconCon p {
+		text-align: left;
 	
 }
