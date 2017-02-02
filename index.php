@@ -65,8 +65,9 @@ include_once("layout/header.php");
 <!--start video-->
 <div class="vidCon row">
 	<div class="vidInfo small-12 medium-6 columns">
-		<h2 class="heading redTxt">Feautured Video</h2>
-		<p class="paragraph blackTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+		<h2 class="heading redTxt">Chantry Island Tours</h2>
+		<p class="paragraph blackTxt">Come out to breathtaking Southampton Ontario and take in the sights and sounds of Chantry Island. Take a tour of the Light Keeper's Cottage and climb the 106 steps to the top of the lighthouse tower for an unparalleled view of the area.</p>
+		<p class="paragraph blackTxt">The island is also a Federal Migratory Bird Sanctuary. With approximately 50,000 birds on the island during the breeding season, it is surely a sight to bewilder.</p>
 	</div>
 	<div class="vid small-12 medium-6 columns">
 		<iframe width="100%" height="300px" src="https://www.youtube.com/embed/7AGUaUcupss" frameborder="0" allowfullscreen></iframe>
