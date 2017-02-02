@@ -1,3 +1,4 @@
+/*-----General-----*/
 ::selection
 {
   background: #981b1e;
@@ -7,3 +8,52 @@
 {
   background: #981b1e;
 }
+
+body {
+	font-family: 'Overpass', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.blackTxt {
+	color: #252525;
+}
+
+.whiteTxt {
+	color: #ffffff;
+}
+
+.heading {
+	font-size: 1.85em;
+	font-weight: 600;
+}
+
+.subHeading {
+	font-size: 1.313em;
+	font-weight: 400;
+}
+
+.paragraphTxt {
+	font-size: 1em;
+	font-weight: 400em;
+}
+
+@media (min-width: 40em) {
+
+	/*-----General-----*/
+	.heading {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	.subHeading {
+		font-size: 1.125em;
+		font-weight: 300;
+	}
+
+	.paragraphTxt {
+		font-size: 1.313em;
+		font-weight: 400;
+	}
