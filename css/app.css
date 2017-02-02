@@ -9,11 +9,6 @@
   background: #981b1e;
 }
 
-body
-{
-	background-color: #ffcc00;
-}
-
 .hidden {
 	display: none;
 }
@@ -26,19 +21,152 @@ body
 	color: #ffffff;
 }
 
+.redTxt {
+	color: #981b1e;
+}
+
 .heading {
-	font-size: 1.85em;
+	font-size: 1.5em;
 	font-weight: 600;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
 }
 
 .subHeading {
 	font-size: 1.313em;
 	font-weight: 400;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
 }
 
-.paragraphTxt {
+.paragraph {
 	font-size: 1em;
 	font-weight: 400em;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+}
+
+/*-----Home-----*/
+.homeRotatorCon {
+	position: relative;
+	overflow: hidden;
+}
+
+.homeRotatorImg {
+	background-image: url(../images/home_rotator_1.jpg);
+	background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+}
+
+.homeRotatorInfo {
+	position: absolute;
+	background-color: rgba(15,15,15,0.35);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*-----BookingBar-----*/
+#bookingCon {
+	border-right: solid 2px #650f11;
+}
+
+#bookingBarFull {
+	background-color: #981b1e;
+}
+
+.bookingBar {
+	background-color: #981b1e;
+	padding: 10px;
+}
+
+#bookATour {
+	color: #650f11;
+	font-size: 1.1em;
+	font-weight: 300;
+	font-family: 'Overpass', sans-serif;
+}
+
+#dontWait {
+	color: #fff;
+	font-size: 1.35em;
+	font-weight: 700;
+	margin-top: -10px;
+}
+
+#bookingCon h3 {
+	font-family: 'Overpass', sans-serif;
+}
+
+#bookingInfo p {
+	font-family: 'Overpass', sans-serif;
+}
+
+#bookingInfo a {
+	font-size: 1.85em;
+	font-weight: 700;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+/*-----Links-----*/
+.linksCon {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #d6d6d6;
+}
+
+.iconCon h3 {
+	color: #981b1e;
+	font-size: 1.25em;
+	font-weight: 700;
+	font-family: 'Overpass', sans-serif;
+	margin-top: 10px;
+}
+
+.iconCon p {
+	color: #252525;
+	font-size: 1em;
+	font-weight: 400;
+	font-family: 'Overpass', sans-serif;
+}
+
+/*-----Video-----*/
+.vidCon {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*-----Donate-----*/
+.donateCon {
+	position: relative;
+	overflow: hidden;
+}
+
+.donateImg {
+	background-image: url(../images/water.jpg);
+	background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    width: 100%;
+    min-height: 200px;
+}
+
+.donateInfo {
+	position: absolute;
+	background-color: rgba(15,15,15,0.35);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.donateInfo h2, .donateInfo p {
+	text-align: center;
 }
 
 /*-----Header-----*/
@@ -215,6 +343,64 @@ body
 
 
 @media (min-width: 40em) {
+/*-----General-----*/
+.heading {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: left;
+}
+
+.subHeading {
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: left;
+}
+
+.paragraph {
+	font-size: 1em;
+	font-weight: 400;
+	text-align: left;
+}
+
+/*-----Home-----*/
+.homeRotatorImg {
+	min-height: 350px;
+}
+
+.homeRotatorInfo {
+	top: 40px;
+	left: 50px;
+	width: 400px;
+	height: inherit;
+}
+
+/*-----BookingBar-----*/
+#bookATour {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+#dontWait {
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-top: -20px;
+}
+
+#bookingInfo {
+	border-left: solid 2px #650f11;
+}
+
+#bookingCon {
+	border: none;
+}
+
+#bookingInfo p {
+	font-size: 1em;
+}
+
+#bookingInfo a {
+	font-size: 1.25em;
+}
 
 	/*-----General-----*/
 	.heading {
