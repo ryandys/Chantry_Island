@@ -102,6 +102,12 @@
 	font-weight: 700;
 	font-style: italic;
 	margin-top: 10px;
+	font-family: 'Overpass', sans-serif;
+	transition: .3s ease-in-out all;
+}
+
+#bookingInfo a:hover {
+	color: #650f11;
 }
 
 .linksCon {
