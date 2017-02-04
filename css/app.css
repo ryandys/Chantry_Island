@@ -728,6 +728,7 @@
 #restorWrapper a:hover {
 	color: #fff;
 	background-color: #252525;
+}
 
 /*-----Donate-----*/
 #donateInfo {
@@ -1237,22 +1238,6 @@ textarea:focus {
 	
 	#formWrapper p {
 		text-align: left;
-	}
-
-	/*-----General-----*/
-	.heading {
-		font-size: 1.5em;
-		font-weight: 700;
-	}
-
-	.subHeading {
-		font-size: 1.125em;
-		font-weight: 300;
-	}
-
-	.paragraphTxt {
-		font-size: 1.313em;
-		font-weight: 400;
 	}
 
 	/*-----Booking-----*/
