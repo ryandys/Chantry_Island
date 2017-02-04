@@ -22,7 +22,7 @@
 				<div class="small-6 medium-2 columns">
 					<ul>
 						<h2>additional</h2>
-						<li><a href="colunteers.php">volunteers</a></li>
+						<li><a href="volunteers.php">volunteers</a></li>
 						<li><a href="donate.php">donate</a></li>
 					</ul>
 				</div>
