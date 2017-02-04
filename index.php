@@ -75,8 +75,8 @@ include_once("layout/header.php");
 </div>
 <!--end video-->
 
-<!--start donate-->
-<div id="donateCon">
+<!--start homeDonateCon-->
+<div id="homeDonateCon">
 	<div class="row">
 		<div class="small-12 columns">
 			<h2 class="donateTitle whiteTxt">Donations are Greatly Appreciated</h2>
@@ -89,7 +89,7 @@ include_once("layout/header.php");
 		</div>
 	</div>
 </div>
-<!--end donate-->
+<!--end homeDonateCon-->
 
 <!--start affiliates-->
 <div id="affiliatesConFull">

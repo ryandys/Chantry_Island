@@ -159,12 +159,7 @@
 	margin-bottom: 50px;
 }
 
-.donateCon {
-	position: relative;
-	overflow: hidden;
-}
-
-#donateCon {
+#homeDonateCon {
 	background-color: #8eabc9;
 	background-image: url(../images/water.jpg);
 	background-position: center center;
@@ -486,12 +481,12 @@
 	text-align: center;
 }
 
-#bookingHeaderInfo a {
+#bookingPhone {
 	color: #fff;
 	transition: .3s ease-in-out all;
 }
 
-#bookingHeaderInfo a:hover {
+#bookingPhone:hover {
 	color: #dcdcdc;
 }
 
@@ -520,7 +515,7 @@
 }
 
 #emailBut:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #981b1e;
 	transition: .3s ease-in-out all;
 }
@@ -558,6 +553,14 @@
 
 #whereAndWhen {
 	padding: 60px 30px;
+}
+
+#whereAndWhen p a {
+	color: #fff;
+}
+
+#whereAndWhen p a:hover {
+	text-decoration: underline;
 }
 
 #finalBookingDetails {
@@ -725,11 +728,97 @@
 #restorWrapper a:hover {
 	color: #fff;
 	background-color: #252525;
+
+/*-----Donate-----*/
+#donateInfo {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+#donateCon {
+	background-color: #252525;
+	padding: 50px 20px 50px 20px;
+}
+
+#donateAddressCon {
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.donateAddress {
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	margin-bottom: -5px;
+}
+
+#paypalCon {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#paypalCon p {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	font-style: italic;
+}
+
+#paypalCon img {
+	width: 50%;
+	max-width: 200px;
+	display: block;
+	margin: 50px auto 20px auto;
+}
+
+#donorCategories {
+	padding: 80px 10px 80px 10px;
+}
+
+.donorCategoryBlack, .donorCategoryWhite, .donorCategoryGrey {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.donorCategoryBlack {
+	background-color: #252525;
+}
+
+.dontorCategoryWhite {
+	background-color: #fff;
+}
+
+.donorCategoryGrey {
+	background-color: #eee;
+}
+
+.donorCategoryBlack h2 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.donorCategoryWhite p, .donorCategoryGrey p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 0.65em;
+	margin: 0;
+}
+
+.donorCategoryWhite span, .donorCategoryGrey span {
+	font-weight: 700;
 }
 
 /*-----Header-----*/
 #headerWrapper {
-	background: #ffffff;
+	background: #fff;
 }
 
 #skewCon {
@@ -1183,6 +1272,15 @@ textarea:focus {
 
 	#finePrint {
 		margin-top: 0px;
+	}
+
+	/*-----Donate-----*/
+	.donorCategoryBlack h2 {
+		font-size: 1.25em;
+	}
+
+	.donorCategoryWhite p, .donorCategoryGrey p {
+		font-size: 1em;
 	}
 	
 	/*-----About-----*/
