@@ -486,12 +486,12 @@
 	text-align: center;
 }
 
-#bookingHeaderInfo a {
+#bookingPhone {
 	color: #fff;
 	transition: .3s ease-in-out all;
 }
 
-#bookingHeaderInfo a:hover {
+#bookingPhone:hover {
 	color: #dcdcdc;
 }
 
@@ -520,7 +520,7 @@
 }
 
 #emailBut:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #981b1e;
 	transition: .3s ease-in-out all;
 }
@@ -558,6 +558,14 @@
 
 #whereAndWhen {
 	padding: 60px 30px;
+}
+
+#whereAndWhen p a {
+	color: #fff;
+}
+
+#whereAndWhen p a:hover {
+	text-decoration: underline;
 }
 
 #finalBookingDetails {
