@@ -13,7 +13,7 @@ include_once("layout/header.php");
 	<div class="row">
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
 			<h2 class="heading whiteTxt">Marine Heritage Society</h2>
-	<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The objective of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
+			<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The objective of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
 		</div>
 	</div>
 </div>
@@ -35,26 +35,26 @@ include_once("layout/header.php");
 <!--end bookingBar-->
 
 <!--start links-->
-<div class="linksCon row show-for-medium">
-	<div class="iconCon medium-4 columns">
-		<img src="images/camera_icon.svg" class="medium-8 medium-centered large-uncentered large-4 columns">
-		<div class="medium-12 large-8 columns">
+<div class="linksCon row">
+	<div class="iconCon small-12 medium-4 columns">
+		<a href="gallery.php"><img src="images/camera_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+		<div class="small-8 medium-12 large-8 columns">
 			<h3>Photo Gallery</h3>
 			<p>View a collection of amazing photographs of Chantry Island and related things.</p>
 		</div>
 	</div>
 
-	<div class="iconCon medium-4 columns">
-		<img src="images/contact_icon.svg" class="medium-8 medium-centered large-uncentered large-4 columns">
-		<div class="medium-12 large-8 columns">
+	<div class="iconCon small-12 medium-4 columns">
+		<a href="contact.php"><img src="images/contact_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+		<div class="small-8 medium-12 large-8 columns">
 			<h3>Contact Us</h3>
 			<p>Looking for more information about Chantry Island? Contact us to learn more!</p>
 		</div>
 	</div>
 
-	<div class="iconCon medium-4 columns">
-		<img src="images/info_icon.svg" class="medium-8 medium-centered large-uncentered large-4 columns">
-		<div class="medium-12 large-8 columns">
+	<div class="iconCon small-12 medium-4 columns">
+		<a href="about.php"><img src="images/info_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+			<div class="small-8 medium-12 large-8 columns">
 			<h3>About Us</h3>
 			<p>Learn more about our rich history and see the restoration project.</p>
 		</div>
@@ -67,7 +67,7 @@ include_once("layout/header.php");
 	<div class="vidInfo small-12 medium-6 columns">
 		<h2 class="heading redTxt">Chantry Island Tours</h2>
 		<p class="paragraph blackTxt">Come out to breathtaking Southampton Ontario and take in the sights and sounds of Chantry Island. Take a tour of the Light Keeper's Cottage and climb the 106 steps to the top of the lighthouse tower for an unparalleled view of the area.</p>
-		<p class="paragraph blackTxt">The island is also a Federal Migratory Bird Sanctuary. With approximately 50,000 birds on the island during the breeding season, it is surely a sight to bewilder.</p>
+		<p class="paragraph blackTxt">The island is also a Federal Migratory Bird Sanctuary. With approximately 50,000 birds on the island during the breeding season, it is surely a sight to behold.</p>
 	</div>
 	<div class="vid small-12 medium-6 columns">
 		<iframe width="100%" height="300px" src="https://www.youtube.com/embed/7AGUaUcupss" frameborder="0" allowfullscreen></iframe>
@@ -96,8 +96,8 @@ include_once("layout/header.php");
 	<div class="affiliatesCon row" data-equalizer>
 		<h2 class="heading redTxt">Affiliate Partners</h2>
 
-		<div class="small-12 medium-4 columns">
-			<img src="images/saugeen_shores.png">
+		<div class="small-12 medium-4 columns affiliateCard">
+			<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
 			<div class="affiliatesInfo" data-equalizer-watch>
 				<h3 class="paragraph redTxt">Saugeen Shores</h3>
 				<p class="paragraph blackTxt">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce.</p>
@@ -105,7 +105,7 @@ include_once("layout/header.php");
 		</div>
 
 		<div class="small-12 medium-4 columns show-for-medium">
-			<img src="images/bruce_county_museum.png">
+			<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png"></a>
 			<div class="affiliatesInfo" data-equalizer-watch>
 				<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
 				<p class="paragraph blackTxt">Offering a journey through thousands of years of natural and human history.</p>
@@ -113,7 +113,7 @@ include_once("layout/header.php");
 		</div>
 
 		<div class="small-12 medium-4 columns show-for-medium">
-			<img src="images/bruce_coast_lighthouse_tour.png">
+			<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png"></a>
 			<div class="affiliatesInfo" data-equalizer-watch>
 				<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
 				<p class="paragraph blackTxt">Enjoy the Bruce Coast Lighthouse tour.</p>
