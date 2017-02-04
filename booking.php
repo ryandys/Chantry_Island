@@ -19,8 +19,8 @@ include_once("layout/header.php");
 <div id="bookingHeaderInfo">
 	<div class="row">
 		<div id="bookingHeaderPhone" class="small-12 columns">
-			<h3><span>Call:</span> <a href="tel:519-797-5862">519-797-5862</a></h3>
-			<h3><span>Toll Free:</span> <a href="tel:1-866-797-5862">1-866-797-5862</a></h3>
+			<h3><span>Call:</span> <a href="tel:519-797-5862" id="bookingPhone">519-797-5862</a></h3>
+			<h3><span>Toll Free:</span> <a href="tel:1-866-797-5862" id="bookingPhone">1-866-797-5862</a></h3>
 			<div id="emailButCon">
 				<a id="emailBut" href="contact.php">Email Us</a>
 			</div>
@@ -52,20 +52,20 @@ include_once("layout/header.php");
 <!--end generalBookingInfo-->
 
 <!--start schedule-->
-	<div class="row">
-		<div class="small-12 columns" id="schedule">
-			<h2 class="heading whiteTxt">SCHEDULE WILL GO HERE</h2>
-		</div>
+<div class="row">
+	<div class="small-12 columns" id="schedule">
+		<h2 class="heading whiteTxt">SCHEDULE WILL GO HERE</h2>
 	</div>
+</div>
 <!--end schedule-->
 
 <!--start whereAndWhen-->
-	<div id="whereAndWhenFull">
-		<div class="row" id="whereAndWhen">
-			<h2 class="heading whiteTxt">where and when to arrive</h2>
-			<p class="paragraph whiteTxt">Come to the Chantry Island Tour Base and Gift Shop located at the south side of the Saugeen River at the harbour in Southampton (See Maps) and arrive 15 minutes ahead of your scheduled tour. Check in and receive your ticket. You will be directed to the dock for the Peerless II.</p>
-		</div>
+<div id="whereAndWhenFull">
+	<div class="row" id="whereAndWhen">
+		<h2 class="heading whiteTxt">where and when to arrive</h2>
+		<p class="paragraph whiteTxt">Come to the Chantry Island Tour Base and Gift Shop located at the south side of the Saugeen River at the harbour in Southampton (<a href="contact.php">see map</a>) and arrive 15 minutes ahead of your scheduled tour. Check in and receive your ticket. You will be directed to the dock for the Peerless II.</p>
 	</div>
+</div>
 <!--end whereAndWhen-->
 
 <!--start bookingFinalDetails-->
