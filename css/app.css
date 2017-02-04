@@ -580,6 +580,38 @@
 	color: #981b1e;
 }
 
+/*-----Gallery-----*/
+#galleryInfo {
+	padding-top: 40px;
+}
+
+#photoGalleryIcon {
+	max-width: 175px;
+}
+
+#galleryInfo p a {
+	color: #475A84;
+}
+
+#galleryInfo p a:hover {
+	color: #981b1e;
+	transition: .3s ease-in-out all;
+}
+
+#galleryCon {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.galleryPlaceholder {
+	margin-bottom: 30px;
+}
+
+.galleryPlaceholder img:hover {
+	cursor: pointer;
+	transform: scale(1.02,1.02);
+}
+
 /*-----Header-----*/
 #headerWrapper {
 	background: #ffffff;
