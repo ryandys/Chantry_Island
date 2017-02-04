@@ -37,9 +37,12 @@
 	
 	
 	<!-- Open mainHeader -->
+	<div id="headerWrapper">
 	<header id="mainHeader" class="row collapse">
 	  	<div class="hide-for-small-only medium-4 large-3 columns">
+		  	<div id="skewCon">
 		  	<a href="index.php"><img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="headerLogo"></a>
+		  	</div>
 	  	</div>
 	  	
 	  	<nav class="medium-8 large-9 columns">
@@ -62,7 +65,7 @@
 		  	
 		  	<div id="expanded-menu" data-magellan>
 			  	<div id="hamburgLogoCon">
-				  	<img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="hamburgLogo">
+				  	<a href="index.php"><img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="hamburgLogo"></a>
 			  	</div>
 			  	
 			  	<ul id="mobileNav">
@@ -82,6 +85,7 @@
 		  	
 	  	</nav>
   	</header>
+	</div>
 	<!-- Close mainHeader -->
   	
 	
