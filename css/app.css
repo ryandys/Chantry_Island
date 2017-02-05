@@ -842,6 +842,44 @@
 	font-weight: 400;
 }
 
+/*-----Volunteers-----*/
+#volWrapper {
+	padding: 30px 0px;
+}
+
+.volCon {
+	background-color: #d7d7d7;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-bottom: 30px solid #981b1e;
+}
+
+.volCon h1 {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	font-color: #252525;
+}
+
+.volCon h2 {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.25em;
+	font-weight: 400;
+	font-color: #252525;
+}
+
+.volCon p {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	font-color: #252525;
+	margin-top: 30px;
+}
+
 /*-----Donate-----*/
 #donateInfo {
 	margin-top: 50px;
