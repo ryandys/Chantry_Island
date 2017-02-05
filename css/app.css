@@ -65,12 +65,32 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 30px 10px;
+	position: relative;
 }
 
 #homeRotatorText
 {
 	background-color: rgba(0,0,0,0.3);
 	padding: 12px;
+}
+
+.homeSelectorsSmall {
+	display: block;
+	margin: 10px auto -10px auto;
+	width: 60px;
+	height: 10px;
+}
+
+.homeSelectorsMedium {
+	position: absolute;
+	right: 20px;
+	top: 47%;
+	width: 10px;
+	height: 60px;
+}
+
+#homeTimer {
+	height: 2px;
 }
 
 #bookingCon {
@@ -1492,19 +1512,7 @@ textarea:focus {
 	}
 	
 	/*-----About-----*/
-	#aboutBook h1 {
-		text-align: left;
-	}
-	
-	#aboutBook p {
-		text-align: left;
-	}
-	
-	#restorWrapper h1 {
-		text-align: left;
-	}
-	
-	#restorWrapper h2 {
+	#aboutBook h1, #aboutBook p, #restorWrapper h1, #restorWrapper h2 {
 		text-align: left;
 	}
 	
@@ -1524,11 +1532,7 @@ textarea:focus {
 		font-size: 1.25em;
 	}
 	
-	#islandSizeWrapper p {
-		text-align: left;
-	}
-	
-	#lightHouseHisTitle h1 {
+	#islandSizeWrapper p, #lightHouseHisTitle h1 {
 		text-align: left;
 	}
 	
