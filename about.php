@@ -35,7 +35,7 @@ is a majestic Imperial Lighthouse built in the mid 1800’s, as well as the Keep
 		</div>
 	</div><!--Close Des/Book Row-->
 	
-	<div id="restorWrapper">
+	<div id="restorWrapper"><!--Open restoration-->
 		<div class="row">
 			<div class="small-12 medium-8 columns">
 				<h1>Lighthouse Restoration</h1>
@@ -44,6 +44,14 @@ is a majestic Imperial Lighthouse built in the mid 1800’s, as well as the Keep
 			
 			<div class="small-12 medium-4 columns">
 				<p><a href="restoration.php">learn more</a></p>
+			</div>
+		</div>
+	</div><!--Close restoration-->
+	
+	<div id="extraDesc">
+		<div class="row" id="extraDescCon">
+			<div class="small-12 columns">
+				<p>Chantry Island is a glacial moraine and consists of stone above the water and beneath extending a mile north and a mile south of the island. These underwater shoals of massive granite boulders have made this area one of the most treacherous in the Great Lakes. There are over 50 known shipwrecks around the island and there are many accounts from the 1800’s and early – mid 1900’s of these disasters and lost lives. Today, buoys and modern navigational tools safely guide boats through the area.</p>
 			</div>
 		</div>
 	</div>

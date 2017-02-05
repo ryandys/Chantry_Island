@@ -730,6 +730,26 @@
 	background-color: #252525;
 }
 
+#extraDesc {
+	background-color: #b7b7b7;
+	padding: 30px;
+}
+
+#extraDescCon {
+	background-color: rgba(0,0,0,0.6);
+	padding: 30px;
+}
+
+#extraDescCon p {
+	text-align: center;
+	color: #fff;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
 /*-----Donate-----*/
 #donateInfo {
 	margin-top: 50px;
@@ -1287,6 +1307,18 @@ textarea:focus {
 	
 	#restorWrapper p {
 		text-align: right;
+	}
+	
+	#extraDesc {
+		background-color: #b7b7b7;
+		background-image: url(../images/extraDesc_BG.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#extraDescCon p {
+		font-size: 1.25em;
 	}
 	
 	/*-----Header-----*/
