@@ -929,6 +929,52 @@
 	font-weight: 700;
 }
 
+/*-----Restoration-----*/
+#restorationIntro {
+	padding: 40px 0 20px 0;
+	margin-bottom: 40px;
+	border-bottom: solid 3px #981b1e;
+}
+
+#beforeRestoration {
+	margin-bottom: 40px;
+}
+
+#beforeRestoration h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#smallLighthouses {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#afterRestorationFull {
+	background-color: #e1e1e1;
+}
+
+#afterRestorationFull h2 {
+	text-align: center;
+	background-color: #252525;
+	padding: 10px;
+	margin: 0px;
+}
+
+#afterRestoration {
+	padding: 40px 10px 40px 10px;
+}
+
+#smallLighthouseRenovated {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#restorationPartners {
+	padding: 50px 10px 30px 10px;
+	background-color: #981b1e;
+}
+
 /*-----Header-----*/
 #headerWrapper {
 	background: #fff;
