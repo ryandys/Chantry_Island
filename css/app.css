@@ -61,7 +61,7 @@
 {
 	background-color: #252525;
 	background-image: url(../images/home_rotator_1.jpg);
-	background-position: center center;
+	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 30px 10px;
@@ -69,7 +69,7 @@
 
 #homeRotatorText
 {
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.3);
 	padding: 12px;
 }
 
@@ -219,15 +219,33 @@
 	padding: 10px;
 }
 
-.selectors {
-	width: 60px;
-	height: 20px;
-	margin: 0 auto;
-	padding-top: 30px;
-	padding-bottom: 50px;
+#affiliatesControls {
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
-.selector1, .selector2, .selector3 {
+#leftArrow {
+	float: left;
+	width: 40px;
+}
+
+#rightArrow {
+	transform: rotate(180deg);
+	float: right;
+	width: 40px;
+}
+
+#leftArrow:hover, #rightArrow:hover {
+	cursor: pointer;
+	filter: brightness(95%);
+}
+
+.selectors {
+	width: 100px;
+	margin: 11px auto 0px auto;
+}
+
+.selectorDot {
 	width: 10px;
 	height: 10px;
 	margin: 5px;
@@ -236,14 +254,15 @@
 	float: left;
 }
 
-.selector1:hover, .selector2:hover, .selector3:hover {
+.selectorDot:hover {
 	cursor: pointer;
 }
 
-.selector1, .selector2 {
+.selectorDot {
 	background-color: #b9b9b9;
 }
-.selector3 {
+
+#activeSelector {
 	background-color: #981b1e;
 }
 
@@ -456,7 +475,7 @@
 #bookingHeaderImg {
 	background-color: #252525;
 	background-image: url(../images/booking_header.jpg);
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 60px 30px;
@@ -620,7 +639,7 @@
 	padding: 90px 0px;
 	background-color: #252525;
 	background-image: url(../images/about_rotator_1.jpg);
-	background-position: center center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
