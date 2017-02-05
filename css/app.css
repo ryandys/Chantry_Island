@@ -1360,6 +1360,18 @@ textarea:focus {
 	color: #252525;
 }
 
+.footerSocIcon {
+	float: left;
+	max-width: 25px;
+	margin-right: 8px;
+	margin-top: 8px;
+	transition: .3s ease-in-out all;
+}
+
+.footerSocIcon:hover {
+	opacity: .7;
+}
+
 
 @media (min-width: 23.4375em) {
 	
