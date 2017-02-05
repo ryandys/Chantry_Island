@@ -95,38 +95,42 @@ include_once("layout/header.php");
 <div id="affiliatesConFull">
 	<div class="affiliatesCon row" data-equalizer>
 		<h2 class="heading redTxt">Affiliate Partners</h2>
-
-		<div class="small-12 medium-4 columns affiliateCard">
-			<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
-			<div class="affiliatesInfo" data-equalizer-watch>
-				<h3 class="paragraph redTxt">Saugeen Shores</h3>
-				<p class="paragraph blackTxt">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce.</p>
+			<div class="small-12 medium-4 columns affiliateCard">
+				<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
+				<div class="affiliatesInfo" data-equalizer-watch>
+					<h3 class="paragraph redTxt">Saugeen Shores</h3>
+					<p class="paragraph blackTxt">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce.</p>
+				</div>
 			</div>
-		</div>
 
-		<div class="small-12 medium-4 columns show-for-medium">
-			<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png"></a>
-			<div class="affiliatesInfo" data-equalizer-watch>
-				<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
-				<p class="paragraph blackTxt">Offering a journey through thousands of years of natural and human history.</p>
+			<div class="small-12 medium-4 columns show-for-medium">
+				<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png"></a>
+				<div class="affiliatesInfo" data-equalizer-watch>
+					<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
+					<p class="paragraph blackTxt">Offering a journey through thousands of years of natural and human history.</p>
+				</div>
 			</div>
-		</div>
 
-		<div class="small-12 medium-4 columns show-for-medium">
-			<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png"></a>
-			<div class="affiliatesInfo" data-equalizer-watch>
-				<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
-				<p class="paragraph blackTxt">Enjoy the Bruce Coast Lighthouse tour.</p>
+			<div class="small-12 medium-4 columns show-for-medium">
+				<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png"></a>
+				<div class="affiliatesInfo" data-equalizer-watch>
+					<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
+					<p class="paragraph blackTxt">Enjoy the Bruce Coast Lighthouse tour.</p>
+				</div>
+			</div>
+
+			<div class="small-12 columns" id="affiliatesControls">
+				<img src="images/chevron.svg" alt="Left" id="leftArrow">
+				<img src="images/chevron.svg" alt="Right" id="rightArrow">
+			<div class="selectors">
+				<div class="selectorDot"></div>
+				<div class="selectorDot" id="activeSelector"></div>
+				<div class="selectorDot"></div>
+				<div class="selectorDot"></div>
+				<div class="selectorDot"></div>
 			</div>
 		</div>
 	</div>
-
-<div class="selectors">
-	<div class="selector1"></div>
-	<div class="selector2"></div>
-	<div class="selector3"></div>
-</div>
-	
 </div>
 <!--end affiliates-->
     
