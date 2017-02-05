@@ -26,8 +26,8 @@ include_once("layout/header.php");
 
 <!--start donateCon-->
 <div id="donateCon">
-	<div class="row">
-		<div class="small-12 medium-8 columns">
+	<div class="row" data-equalizer>
+		<div class="small-12 medium-8 columns" data-equalizer-watch>
 			<p class="paragraph whiteTxt">If you would like to be included please send a cheque or money order to:</p>
 			<br>
 			<div id="donateAddressCon">
@@ -38,7 +38,7 @@ include_once("layout/header.php");
 			</div>
 			<p class="paragraph whiteTxt">Please specify your donation preference: Chantry Island and/or new tour boat.</p>
 		</div>
-		<div class="small-12 medium-4 columns" id="paypalCon">
+		<div class="small-12 medium-4 columns" id="paypalCon" data-equalizer-watch>
 			<p>or donate with PayPal</p>
 			<img src="images/paypal.png" alt="PayPal">
 		</div>
