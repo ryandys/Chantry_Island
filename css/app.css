@@ -769,6 +769,79 @@
 	padding: 0;
 }
 
+#islandSizeWrapper {
+	padding: 30px 0px;
+}
+
+#islandSizeWrapper p {
+	text-align: center;
+	color: #252525;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+#islandSizeWrapper img {
+	max-height: 150px;
+	float: right;
+}
+
+#lightHouseHisTitle {
+	padding: 20px 0px;
+}
+
+#lightHouseHisTitle h1 {
+	text-align: center;
+	color: #981b1e;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+#historyWrapper {
+	background-color: #981b1e;
+	padding: 30px 0px;
+}
+
+#historyWrapper p {
+	text-align: center;
+	color: #fff;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 20px 0px;
+	margin: 0;
+}
+
+#birdSancWrapper {
+	padding: 40px 0px;
+}
+
+#birdSancWrapper h1 {
+	text-align: center;
+	color: #252525;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#birdSancWrapper img {
+	max-width: 150px;
+	float: right;
+}
+
+#birdSancWrapper p {
+	text-align: center;
+	color: #252525;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
 /*-----Donate-----*/
 #donateInfo {
 	margin-top: 50px;
@@ -1337,6 +1410,35 @@ textarea:focus {
 	}
 	
 	#extraDescCon p {
+		font-size: 1.25em;
+	}
+	
+	#islandSizeWrapper p {
+		text-align: left;
+	}
+	
+	#lightHouseHisTitle h1 {
+		text-align: left;
+	}
+	
+	#historyWrapper {
+		background-color: #981b1e;
+		background-image: url(../images/lighthouseHis_BG.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#historyWrapper p {
+		text-align: left;
+	}
+	
+	#birdSancWrapper h1 {
+		text-align: left;
+	}
+	
+	#birdSancWrapper p {
+		text-align: left;
 		font-size: 1.25em;
 	}
 	
