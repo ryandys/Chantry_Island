@@ -25,7 +25,7 @@ include_once("layout/header.php");
 		    <div class="small-12 columns" id="contactGeneral">
 			    <p>86 Saugeen St. Southampton, Ontario Canada   -  N0H 2L0</p>
 			    <p>Call: <span>519-797-5862</span> Toll Free: <span>1-866-797-5862 </span></p>
-			    <p>Mailing Address: <span>Marine Heritage Society - Box 421 Southampton, Ontario Canada  -  N0H 2L0</span></p>
+			    <p>Mailing Address: <span>Marine Heritage Society - Southampton, Ontario Canada  -  N0H 2L0</span></p>
 			    <h1><a href="#formWrapper">SEND US A MESSAGE</a></h1>
 		    </div>
 	    </div>
@@ -35,6 +35,7 @@ include_once("layout/header.php");
 	    <div class="row">
 		    <div class="small-12 medium-6 columns">
 			    <div id="formCon">
+				    <p>TO: email@chantryisland.com</p>
 				    <form action="" method="post">
 						
 						<label>Your name:</label>
@@ -42,6 +43,9 @@ include_once("layout/header.php");
 						
 						<label>Your email:</label>
 						<input id="inputEmailAddress" name="email" type="email">
+						
+						<label>Email Subject:</label>
+						<input id="inputSubject" name="subject" type="text">
 						
 						<label class="address">Address:</label>
 						<input id="inputHouseAddress" class="address" name="address" type="text">
