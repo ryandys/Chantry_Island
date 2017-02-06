@@ -450,14 +450,14 @@
 	display: none;
 }
 
-#inputName, #inputEmailAddress, #inputHouseAddress {
+#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress {
 	border: 0px;
 	height: 35px;
 	background-color: #fff;
 	margin-bottom: 8px;
 }
 
-#inputName, #inputEmailAddress, #inputHouseAddress:focus {
+#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress:focus {
 	box-shadow: none;
 }
 
