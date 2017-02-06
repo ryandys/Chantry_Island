@@ -32,7 +32,7 @@ include_once("layout/header.php");
 			<br>
 			<div id="donateAddressCon">
 				<p class="donateAddress">Marine Heritage Society</p>
-				<p class="donateAddress">Box 421</p>
+				<p class="donateAddress">86 Saugeen St</p>
 				<p class="donateAddress">Southampton, Ontario</p>
 				<p class="donateAddress">Canada, N0H 2L0</p>
 			</div>

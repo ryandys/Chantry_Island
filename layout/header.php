@@ -29,7 +29,7 @@
 			
 			<div class="small-3 medium-6 columns">
 				<a href="#"><img data-interchange="[images/socIcon_YouTube.png, small], [images/socIcon_YouTube.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
-				<a href="#"><img data-interchange="[images/socIcon_Twitter.png, small], [images/socIcon_Twitter.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
+				<a href="#"><img data-interchange="[images/socIcon_Facebook.png, small], [images/socIcon_Facebook.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
 			</div>
 		</div>
 	</div>

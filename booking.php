@@ -34,7 +34,6 @@ include_once("layout/header.php");
 	<div class="small-12 medium-8 columns">
 		<h2 class="heading">General Booking Information</h2>
 		<p class="paragraph">We offer tours throughout the summer season from late May to mid-September. During June and July, we offer the tour daily, check below for the exact schedule. Note, it does change on a yearly basis.</p>
-		<p class="paragraph">Since the Chantry Island is also Federal Bird Sanctuary we are only able to bring 12 persons per tour. Therefore, call ahead to ensure your place on the boat.</p>
 	</div>
 
 	<div class="small-12 medium-4 columns" id="bookingRates">

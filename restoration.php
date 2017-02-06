@@ -59,7 +59,7 @@ include_once("layout/header.php");
 				<img src="images/renovated_lighthouse.jpg" alt="Renovated lighthouse">
 			</div>
 
-			<p class="paragraph">Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 12,000 visitors to the island.</p>
+			<p class="paragraph">Today the tour is operated with over 125 volunteers, whose jobs include island housekeepers, gardeners, tour boat captains, crew and tour guides, and gift shop sales and service personnel. Volunteers also install the portable walkways and docks every spring and remove them every fall. To date, there have been over 20,538 visitors to the island.</p>
 		</div>
 	</div>
 </div>
