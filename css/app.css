@@ -2,6 +2,7 @@
 ::selection
 {
   background: #981b1e;
+  color: #fff;
 }
 
 ::-moz-selection
@@ -639,18 +640,117 @@
 	transition: .3s ease-in-out all;
 }
 
+#noScriptGallery {
+  width: 100%;
+  background-color: red;
+  padding: 8px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#noScriptGallery p {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  color: #f2f2f2;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
 #galleryCon {
-	margin-top: 50px;
-	margin-bottom: 50px;
+  text-align: center;
+  margin: 25px auto 25px auto;
 }
 
-.galleryPlaceholder {
-	margin-bottom: 30px;
+#mainImgCon {
+  background-color: #252525;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  box-shadow: 0px 0px 6px #252525;
+  overflow-x: hidden;
 }
 
-.galleryPlaceholder img:hover {
-	cursor: pointer;
-	transform: scale(1.02,1.02);
+#mainImg img {
+  max-height: 500px;
+}
+
+#imgDesc {
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: .85em;
+  padding: 10px;
+  margin: 0;
+  float: left;
+  width: 300px;
+}
+
+#galleryIcon {
+  width: 20px;
+  float: right;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#prev {
+  cursor: pointer;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 30px;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  transition: .2s ease-In-Out all;
+}
+
+#next {
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  width: 30px;
+  transform: rotate(180deg) translateY(+50%);
+  opacity: 0.6;
+  transition: .2s ease-In-Out all;
+}
+
+#prev:hover, #next:hover {
+  opacity: 0.9;
+}
+
+#thumbnailCon {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 25px auto;
+  text-align: center;
+}
+
+.thumb {
+  cursor: pointer;
+  width: 103px;
+  height: 103px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.thumb img {
+  object-fit: cover;
+  width: 103px;
+  height: 103px;
+  padding: 3px;
+  border: solid 1px #252525;
+}
+
+.thumb:hover {
+  transform: scale(1.05,1.05);
+}
+
+.nonActive {
+  filter: saturate(0.2) opacity(0.6);
 }
 
 /*-----About-----*/
