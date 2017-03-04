@@ -27,22 +27,54 @@ include_once("layout/header.php");
 <!--end galleryInfo-->
 
 <!--start gallery-->
-<div class="row" id="galleryCon">
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
-	<div class="small-4 columns galleryPlaceholder"><img src="images/news_img_4.jpg" alt="placeholder"></div>
+<noscript>
+  <div id="noScriptGallery">
+    <p>JavaScript is required to view the gallery.</p>
+  </div>
+</noscript>
+
+<div class="row">
+  <div id="galleryCon">
+    <div id="mainImgCon">
+      <div id="mainImg">
+        <img src="images/img-1.jpg" alt="Current image">
+      </div>
+        <p id="imgDesc">Aerial view of Chantry Island and the Saugeen River mouth in Southhampton, Ontario. Photo by Karen Smith.</p>
+        <img src="images/chevron2.svg" alt="left" id="prev">
+        <img src="images/chevron2.svg" alt="right" id="next">
+        <img src="images/gallery_icon.svg" alt="Gallery" id="galleryIcon">
+    </div> 
+  </div>
+</div>
+
+<div class="row hide" id="thumbnailCon">
+    <div class="thumb"><img src="images/img-1.jpg" id="1"></div>
+    <div class="thumb nonActive"><img src="images/img-2.jpg" id="2"></div>
+    <div class="thumb nonActive"><img src="images/img-3.jpg" id="3"></div>
+    <div class="thumb nonActive"><img src="images/img-4.jpg" id="4"></div>
+    <div class="thumb nonActive"><img src="images/img-5.jpg" id="5"></div>
+    <div class="thumb nonActive"><img src="images/default.jpg" id="6"></div>
+    <div class="thumb nonActive"><img src="images/img-7.jpg" id="7"></div>
+    <div class="thumb nonActive"><img src="images/img-8.jpg" id="8"></div>
+    <div class="thumb nonActive"><img src="images/img-9.jpg" id="9"></div>
+    <div class="thumb nonActive"><img src="images/img-10.jpg" id="10"></div>
+    <div class="thumb nonActive"><img src="images/img-11.jpg" id="11"></div>
+    <div class="thumb nonActive"><img src="images/img-12.jpg" id="12"></div>
+    <div class="thumb nonActive"><img src="images/default.jpg" id="13"></div>
+    <div class="thumb nonActive"><img src="images/img-14.jpg" id="14"></div>
+    <div class="thumb nonActive"><img src="images/img-15.jpg" id="15"></div>
+    <div class="thumb nonActive"><img src="images/default.jpg" id="16"></div>
+    <div class="thumb nonActive"><img src="images/default.jpg" id="17"></div>
+    <div class="thumb nonActive"><img src="images/img-18.jpg" id="18"></div>
+    <div class="thumb nonActive"><img src="images/img-19.jpg" id="19"></div>
+    <div class="thumb nonActive"><img src="images/default.jpg" id="20"></div>
 </div>
 <!--end gallery-->
 
     <!--CLOSE BODY CONTENT HERE-->
-    
-    
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/gallery.js"></script>
     
 <?php
 	include("layout/footer.php");
