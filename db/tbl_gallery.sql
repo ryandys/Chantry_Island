@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 04, 2017 at 03:54 AM
+-- Generation Time: Mar 04, 2017 at 07:52 PM
 -- Server version: 5.6.28
 -- PHP Version: 7.0.10
 
@@ -37,26 +37,26 @@ CREATE TABLE tbl_gallery (
 --
 
 INSERT INTO tbl_gallery (gallery_id, gallery_img, gallery_desc) VALUES
-(1, 'img-1.jpg', 'Aerial view of Chantry Island and the Saugeen River mouth in Southhampton, Ontario. Photo by Karen Smith.'),
-(2, 'img-2.jpg', 'Aerial view of Chantry Island and the Saugeen River mouth in Southhampton, Ontario. Photo by Karen Smith.'),
-(3, 'img-3.jpg', 'Aerial view of Chantry Island and the Saugeen River mouth in Southhampton, Ontario. Photo by Karen Smith.'),
-(4, 'img-4.jpg', 'Chantry Island Lighthouse. Photo by Carol Walberg.'),
-(5, 'img-5.jpg', 'Chantry Island Lighthouse. Photo by Donna Savoy.'),
-(6, 'default.jpg', 'Image not found'),
-(7, 'img-7.jpg', 'Chantry Island Birds. Photo by Nancy Calder.'),
-(8, 'img-8.jpg', 'Chantry Island Birds. Photo by Nancy Calder.'),
-(9, 'img-9.jpg', 'Inside Light Keeper\'s Cottage. Photo by George Plant.'),
-(10, 'img-10.jpg', 'Inside Light Keeper\'s Cottage. Photo by George Plant.'),
-(11, 'img-11.jpg', 'Chantry Island Birds. Photo by Nancy Calder.'),
-(12, 'img-12.jpg', 'Inside Light Keeper\'s Cottage. Photo by George Plant.'),
-(13, 'default.jpg', 'Image not found'),
-(14, 'img-14.jpg', 'Chantry Island Gardens. Photo by Donna Savoy.'),
-(15, 'img-15.jpg', 'Chantry Island Gardens. Photo by Donna Savoy.'),
-(16, 'default.jpg', 'Image not found'),
-(17, 'default.jpg', 'Image not found'),
-(18, 'img-18.jpg', 'Chantry Island Lighthouse. Photo by Carol Walberg.'),
-(19, 'img-19.jpg', 'Aerial views of Chantry Island and the Saugeen River mouth in Southampton, Ontario. A photo by James Swartz.'),
-(20, 'default.jpg', 'Image not found');
+(1, 'img-1.jpg', 'Photo by Karen Smith.'),
+(2, 'img-2.jpg', 'Photo by Karen Smith.'),
+(3, 'img-3.jpg', 'Photo by Karen Smith.'),
+(4, 'img-4.jpg', 'Photo by Carol Walberg.'),
+(5, 'img-5.jpg', 'Photo by Vicki Tomori.'),
+(6, 'img-6.jpg', 'Photo by Nancy Calder.'),
+(7, 'img-7.jpg', 'Photo by Nancy Calder.'),
+(8, 'img-8.jpg', 'Photo by Nancy Calder.'),
+(9, 'img-9.jpg', 'Photo by Terry Thomas.'),
+(10, 'img-10.jpg', 'Photo by Vicki Tomori.'),
+(11, 'img-11.jpg', 'Photo by James Swartz.'),
+(12, 'img-12.jpg', 'Photo by Vicki Tomori.'),
+(13, 'img-13.jpg', 'Photo by Vicki Tomori.'),
+(14, 'img-14.jpg', 'Photo by Vicki Tomori.'),
+(15, 'img-15.jpg', 'Photo by Vicki Tomori.'),
+(16, 'img-16.jpg', 'Photo by Terry Thomas.'),
+(17, 'img-17.jpg', 'Photo by Vicki Tomori.'),
+(18, 'img-18.jpg', 'Photo by Wayne MacDonald.'),
+(19, 'img-19.jpg', 'Photo by James Swartz.'),
+(20, 'img-20.jpg', 'Photo by Karen Smith.');
 
 --
 -- Indexes for dumped tables
