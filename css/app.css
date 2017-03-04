@@ -701,12 +701,7 @@
   z-index: 100;
 }
 
-#mainImg {
-  padding: 50px 0px 5px 0px;
-}
-
 #mainImg img {
-  width: 100%;
   max-height: 500px;
   max-width: 100%;
 }
