@@ -41,39 +41,30 @@
 				<a href="#"><img data-interchange="[images/socIcon_Facebook_Dark.png, small], [images/socIcon_Facebook_Dark.svg, retina]" alt="social media icon" class="footerSocIcon"></a>
 				</div>
 				
-				<div class="hide-for-small-only medium-5 columns">
+				<div class="hide-for-small-only medium-5 columns">	
+										
 					<form action="" method="post">
 						
-						<div class="small-12 medium-6 columns">
-						<label>first name:</label>
+						<div class="small-12 columns">
+						<label>Your name:</label>
 						<input id="inputfName" name="name" type="text">
 						</div>
 						
-						<div class="small-12 medium-6 columns">
-						<label>last name:</label>
-						<input id="inputlName" name="name" type="text">
-						</div>
-						
-						<div class="small-12 medium-6 columns">
-						<label>email address:</label>
+						<div class="small-12 columns">
+						<label>Your email:</label>
 						<input id="inputEmail" name="email" type="email">
-						</div>
-						
-						<div class="small-12 medium-6 columns">
-						<label>phone number:</label>
-						<input id="inputPhone" name="email" type="email">
 						</div>
 						
 						<label class="address">Address:</label>
 						<input id="inputAddress" class="address" name="address" type="text">
 						
 						<div class="small-12 columns">
-						<label>message:</label>
+						<label>Your message:</label>
 						<textarea name="msg"></textarea>
 						</div>
 						
 						<div class="small-12 columns">
-						<input id="submit" type="submit" value="send">
+						<input id="submit" type="submit" value="send to email@chantryisland.com">
 						</div>
 						
 					</form>
