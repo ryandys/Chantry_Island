@@ -59,7 +59,8 @@
 		  	<div>
 			  	<ul id="mainNavAdditionlLinks">
 				  	<li><a href="volunteers.php">volunteers</a></li>
-				  	<li><a href="donate.php">donate</a></li>
+					<li><a href="donate.php">donate</a></li>
+					<li><a href="contact.php">contact</a></li>
 			  	</ul>
 		  	</div>
 		  	
@@ -69,17 +70,18 @@
 			  	</div>
 			  	
 			  	<ul id="mobileNav">
+				  	<li><a href="index.php">home</a></li>
 				  	<li><a href="news.php">news</a></li>
 				  	<li><a href="about.php">about</a></li>
 				  	<li><a href="events.php">events</a></li>
 				  	<li><a href="booking.php">booking</a></li>
 				  	<li><a href="gallery.php">gallery</a></li>
-				  	<li><a href="contact.php">contact</a></li>
 			  	</ul>
 			  	
 			  	<ul id="extraHamburgLinks">
 					<li><a href="volunteers.php">volunteers</a></li>
 					<li><a href="donate.php">donate</a></li>
+					<li><a href="contact.php">contact</a></li>
 				</ul>
 		  	</div>
 		  	
