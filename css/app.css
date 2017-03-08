@@ -793,22 +793,10 @@
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#aboutTopBar {
 	position: relative;
-}
-
-.aboutSelectorsSmall {
-	display: block;
-	margin: -20px auto 20px auto;
-	width: 60px;
-	height: 10px;
-}
-
-.aboutSelectorsMedium {
-	position: absolute;
-	right: 20px;
-	top: 118px;
-	width: 10px;
-	height: 60px;
 }
 
 #aboutTopBar h1 {
@@ -1045,6 +1033,19 @@
 	font-weight: 400;
 	font-color: #252525;
 	margin-top: 30px;
+}
+
+#interviews h2 {
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+	font-color: #252525;
+	margin-bottom: 20px;
+}
+
+#interviews iframe {
+	margin-bottom: 30px;
 }
 
 /*-----Donate-----*/
