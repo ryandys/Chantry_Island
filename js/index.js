@@ -2,6 +2,7 @@
 	"use strict";
 
 var homeRotatorCon = document.querySelector("#homeRotatorCon");
+var homeRotatorInfo = document.querySelector("#homeRotatorText")
 var homeRotatorTitle = document.querySelector("#homeRotatorText h2");
 var homeRotatorTxt = document.querySelector("#homeRotatorText p");
 var count = 1;
@@ -28,6 +29,8 @@ function dotAdd(e) {
 	homeRotatorCon.style.backgroundImage = "url(images/"+homeImgArray[dotNumber]+")";
 	homeRotatorTitle.innerHTML = homeTitleArray[dotNumber];
 	homeRotatorTxt.innerHTML = homeTxtArray[dotNumber];
+	TweenMax.from(homeRotatorCon, .8, {opacity: .5, ease: Power0.easeNone});
+	TweenMax.from(homeRotatorInfo, .5, {x:-5000, ease:SteppedEase.easeOut});
 }
 
 for (var i=0; i<homeDotsArray.length; i++) {
