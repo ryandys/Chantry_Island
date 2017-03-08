@@ -72,27 +72,15 @@
 
 #homeRotatorText
 {
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
 	padding: 12px;
 }
 
-.homeSelectorsSmall {
+.homeSelectors {
 	display: block;
 	margin: 10px auto -10px auto;
 	width: 60px;
 	height: 10px;
-}
-
-.homeSelectorsMedium {
-	position: absolute;
-	right: 20px;
-	top: 47%;
-	width: 10px;
-	height: 60px;
-}
-
-#homeTimer {
-	height: 2px;
 }
 
 #bookingCon {
@@ -279,11 +267,11 @@
 	cursor: pointer;
 }
 
-.selectorDot {
+.nonActiveSelector {
 	background-color: #b9b9b9;
 }
 
-#activeSelector {
+.activeSelector {
 	background-color: #981b1e;
 }
 
@@ -1620,6 +1608,15 @@ textarea:focus {
 
 	.iconCon h3, .iconCon p {
 		text-align: center;
+	}
+
+	.homeSelectors {
+		position: absolute;
+		right: 20px;
+		top: 47%;
+		width: 10px;
+		height: 60px;
+		margin: 0;
 	}
 	
 	/*-----News-----*/
