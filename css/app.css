@@ -663,21 +663,6 @@
   overflow-x: hidden;
 }
 
-.playPause {
-  float: left;
-  width: 12px;
-  cursor: pointer;
-  margin: 10px;
-  opacity: .2;
-  transition: .2s ease-In-Out all;
-  position: relative;
-  z-index: 100;
-}
-
-.playPauseClicked {
-  opacity: .9;
-}
-
 #imgNo {
   color: #252525;
   font-family: 'Overpass', sans-serif;

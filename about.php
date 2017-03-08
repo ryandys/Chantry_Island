@@ -122,7 +122,7 @@ limited and tours must be booked through the Chantry Island Tour Base.</p>
     
     <!--CLOSE BODY CONTENT HERE-->
     
-    
+<script src="js/about.js"></script>
     
 <?php
 	include("layout/footer.php");

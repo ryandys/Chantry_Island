@@ -2,8 +2,6 @@
 	"use strict";
 	//console.log("SEAF Fired");
 
-var playPause = document.querySelector(".playPause");
-
 var firstNo = document.querySelector("#firstNo");
 var secondNo = document.querySelector("#secondNo");
 
@@ -54,12 +52,6 @@ $('#thumbnailCon img, #next, #prev').on('click', function() {
 	})
 })
 
-function slideshow() {
-	playPause.classList.toggle("playPauseClicked");
-	console.log("Slideshow feature not yet functional");
-}
-
 galleryIcon.addEventListener("click", showHide, false);
-playPause.addEventListener("click", slideshow, false);
 
 })();
