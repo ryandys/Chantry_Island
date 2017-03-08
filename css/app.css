@@ -1208,6 +1208,65 @@
 }
 
 /*-----Header-----*/
+
+#offCanvas {
+	background-color: #e3e3e3;;
+}
+
+#sideBarWhite
+{
+	background-color: #fff;
+}
+
+#closeButtonColor {
+	color: #981b1e;
+	transition: .3s ease-in-out all;
+}
+
+#closeButtonColor:hover {
+	color: #c2c2c2;
+}
+
+#smallConMenuLogo {
+	padding-top: 30px;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	border-bottom: 1px solid #c2c2c2;
+	padding-bottom: 10px;
+}
+
+#offCanvText {
+	padding: 20px;
+}
+
+#offCanvas a {
+	color: #303030;
+}
+
+#offCanvas p {
+	color: #303030;
+	font-family: 'Overpass', sans-serif;
+	font-size: .875em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+#offCanvas span {
+	color: #c2c2c2;
+}
+
+#offCanvFormCon {
+	padding: 20px;
+}
+
+#offCanvFormCon p {
+	color: #981b1e;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 #headerWrapper {
 	background: #fff;
 }

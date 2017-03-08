@@ -17,6 +17,73 @@
   </head>
   <body class="body-<?=strtolower(str_replace(' ', '-', $strPageTitle))?>">
 	
+
+  	<!-- start off canvas -->
+	<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+        <!-- Close button -->
+        <button id="closeButtonColor" class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Menu -->
+        <div id="sideBarWhite">
+        <div id="sideBarMenuItems">
+	        <a href="index.php"><img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="smallConMenuLogo"></a>
+        </div>
+        
+        <div id="offCanvText">
+	        <p><span>Call: </span><a href="tel:519-797-5862">519-797-5862</a></p>
+	        <p><span>toll free: </span><a href="tel:1-866-797-5862">1-866-797-5862</a></p>
+	        <p><span>mailing address:</span></p>
+	        <p>Marine Heritage Society</p>
+	        <p>Box 421</p>
+	        <p>Southhampton, Ontario</p>
+	        <p>Canada, NOH 2L0</p>
+        </div>
+        </div>
+
+        <div id="offCanvFormCon">
+
+        	<p id="offCanvFormTitle">TO: email@chantryisland.com</p>
+
+        	<form action="" method="post">
+						
+				<div class="small-12 columns">
+				<label>Your name:</label>
+				<input id="inputfName" name="name" type="text">
+				</div>
+						
+				<div class="small-12 columns">
+				<label>Your email:</label>
+				<input id="inputEmail" name="email" type="email">
+				</div>
+						
+				<label class="address">Address:</label>
+				<input id="inputAddress" class="address" name="address" type="text">
+						
+				<div class="small-12 columns">
+				<label>Your message:</label>
+				<textarea name="msg"></textarea>
+				</div>
+						
+				<div class="small-12 columns">
+				<input id="submit" type="submit" value="submit">
+				</div>
+						
+			</form>
+
+        </div>
+
+       </div>
+
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+	<!-- close off canvas -->
+
 	
 	<!--START HEADER CONTENT HERE-->
 	
@@ -24,7 +91,7 @@
 		<div class="row expanded">
 			<div class="small-9 medium-6 columns">
 				<img data-interchange="[images/phoneIcon.png, small], [images/phoneIcon.svg, retina]" alt="phone icon" id="topNavBarPhone">
-				<h1><a href="tel:519-797-5862">519-797-5862</a> <span> TOLL FREE: <a href="tel:1-866-797-5862">1-866-797-5862</a></span></h1>
+				<h1><a href="tel:519-797-5862">519-797-5862</a> <span> TOLL FREE: 1-866-797-5862</span></h1>
 			</div>
 			
 			<div class="small-3 medium-6 columns">
@@ -49,7 +116,7 @@
 		  	<h1 class="hide">Main Navigation</h1>
 		  	
 		  	<div id="smallContactIconCon">
-			  	<img data-interchange="[images/contact.png, small], [images/contact.svg, retina]" alt="contact icon" id="smallContactIcon">
+			  	<img data-toggle="offCanvas" data-interchange="[images/contact.png, small], [images/contact.svg, retina]" alt="contact icon" id="smallContactIcon">
 		  	</div>
 
 		  	<div class="title-bar" data-responsive-toggle="expanded-menu" data-hide-for="medium">
