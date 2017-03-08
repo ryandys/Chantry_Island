@@ -36,7 +36,6 @@ include_once("layout/header.php");
 <div class="row">
   <div id="galleryCon">
     <div id="mainImgCon">
-      <img src="images/play.svg" alt="Slideshow" class="playPause">
       <p id="imgNo"><span id="firstNo">1</span>/<span id="secondNo">20</span></p>
       <div id="mainImg">
         <img src="images/img-1.jpg" alt="Current Image">
