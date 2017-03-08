@@ -11,12 +11,6 @@ include_once("layout/header.php");
 <!--start homeRotatorCon-->
 <div id="homeRotatorCon">
 
-	<div class="homeSelectorsMedium show-for-medium">
-		<div class="selectorDot" id="activeSelector"></div>
-		<div class="selectorDot"></div>
-		<div class="selectorDot"></div>
-	</div>
-
 	<div class="row">
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
 			<h2 class="heading whiteTxt">Marine Heritage Society</h2>
@@ -24,18 +18,14 @@ include_once("layout/header.php");
 		</div>
 	</div>
 
-	<div class="homeSelectorsSmall hide-for-medium">
-		<div class="selectorDot" id="activeSelector"></div>
-		<div class="selectorDot"></div>
-		<div class="selectorDot"></div>
+	<div class="homeSelectors">
+		<div class="selectorDot nonActiveSelector activeSelector" id="dot0"></div>
+		<div class="selectorDot nonActiveSelector" id="dot1"></div>
+		<div class="selectorDot nonActiveSelector" id="dot2"></div>
 	</div>
 
 </div>
 <!--end homeRotatorCon-->
-
-<!--start timer-->
-<div id="homeTimer"></div>
-<!--end timer-->
 
 <!--start bookingBar-->
 <div id="bookingBarFull">
@@ -141,11 +131,11 @@ include_once("layout/header.php");
 				<img src="images/chevron.svg" alt="Left" id="leftArrow">
 				<img src="images/chevron.svg" alt="Right" id="rightArrow">
 			<div class="selectors">
-				<div class="selectorDot"></div>
-				<div class="selectorDot" id="activeSelector"></div>
-				<div class="selectorDot"></div>
-				<div class="selectorDot"></div>
-				<div class="selectorDot"></div>
+				<div class="selectorDot nonActiveSelector"></div>
+				<div class="selectorDot activeSelector"></div>
+				<div class="selectorDot nonActiveSelector"></div>
+				<div class="selectorDot nonActiveSelector"></div>
+				<div class="selectorDot nonActiveSelector"></div>
 			</div>
 		</div>
 	</div>
@@ -155,7 +145,7 @@ include_once("layout/header.php");
     
     <!--CLOSE BODY CONTENT HERE-->
     
-    
+<script src="js/index.js"></script>
     
 <?php
 	include("layout/footer.php");
