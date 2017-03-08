@@ -90,6 +90,11 @@
 	
 	<!--CLOSE FOOTER CONTENT HERE-->
 
+	<!-- close off canvas (3 divs below) -->
+      </div>
+    </div>
+  </div>
+
 	
 	<script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
