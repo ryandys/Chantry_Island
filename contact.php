@@ -45,7 +45,12 @@ include_once("layout/header.php");
 						<input id="inputEmailAddress" name="email" type="email">
 						
 						<label>Email Subject:</label>
-						<input id="inputSubject" name="subject" type="text">
+						<select id="inputSubject" name="subject">
+							<option value="inquiry">General Inquiry</option>
+  							<option value="booking">Booking</option>
+  							<option value="feedback">Feedback</option>
+  							<option value="info">Info Request</option>
+						</select>
 						
 						<label class="address">Address:</label>
 						<input id="inputHouseAddress" class="address" name="address" type="text">
