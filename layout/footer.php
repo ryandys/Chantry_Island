@@ -37,8 +37,8 @@
 					<p>Box 421</p>
 					<p>Southampton, Ontario</p>
 					<p>Canada, N0H 2L0</p>
-					<a href="#"><img data-interchange="[images/socIcon_YouTube_Dark.png, small], [images/socIcon_YouTube_Dark.svg, retina]" alt="social media icon" class="footerSocIcon"></a>
-				<a href="#"><img data-interchange="[images/socIcon_Facebook_Dark.png, small], [images/socIcon_Facebook_Dark.svg, retina]" alt="social media icon" class="footerSocIcon"></a>
+					<a href="https://www.youtube.com/channel/UC5BwiLq9hSIl9BZRq7Q4UNA" target="blank"><img data-interchange="[images/socIcon_YouTube_Dark.png, small], [images/socIcon_YouTube_Dark.svg, retina]" alt="social media icon" class="footerSocIcon"></a>
+				<a href="https://www.facebook.com/MarineHeritageSociety/" target="blank"><img data-interchange="[images/socIcon_Facebook_Dark.png, small], [images/socIcon_Facebook_Dark.svg, retina]" alt="social media icon" class="footerSocIcon"></a>
 				</div>
 				
 				<div class="hide-for-small-only medium-5 columns">	

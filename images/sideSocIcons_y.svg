@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="252px" height="288px"
+	 viewBox="0 0 252 288" enable-background="new 0 0 252 288" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  width="252" height="252" bottomLeftOrigin="true" y="18.5" x="-0.5"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_113">
+	<g>
+		<circle fill="#252525" cx="126" cy="144" r="126"/>
+		<g>
+			<g id="Lozenge_14_">
+				<g>
+					<path fill="#FFFFFF" d="M203.17,111.161c0,0-1.539-11.324-6.253-16.307c-5.99-6.531-12.705-6.573-15.771-6.951
+						c-22.056-1.654-55.104-1.654-55.104-1.654h-0.074c0,0-33.069,0-55.104,1.659c-3.076,0.373-9.78,0.415-15.781,6.951
+						c-4.714,4.982-6.253,16.307-6.253,16.307s-1.58,13.283-1.58,26.576v12.453c0,13.298,1.58,26.591,1.58,26.591
+						s1.539,11.313,6.253,16.296c6.001,6.541,13.876,6.332,17.372,7.014c12.6,1.261,53.545,1.654,53.545,1.654
+						s33.091-0.062,55.146-1.711c3.065-0.384,9.78-0.416,15.771-6.962c4.714-4.982,6.253-16.296,6.253-16.296
+						s1.58-13.288,1.58-26.586v-12.453C204.75,124.449,203.17,111.161,203.17,111.161z M109.746,165.305l-0.011-46.143
+						l42.552,23.158L109.746,165.305z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_1_1_">
+</g>
+</svg>

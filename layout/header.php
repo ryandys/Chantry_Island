@@ -95,8 +95,8 @@
 			</div>
 			
 			<div class="small-3 medium-6 columns">
-				<a href="#"><img data-interchange="[images/socIcon_YouTube.png, small], [images/socIcon_YouTube.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
-				<a href="#"><img data-interchange="[images/socIcon_Facebook.png, small], [images/socIcon_Facebook.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
+				<a href="https://www.youtube.com/channel/UC5BwiLq9hSIl9BZRq7Q4UNA" target="blank"><img data-interchange="[images/socIcon_YouTube.png, small], [images/socIcon_YouTube.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
+				<a href="https://www.facebook.com/MarineHeritageSociety/" target="blank"><img data-interchange="[images/socIcon_Facebook.png, small], [images/socIcon_Facebook.svg, retina]" alt="social media icon" class="topNavBarSocIcon"></a>
 			</div>
 		</div>
 	</div>
@@ -156,6 +156,17 @@
   	</header>
 	</div>
 	<!-- Close mainHeader -->
+
+
+	<!-- Open Social Icons Side -->
+
+	<div id="sideSocIconsCon">
+	<a href="https://www.youtube.com/channel/UC5BwiLq9hSIl9BZRq7Q4UNA" target="blank"><img data-interchange="[images/sideSocIcons_y.png, small], [images/sideSocIcons_y.svg, retina]" alt="social media icon" class="sideSocIcons"></a>
+	
+	<a href="https://www.facebook.com/MarineHeritageSociety/" target="blank"><img data-interchange="[images/sideSocIcons_f.png, small], [images/sideSocIcons_f.svg, retina]" alt="social media icon" class="sideSocIcons"></a>
+	</div>
+
+	<!-- Close Social Icons Side -->
   	
 	
 	<!--CLOSE HEADER CONTENT HERE-->

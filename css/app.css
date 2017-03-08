@@ -1409,6 +1409,27 @@
 	color: #252525;
 }
 
+#sideSocIconsCon {
+	width: 55px;
+	position: fixed;
+	top: 46%;
+	margin-left: -500px;
+	z-index: 2000;
+	display: none;
+}
+
+.sideSocIcons {
+	padding: 5px;
+	width: 45px;
+	display: block;
+	margin: 0 auto;
+	transition: .3s ease-in-out all;
+}
+
+.sideSocIcons:hover {
+	opacity: .5;
+}
+
 /*-----Footer-----*/
 #mainFooterWrapper {
 	background-color: #fff;
@@ -1909,9 +1930,17 @@ textarea:focus {
 	}
   
   .iconCon h3, .iconCon p {
-		text-align: left;
-	
-}
+		text-align: left;	
+	}
+
+
+@media screen and (min-width: 82.5em) {
+
+	#sideSocIconsCon {
+		display: block;
+	}
+
+}	
 
 @media screen and (min-width: 96.562em) {
 	
