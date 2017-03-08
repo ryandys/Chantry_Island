@@ -14,25 +14,12 @@ include_once("layout/header.php");
 			<div class="small-12 columns" id="aboutTopBar">
 				<h1>About Chantry Island</h1>
 				<h2>Marine Heritage Society</h2>
-
-			<div class="aboutSelectorsMedium show-for-medium">
-				<div class="selectorDot" id="activeSelector"></div>
-				<div class="selectorDot"></div>
-				<div class="selectorDot"></div>
-			</div>
-
 			</div>
 		</div>
 	</div><!--Close topBar-->
 	
 	<div class="row expanded" data-equalizer><!--Open Des/Book Row-->
 		<div class="small-12 medium-8 columns" id="aboutDesc">
-
-			<div class="aboutSelectorsSmall hide-for-medium">
-				<div class="selectorDot" id="activeSelector"></div>
-				<div class="selectorDot"></div>
-				<div class="selectorDot"></div>
-			</div>
 
 			<div data-equalizer-watch>
 			<p class="blackTxt">Chantry Island is located on Lake Huron, just over a mile southwest of the Saugeen River mouth in Southampton, Ontario. On the island is a majestic Imperial Lighthouse built in the mid 1800’s, as well as the Keeper’s quarters and a boat house. In 1822, during a hydrographic survey, Captain Henry Bayfield of the Royal Navy christened the island and named it after his friend and British sculptor Sir Francis Chantry.</p>
