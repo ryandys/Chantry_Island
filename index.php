@@ -100,46 +100,65 @@ include_once("layout/header.php");
 <!--end homeDonateCon-->
 
 <!--start affiliates-->
-<div id="affiliatesConFull">
-	<div class="affiliatesCon row" data-equalizer>
+<div class="affiliatesConFull">
+	<div class="affiliatesConLarge show-for-large row" data-equalizer>
 		<h2 class="heading redTxt">Affiliate Partners</h2>
-			<div class="small-12 medium-4 columns affiliateCard">
+
+			<div class="large-2 large-offset-1 affiliatesCard columns">
 				<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Saugeen Shores</h3>
-					<p class="paragraph blackTxt">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce.</p>
 				</div>
 			</div>
 
-			<div class="small-12 medium-4 columns show-for-medium">
+			<div class="large-2 affiliatesCard columns">
 				<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
-					<p class="paragraph blackTxt">Offering a journey through thousands of years of natural and human history.</p>
 				</div>
 			</div>
 
-			<div class="small-12 medium-4 columns show-for-medium">
+			<div class="large-2 affiliatesCard columns">
 				<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
-					<p class="paragraph blackTxt">Enjoy the Bruce Coast Lighthouse tour.</p>
 				</div>
 			</div>
 
-			<div class="small-12 columns" id="affiliatesControls">
-				<img src="images/chevron.svg" alt="Left" id="leftArrow">
-				<img src="images/chevron.svg" alt="Right" id="rightArrow">
-			<div class="selectors">
-				<div class="selectorDot nonActiveSelector"></div>
-				<div class="selectorDot activeSelector"></div>
-				<div class="selectorDot nonActiveSelector"></div>
-				<div class="selectorDot nonActiveSelector"></div>
-				<div class="selectorDot nonActiveSelector"></div>
+			<div class="large-2 affiliatesCard columns">
+				<a href="http://explorethebruce.com/" target="_blank"><img src="images/explore_the_bruce.png"></a>
+				<div class="affiliatesInfo" data-equalizer-watch>
+					<h3 class="paragraph redTxt">Explore The Bruce</h3>
+				</div>
 			</div>
+
+			<div class="large-2 affiliatesCard columns end">
+				<a href="http://www.southamptontennisclub.ca/" target="_blank"><img src="images/southampton_tennis_club.png"></a>
+				<div class="affiliatesInfo" data-equalizer-watch>
+					<h3 class="paragraph redTxt">Southampton Tennis Club</h3>
+				</div>
+			</div>
+	</div>
+
+	<div class="affiliatesConMed hide-for-large row">
+	<h2 class="heading redTxt">Affiliate Partners</h2>
+		<div class="small-12 medium-6 medium-offset-3 affiliatesCard columns end" id="affiliateCardMed">
+			<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
+			<div class="affiliatesInfo" data-equalizer-watch>
+				<h3 class="paragraph redTxt">Saugeen Shores</h3>
+			</div>
+		</div>
+
+		<div class="small-12 columns" id="affiliatesControls">
+			<img src="images/chevron.svg" alt="Left" id="affiliatesLeft">
+			<img src="images/chevron.svg" alt="Right" id="affiliatesRight">
 		</div>
 	</div>
 </div>
+
+
+
+
 <!--end affiliates-->
     
     
