@@ -50,13 +50,74 @@ include_once("layout/header.php");
 </div>
 <!--end generalBookingInfo-->
 
+
+
+
+
+
+
 <!--start schedule-->
-<div class="row">
-	<div class="small-12 columns" id="schedule">
-		<h2 class="heading whiteTxt">SCHEDULE WILL GO HERE</h2>
+<div class="row" data-equalizer>
+	<div class="monthCardCon small-12 medium-6 large-4 columns">
+		<div class="monthCard" data-equalizer-watch>
+			<h2 class="heading whiteTxt">MAY</h2>
+				<h3>Tours</h3>
+					<p><span>27th-28th: </span>1:00pm, 3:00pm</p>
+				<h3>Tour Base &amp; Gift Shop</h3>
+					<p><span>27th-28th: </span>12:00pm - 5:30pm</p>
+		</div>
+	</div>
+	<div class="monthCardCon small-12 medium-6 large-4 columns">
+		<div class="monthCard" data-equalizer-watch>
+			<h2 class="heading whiteTxt">JUNE</h2>
+				<h3>Tours</h3>
+					<p><span>Weekends: </span>1:00pm, 3:00pm</p>
+				<h3>Tour Base &amp; Gift Shop</h3>
+					<p><span>17th-18th: </span>12:00pm - 5:30pm</p>
+					<p><span>24th-25th: </span>12:00pm - 5:30pm</p>
+		</div>
+	</div>
+	<div class="monthCardCon small-12 medium-6 large-4 columns">
+		<div class="monthCard" data-equalizer-watch>
+			<h2 class="heading whiteTxt">JULY</h2>
+				<h3>Tours</h3>
+					<p><span>Weekdays: </span>1:00pm, 3:00pm</p>
+					<p><span>Weekends: </span>9:30am, 1:00pm, 3:00pm</p>
+				<h3>Tour Base &amp; Gift Shop</h3>
+					<p><span>Weekdays: </span>9:00am - 5:30pm</p>
+					<p><span>Weekends: </span>9:00am - 5:30pm</p>
+		</div>
+	</div>
+	<div class="monthCardCon small-12 medium-6 large-4 columns">
+		<div class="monthCard" data-equalizer-watch>
+			<h2 class="heading whiteTxt">AUGUST</h2>
+				<h3>Tours</h3>
+					<p><span>Weekdays: </span>9:30am, 1:00pm, 3:00pm</p>
+					<p><span>Weekends: </span>9:30am, 1:00pm, 3:00pm</p>
+				<h3>Tour Base &amp; Gift Shop</h3>
+					<p><span>Weekdays: </span>9:00am - 5:30pm</p>
+					<p><span>Weekends: </span>9:00am - 5:30pm</p>
+		</div>
+	</div>
+	<div class="monthCardCon small-12 medium-6 large-4 columns end">
+		<div class="monthCard" data-equalizer-watch>
+			<h2 class="heading whiteTxt">SEPTEMBER</h2>
+				<h3>Tours</h3>
+					<p><span>1st-4th: </span>1:00pm, 3:00pm</p>
+				<h3>Tour Base &amp; Gift Shop</h3>
+					<p><span>1st-4th: </span>9:00am - 5:30pm</p>
+		</div>
 	</div>
 </div>
 <!--end schedule-->
+
+
+
+
+
+
+
+
 
 <!--start whereAndWhen-->
 <div id="whereAndWhenFull">

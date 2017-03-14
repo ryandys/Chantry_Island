@@ -15,37 +15,9 @@ include_once("layout/header.php");
 			</div>
 		</div>
 	</div>
-	
-	<div id="volWrapper">
-		<div class="row" data-equalizer>
-			<div class="small-12 medium-4 columns">
-				<div class="volCon" data-equalizer-watch>
-					<h1>Don Nicholson</h1>
-					<h2>Chairman</h2>
-					<p>Don is the chairman of the organization and has a great passion for Chantry Island and preserving its beauty.</p>
-				</div>
-			</div>
-			
-			<div class="small-12 medium-4 columns">
-				<div class="volCon" data-equalizer-watch>
-					<h1>Pat O'Connor</h1>
-					<h2>Vice Chairman</h2>
-					<p>As vice chairman of Chantry Island and Marine Heritage Society, Pat has a love for the group and the task.</p>
-				</div>
-			</div>
-			
-			<div class="small-12 medium-4 columns">
-				<div class="volCon" data-equalizer-watch>
-					<h1>John Rigby</h1>
-					<h2>Treasurer</h2>
-					<p>Arguably one of the most important jobs in the organization, John handles many of the daily tasks.</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div class="row" id="interviews">
-	<h2>Volunteer Interviews</h2>
+	<h2>Interviews</h2>
 		<div class="small-12 medium-4 columns">
 		<iframe width="100%" height="190px" src="https://www.youtube.com/embed/BkZWHmX8HY0" frameborder="0" allowfullscreen></iframe>
 		</div>
@@ -56,6 +28,54 @@ include_once("layout/header.php");
 		<iframe width="100%" height="190px" src="https://www.youtube.com/embed/hbGffSYF5LU" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
+
+<!--start volunteers-->
+<div class="row" id="volunteersCon">
+	<div class="small-10 small-centered columns volunteersConBlack">
+		<h2 class="whiteTxt">Volunteers</h2>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Don Nicholson</span>&emsp;&emsp;-&emsp;&emsp;Chairman</p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>Pat O-Connor</span>&emsp;&emsp;-&emsp;&emsp;Vice Chairman</p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>John Rigby</span>&emsp;&emsp;-&emsp;&emsp;Treasurer</p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>Stan Young</span>&emsp;&emsp;-&emsp;&emsp;Secretary</p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Rick Smith</span>&emsp;&emsp;-&emsp;&emsp;Past Chairman</p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>Ali Kelly</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Jane Kramer</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>Vicki Tomori</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Dan Holmes</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>Dave Wenn</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Ed Braun</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConGrey">
+		<p><span>John Willetts</span></p>
+	</div>
+	<div class="small-10 small-centered columns volunteersConWhite">
+		<p><span>Peter Williamson</span>&emsp;&emsp;-&emsp;&emsp;Observer</p>
+	</div>
+</div>
+<!--end volunteers-->
+	
     
     
     <!--CLOSE BODY CONTENT HERE-->
