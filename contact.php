@@ -2,6 +2,9 @@
 $strPageTitle = 'Contact';
 include_once("layout/header.php");
 ?>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhOUr_37CzgsVIt0tYI-KyOV6FlsRAP4"></script>
     
     
     
@@ -16,10 +19,38 @@ include_once("layout/header.php");
 		</div>
 	</div>
 	
-	<div id="mapArea" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);"><!--Open Google Map--> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45535.884652499204!2d-81.39708861825422!3d44.49481452499338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8829cfbc0ee0d0c9%3A0x9f95e0d6cd37c1e4!2sSouthampton%2C+ON!5e0!3m2!1sen!2sca!4v1486230075370" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	<div id="mapArea"><!--Open Google Map--> 
+
+		<div class="preload-wrapper">
+			<i class="fa fa-spinner fa-spin"></i>
+			<span>Loading map, please wait...</span>
+		</div>
+		
+		<div class="map-wrapper"></div>
+
     </div><!--Close Google Map-->
+
+
+    <div id="mapOptionsArea"><!--Open Map Options--> 
+
+	    <div class="row">
+	    	<div class="small-12 medium-6 columns">
+	    		<div class="formCon">
+	    		<p class="geocode-header">Type an Address to Calculate Route</p>
+				<input type="text" id="yourAddress">
+				<button class="geocode">Calculate Route</button>
+				</div>
+	    	</div>
+
+	    	<div class="small-12 medium-6 columns">
+				
+	    	</div>
+	    </div>
+
+    </div><!--Close Map Options--> 
     
+
     <div id="contactGeneralWrapper"><!--Open General Info--> 
 	    <div class="row">
 		    <div class="small-12 columns" id="contactGeneral">
@@ -34,7 +65,7 @@ include_once("layout/header.php");
     <div id="formWrapper">
 	    <div class="row">
 		    <div class="small-12 medium-6 columns">
-			    <div id="formCon">
+			    <div class="formCon">
 				    <p>TO: email@chantryisland.com</p>
 				    <form action="" method="post">
 						
@@ -75,7 +106,7 @@ include_once("layout/header.php");
     <!--CLOSE BODY CONTENT HERE-->
     
     
-    
+    <script src="js/map.js"></script>
 <?php
 	include("layout/footer.php");
 ?>
