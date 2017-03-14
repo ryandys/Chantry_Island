@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
+-- version 4.4.10
+-- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 04, 2017 at 07:52 PM
--- Server version: 5.6.28
--- PHP Version: 7.0.10
+-- Generation Time: Mar 10, 2017 at 12:12 AM
+-- Server version: 5.5.42
+-- PHP Version: 5.6.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE tbl_gallery (
-  gallery_id tinyint(3) UNSIGNED NOT NULL,
+  gallery_id tinyint(3) unsigned NOT NULL,
   gallery_img varchar(150) NOT NULL DEFAULT 'default.jpg',
   gallery_desc varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -58,6 +58,30 @@ INSERT INTO tbl_gallery (gallery_id, gallery_img, gallery_desc) VALUES
 (19, 'img-19.jpg', 'Photo by James Swartz.'),
 (20, 'img-20.jpg', 'Photo by Karen Smith.');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_user
+--
+
+CREATE TABLE tbl_user (
+  user_id tinyint(3) unsigned NOT NULL,
+  user_name varchar(100) NOT NULL,
+  user_pass varchar(75) NOT NULL,
+  user_ip varchar(50) NOT NULL,
+  user_level varchar(100) NOT NULL DEFAULT '1',
+  user_email varchar(100) NOT NULL,
+  user_loginAttempt varchar(10) NOT NULL DEFAULT '0',
+  user_lastlogin varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_user
+--
+
+INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin) VALUES
+(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 9, 2017, 6:11 pm');
+
 --
 -- Indexes for dumped tables
 --
@@ -69,6 +93,12 @@ ALTER TABLE tbl_gallery
   ADD PRIMARY KEY (gallery_id);
 
 --
+-- Indexes for table tbl_user
+--
+ALTER TABLE tbl_user
+  ADD PRIMARY KEY (user_id);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -76,7 +106,12 @@ ALTER TABLE tbl_gallery
 -- AUTO_INCREMENT for table tbl_gallery
 --
 ALTER TABLE tbl_gallery
-  MODIFY gallery_id tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY gallery_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_user
+--
+ALTER TABLE tbl_user
+  MODIFY user_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
