@@ -59,8 +59,7 @@
 }
 
 /*-----Home-----*/
-#homeRotatorCon
-{
+#homeRotatorCon {
 	background-color: #252525;
 	background-image: url(../images/home_rotator_1.jpg);
 	background-position: right bottom;
@@ -68,17 +67,20 @@
 	background-size: cover;
 	padding: 30px 10px;
 	position: relative;
+	min-height: 300px;
 }
 
-#homeRotatorText
-{
+#homeRotatorText {
 	background-color: rgba(0,0,0,0.5);
 	padding: 12px;
 }
 
 .homeSelectors {
-	display: block;
-	margin: 10px auto -10px auto;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	right: 0;
+	transform: translateX(-50%);
 	width: 60px;
 	height: 10px;
 }
@@ -215,13 +217,19 @@
 	transition: .3s ease-in-out all;
 }
 
-#affiliatesConFull {
+.affiliatesConFull {
 	background-color: #d9d9d9;
+	padding-bottom: 40px;
 }
 
-#affiliatesConFull h2 {
+.affiliatesConFull h2 {
 	text-align: center;
 	padding: 20px;
+}
+
+.affiliatesConFull h3 {
+	font-weight: 600;
+	margin: 0;
 }
 
 .affiliatesInfo {
@@ -230,29 +238,26 @@
 }
 
 #affiliatesControls {
-	margin-top: 20px;
-	margin-bottom: 50px;
+	padding-top: 20px;
+	margin: 0;
 }
 
-#leftArrow {
+#affiliatesLeft {
 	float: left;
 	width: 40px;
+	margin-left: 30px;
 }
 
-#rightArrow {
+#affiliatesRight {
 	transform: rotate(180deg);
 	float: right;
 	width: 40px;
+	margin-right: 30px;
 }
 
-#leftArrow:hover, #rightArrow:hover {
+#affiliatesLeft:hover, #affiliatesRight:hover {
 	cursor: pointer;
 	filter: brightness(95%);
-}
-
-.selectors {
-	width: 100px;
-	margin: 11px auto 0px auto;
 }
 
 .selectorDot {
@@ -790,9 +795,10 @@
 	padding: 90px 0px;
 	background-color: #252525;
 	background-image: url(../images/about_rotator_1.jpg);
-	background-position: center top;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 375px;
 }
 
 #aboutTopBar {
@@ -1678,8 +1684,10 @@ textarea:focus {
 
 	.homeSelectors {
 		position: absolute;
+		left: auto;
 		right: 20px;
-		top: 47%;
+		top: 50%;
+		transform: translateX(50%);
 		width: 10px;
 		height: 60px;
 		margin: 0;
