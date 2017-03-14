@@ -558,8 +558,8 @@
 }
 
 #bookingRates {
-	border-radius: 10px;
-	background-color: #a1a1a1;
+	border-radius: 5px;
+	background-color: #dfdfdf;
 	padding: 10px;
 }
 
@@ -570,14 +570,43 @@
 	font-size: 1em;
 }
 
-#schedule {
-	padding: 100px 0px;
+/*-----Schedule-----*/
+.monthCard {
+	background-color: #dfdfdf;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.monthCard h2 {
+	text-align: center;
 	background-color: #252525;
 }
 
-#schedule h2 {
+.monthCard h3 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.25em;
+	font-weight: 600;
+	color: #252525;
 	text-align: center;
+	margin: 20px 0 0 0;
 }
+
+.monthCard p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	color: #252525;
+	text-align: center;
+	margin: 0;
+}
+
+.monthCard p span {
+	font-weight: 700;
+}
+
+/*-----End Schedule-----*/
 
 #whereAndWhenFull {
 	background-color: #981b1e;
@@ -602,7 +631,7 @@
 
 #pleaseNote {
 	background-color: #252525;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 20px;
 }
 
@@ -1004,41 +1033,8 @@
 }
 
 /*-----Volunteers-----*/
-#volWrapper {
-	padding: 30px 0px;
-}
-
-.volCon {
-	background-color: #d7d7d7;
-	border-radius: 5px;
-	padding: 20px;
-	margin-bottom: 20px;
-	border-bottom: 30px solid #981b1e;
-}
-
-.volCon h1 {
-	text-align: center;
-	font-family: 'Overpass', sans-serif;
-	font-size: 1.5em;
-	font-weight: 700;
-	font-color: #252525;
-}
-
-.volCon h2 {
-	text-align: center;
-	font-family: 'Overpass', sans-serif;
-	font-size: 1.25em;
-	font-weight: 400;
-	font-color: #252525;
-}
-
-.volCon p {
-	text-align: center;
-	font-family: 'Overpass', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	font-color: #252525;
-	margin-top: 30px;
+#interviews {
+	margin-top: 40px;
 }
 
 #interviews h2 {
@@ -1052,6 +1048,44 @@
 
 #interviews iframe {
 	margin-bottom: 30px;
+}
+
+#volunteersCon {
+	padding: 50px 10px 50px 10px;
+}
+
+.volunteersConBlack, .volunteersConWhite, .volunteersConGrey {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.volunteersConBlack {
+	background-color: #252525;
+}
+
+.volunteersConWhite {
+	background-color: #fff;
+}
+
+.volunteersConGrey {
+	background-color: #eee;
+}
+
+.volunteersConBlack h2 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.volunteersConWhite p, .volunteersConGrey p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 0.65em;
+	margin: 0;
+}
+
+.volunteersConWhite span, .volunteersConGrey span {
+	font-weight: 700;
 }
 
 /*-----Donate-----*/
@@ -1730,6 +1764,15 @@ textarea:focus {
 
 	#finePrint {
 		margin-top: 0px;
+	}
+
+	/*-----Volunteers-----*/
+	.volunteersConBlack h2 {
+		font-size: 1.25em;
+	}
+
+	.volunteersConWhite p, .volunteersConGrey p {
+		font-size: 1em;
 	}
 
 	/*-----Donate-----*/
