@@ -366,6 +366,87 @@
 }
 
 /*-----Contact-----*/
+.map-wrapper, .preload-wrapper
+{
+	width: 100%;
+	height: 350px;
+}
+
+.address
+{
+	width: 350px;
+}
+
+.preload-wrapper
+{ 
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 2px solid #ccc;
+	z-index: 50;
+	width: 98.5%;
+	border-radius: 8px;
+	left: 0;
+	right: 0;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	color: #CCC;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	pointer-events: none;
+	transition: opacity 0.7s ease;
+}
+
+.hide-preloader
+{
+	opacity: 0;
+}
+
+.preload-wrapper i
+{
+	margin: 100px 0 20px;
+	font-size : 2.2em;
+}
+
+.preload-wrapper span
+{
+	display: block;
+
+}
+
+#mapOptionsArea {
+	background-color: #c2c2c2;
+	padding: 30px 0px;
+}
+
+#mapOptionsArea p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	color: #252525;
+}
+
+#mapOptionsArea button {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	color: #fff;
+	background-color: #981b1e;
+	padding: 8px 20px;
+	transition: .3s ease-in-out all;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+#mapOptionsArea button:hover {
+	color: #fff;
+	background-color: #6e1214;
+}
+
+
+
 #contactGeneralWrapper {
 	padding: 30px 0px;
 }
@@ -412,7 +493,7 @@
 	padding: 30px 0px;
 }
 
-#formCon {
+.formCon {
 	padding-right: 0px;
 	border-right: none;
 }
@@ -445,14 +526,14 @@
 	display: none;
 }
 
-#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress {
+#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress, #yourAddress {
 	border: 0px;
 	height: 35px;
 	background-color: #fff;
 	margin-bottom: 8px;
 }
 
-#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress:focus {
+#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress, #yourAddress:focus {
 	box-shadow: none;
 }
 
