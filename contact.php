@@ -44,7 +44,7 @@ include_once("layout/header.php");
 	    	</div>
 
 	    	<div class="small-12 medium-6 columns">
-				
+	    		<!-- directions for map will go here -->
 	    	</div>
 	    </div>
 
