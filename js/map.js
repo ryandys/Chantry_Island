@@ -48,6 +48,7 @@
 	}
 	
 	function codeAddress() {
+
 		var address = document.querySelector('#yourAddress').value;
 		
 		geocoder.geocode({ 'address' : address}, function(results, status) {
@@ -61,12 +62,6 @@
 				
 				if (marker) {
 					marker.setMap(null);
-					
-					marker = new google.maps.Marker({
-						map: map,
-						animation: google.maps.Animation.DROP,
-						position: results[0].geometry.location
-					});
 					
 					calcRoute(results[0].geometry.location);
 					
