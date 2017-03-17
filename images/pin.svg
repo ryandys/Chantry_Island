@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="chantry_island" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="53px"
-	 viewBox="38.377 76.146 30 53" enable-background="new 38.377 76.146 30 53" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  width="24.686" height="46.517" x="419.157" y="408.596" bottomLeftOrigin="true"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g id="little_arrows">
-	<polygon id="tr" fill="#475A84" points="59.53,84.897 61.59,83.701 60.395,85.762 	"/>
-	<polygon id="bl" fill="#475A84" points="48.298,97.858 46.238,99.054 47.434,96.993 	"/>
-	<polygon id="tl" fill="#475A84" points="47.434,85.761 46.237,83.701 48.298,84.897 	"/>
-	<polygon id="br" fill="#475A84" points="60.395,96.993 61.59,99.053 59.53,97.857 	"/>
-</g>
-<circle fill="none" stroke="#981B1E" stroke-width="0.9164" stroke-miterlimit="10" cx="53.877" cy="91.377" r="11.885"/>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="chantry_island" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="30.02px" height="49.183px" viewBox="38.867 76.367 30.02 49.183"
+	 enable-background="new 38.867 76.367 30.02 49.183" xml:space="preserve">
 <g>
-	<path fill="#F4F4F4" d="M53.915,125.55V99.913l-0.403,0.049c-2.177-0.092-4.143-0.993-5.608-2.41L53.915,125.55z"/>
-	<path fill="#475A84" d="M54.324,99.958l-0.41-0.046l0,25.638l6.055-28.112l-0.001,0.001C58.51,98.904,56.527,99.846,54.324,99.958z
-		"/>
+	<path fill="#981B1E" d="M53.877,78.117c7.324,0,13.26,5.936,13.26,13.26s-5.936,13.26-13.26,13.26s-13.26-5.936-13.26-13.26
+		S46.553,78.117,53.877,78.117 M53.877,76.367c-8.276,0-15.01,6.733-15.01,15.01s6.733,15.01,15.01,15.01s15.01-6.733,15.01-15.01
+		S62.153,76.367,53.877,76.367L53.877,76.367z"/>
 </g>
-<circle fill="#475A84" cx="53.877" cy="91.377" r="8.593"/>
+<g>
+	<path fill="#F4F4F4" d="M53.915,125.55V99.913l-0.403,0.049c-2.177-0.092-4.143-0.993-5.607-2.41L53.915,125.55z"/>
+	<path fill="#475A84" d="M54.324,99.958l-0.41-0.046v25.638l6.055-28.112l-0.001,0.002C58.51,98.904,56.527,99.846,54.324,99.958z"
+		/>
+</g>
+<g>
+	<path fill="#475A84" d="M53.877,86.784c2.533,0,4.594,2.061,4.594,4.593c0,2.533-2.061,4.594-4.594,4.594
+		c-2.532,0-4.593-2.061-4.593-4.594C49.284,88.845,51.345,86.784,53.877,86.784 M53.877,82.784c-4.746,0-8.593,3.847-8.593,8.593
+		s3.847,8.594,8.593,8.594s8.594-3.848,8.594-8.594S58.623,82.784,53.877,82.784L53.877,82.784z"/>
+</g>
+<g id="little_arrows">
+	<polygon id="tr" fill="#475A84" stroke="#475B84" stroke-miterlimit="10" points="59.529,84.896 61.59,83.701 60.395,85.762 	"/>
+	<polygon id="bl" fill="#475A84" stroke="#475B84" stroke-miterlimit="10" points="48.298,97.857 46.238,99.055 47.434,96.993 	"/>
+	<polygon id="tl" fill="#475A84" stroke="#475B84" stroke-miterlimit="10" points="47.434,85.761 46.236,83.701 48.298,84.896 	"/>
+	<polygon id="br" fill="#475A84" stroke="#475B84" stroke-miterlimit="10" points="60.395,96.993 61.59,99.053 59.529,97.857 	"/>
+</g>
 </svg>
