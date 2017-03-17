@@ -35,16 +35,14 @@ include_once("layout/header.php");
     <div id="mapOptionsArea"><!--Open Map Options--> 
 
 	    <div class="row">
-	    	<div class="small-12 medium-6 columns">
+	    	<div class="small-12 medium-4 columns">
 	    		<div class="formCon">
-	    		<p class="geocode-header">Type an Address to Calculate Route</p>
-				<input type="text" id="yourAddress">
-				<button class="geocode">Calculate Route</button>
+					<input type="text" id="yourAddress" placeholder="Your address">
+					<button class="geocode">Get Directions</button>
 				</div>
 	    	</div>
 
-	    	<div class="small-12 medium-6 columns">
-	    		<!-- directions for map will go here -->
+	    	<div class="small-12 medium-8 columns" id="directionsPanel">
 	    	</div>
 	    </div>
 
@@ -75,19 +73,18 @@ include_once("layout/header.php");
 						<label>Your email:</label>
 						<input id="inputEmailAddress" name="email" type="email">
 						
-						<label>Email Subject:</label>
+						<label>Subject:</label>
 						<select id="inputSubject" name="subject">
 							<option value="inquiry">General Inquiry</option>
   							<option value="booking">Booking</option>
   							<option value="feedback">Feedback</option>
-  							<option value="info">Info Request</option>
 						</select>
 						
 						<label class="address">Address:</label>
 						<input id="inputHouseAddress" class="address" name="address" type="text">
 						
 						<label>Your message:</label>
-						<textarea name="msg"></textarea>
+						<textarea name="msg" id="contactMsg"></textarea>
 						
 						<input id="submitContact" type="submit" value="send">
 						

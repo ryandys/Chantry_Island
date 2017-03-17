@@ -22,6 +22,7 @@
 		
 		directionsDisplay = new google.maps.DirectionsRenderer();
 		directionsDisplay.setMap(map);
+		directionsDisplay.setPanel(document.getElementById('directionsPanel'));
 		
 		map.setCenter({ lat: 44.500145, lng: -81.373168 });
 		map.setZoom(15);
@@ -31,7 +32,7 @@
 			animation: google.maps.Animation.DROP,
 			map: map,
 			icon: image,
-			title: "Hello World!"
+			title: "Marine Heritage Society"
 		});
 		
 		preloader.classList.add('hide-preloader');
@@ -56,7 +57,7 @@
 				// push location into array
 				locations[1] = { lat: results[0].geometry.location.lat(),
 								 lng: results[0].geometry.location.lng()
-							   }
+							   };
 				
 				map.setCenter(results[0].geometry.location);
 				
@@ -69,7 +70,7 @@
 					console.log('Geocode was not successful for the following reasons: ', status);
 				}
 			}
-		})
+		});
 	}
 	
 	function calcRoute(codeLoc) {
@@ -77,7 +78,7 @@
 			origin: locations[1],
 			destination: locations[0],
 			travelMode: 'DRIVING'
-  		}
+  		};
 		
 		directionsService.route(request, function(response, status) {
 			if (status == 'OK') {
