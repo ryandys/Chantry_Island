@@ -445,7 +445,9 @@
 	background-color: #6e1214;
 }
 
-
+#directionsPanel {
+	margin-top: -12px;
+}
 
 #contactGeneralWrapper {
 	padding: 30px 0px;
@@ -537,13 +539,13 @@
 	box-shadow: none;
 }
 
-#formCon textarea {
+#contactMsg {
 	height: 100px;
 	border: 0px;
 	background-color: #fff;
 }
 
-#formCon textarea:focus {
+#contactMsg:focus {
 	background-color: #fff;
 	border: none;
 	box-shadow: none;
