@@ -446,7 +446,9 @@
 }
 
 #directionsPanel {
-	margin-top: -12px;
+	margin-top: 10px;
+	height: 150px;
+	overflow: scroll;
 }
 
 #contactGeneralWrapper {
@@ -1828,6 +1830,10 @@ textarea:focus {
 	
 	#formWrapper p {
 		text-align: left;
+	}
+
+	#directionsPanel {
+		margin-top: -12px;
 	}
 
 	/*-----Booking-----*/
