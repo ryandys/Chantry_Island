@@ -447,6 +447,8 @@
 
 #directionsPanel {
 	margin-top: -12px;
+	height: 150px;
+	overflow: scroll;
 }
 
 #contactGeneralWrapper {
