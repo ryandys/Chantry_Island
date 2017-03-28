@@ -1,4 +1,16 @@
 <?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	$tbl_video = "tbl_video";
+	$getVideo = getAll($tbl_video);
+	
+?>
+
+<?php
 $strPageTitle = 'Home';
 include_once("layout/header.php");
 ?>
@@ -72,14 +84,23 @@ include_once("layout/header.php");
 
 <!--start video-->
 <div class="vidCon row">
-	<div class="vidInfo small-12 medium-6 columns">
-		<h2 class="heading redTxt">Chantry Island Tours</h2>
-		<p class="paragraph blackTxt">Come out to breathtaking Southampton Ontario and take in the sights and sounds of Chantry Island. Take a tour of the Light Keeper's Cottage and climb the 106 steps to the top of the lighthouse tower for an unparalleled view of the area.</p>
-		<p class="paragraph blackTxt">The island is also a Federal Migratory Bird Sanctuary. With approximately 50,000 birds on the island during the breeding season, it is surely a sight to behold.</p>
-	</div>
-	<div class="vid small-12 medium-6 columns">
-		<iframe width="100%" height="300px" src="https://www.youtube.com/embed/7AGUaUcupss" frameborder="0" allowfullscreen></iframe>
-	</div>
+		<?php
+
+			if(!is_string($getVideo)){
+				while($row = mysqli_fetch_array($getVideo)){
+					echo "<div class=\"vidInfo small-12 medium-6 columns\">";
+					echo "<h2 class=\"heading redTxt\">Chantry Island Tours</h2>";
+					echo "<p class=\"paragraph blackTxt\">{$row['video_desc']}</p>";
+					echo "</div>";
+					echo "<div class=\"vid small-12 medium-6 columns\">";
+					echo "<iframe width=\"100%\" height=\"300px\" src=\"https://www.youtube.com/embed/7AGUaUcupss\" frameborder=\"0\" allowfullscreen></iframe>";
+					echo "</div>";
+				}
+			}else{
+				echo "<p>{$getVideo}</p>";
+			}
+
+		?>
 </div>
 <!--end video-->
 
