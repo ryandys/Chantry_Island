@@ -919,7 +919,7 @@
 	position: relative;
 }
 
-#aboutTopBar h1 {
+#aboutTopBar h2 {
 	font-family: 'Overpass', sans-serif;
 	color: #fff;
 	font-size: 3em;
@@ -928,7 +928,7 @@
 	text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
 }
 
-#aboutTopBar h2 {
+#aboutTopBar h3 {
 	font-family: 'Overpass', sans-serif;
 	color: #fff;
 	font-size: 1.5em;
@@ -949,7 +949,7 @@
 	margin: 0;
 }
 
-#aboutBook h1 {
+#aboutBook h2 {
 	font-family: 'Overpass', sans-serif;
 	color: #252525;
 	font-size: 1.5em;
@@ -985,7 +985,7 @@
 	padding: 20px 0px;
 }
 
-#restorWrapper h1 {
+#restorWrapper h2 {
 	font-family: 'Overpass', sans-serif;
 	color: #fff;
 	font-size: 1.5em;
@@ -993,7 +993,7 @@
 	text-align: center;
 }
 
-#restorWrapper h2 {
+#restorWrapper h3 {
 	font-family: 'Overpass', sans-serif;
 	color: #fff;
 	font-size: 1.25em;
@@ -1067,7 +1067,7 @@
 	padding: 20px 0px;
 }
 
-#lightHouseHisTitle h1 {
+#lightHouseHisTitle h2 {
 	text-align: center;
 	color: #981b1e;
 	font-family: 'Overpass', sans-serif;
@@ -1096,7 +1096,7 @@
 	padding: 40px 0px;
 }
 
-#birdSancWrapper h1 {
+#birdSancWrapper h2 {
 	text-align: center;
 	color: #252525;
 	font-family: 'Overpass', sans-serif;
@@ -1874,7 +1874,7 @@ textarea:focus {
 	}
 	
 	/*-----About-----*/
-	#aboutBook h1, #aboutBook p, #restorWrapper h1, #restorWrapper h2 {
+	#aboutBook h2, #aboutBook p, #restorWrapper h2, #restorWrapper h3 {
 		text-align: left;
 	}
 	
@@ -1894,7 +1894,7 @@ textarea:focus {
 		font-size: 1.25em;
 	}
 	
-	#islandSizeWrapper p, #lightHouseHisTitle h1 {
+	#islandSizeWrapper p, #lightHouseHisTitle h2 {
 		text-align: left;
 	}
 	
@@ -1910,7 +1910,7 @@ textarea:focus {
 		text-align: left;
 	}
 	
-	#birdSancWrapper h1 {
+	#birdSancWrapper h2 {
 		text-align: left;
 	}
 	
