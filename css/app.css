@@ -472,7 +472,7 @@
 	margin-right: 0px;
 }
 
-#contactGeneral h1 {
+#contactGeneral h2 {
 	font-family: 'Overpass', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
@@ -502,7 +502,7 @@
 	border-right: none;
 }
 
-#formWrapper h1 {
+#formWrapper h2 {
 	font-family: 'Overpass', sans-serif;
 	font-size: 1.25em;
 	font-weight: 700;
