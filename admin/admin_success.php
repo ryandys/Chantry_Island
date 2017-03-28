@@ -1,10 +1,9 @@
-
 <?php
-	require_once("phpscripts/init.php");
-	confirm_logged_in();
-	
 	//ini_set('display_errors',1);
 	//error_reporting(E_ALL);
+
+	require_once("phpscripts/init.php");
+	confirm_logged_in();
 	
 	$id = $_SESSION['users_id'];
 	//echo $id;

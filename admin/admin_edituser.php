@@ -12,11 +12,10 @@
 	
 	if(isset($_POST['submit'])) {
 		//echo "submit clicked";
-		$name = trim($_POST['name']);
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
 		
-	$result = editUser($id, $name, $email, $password);
+	$result = editUser($id, $email, $password);
 	$message = $result;
 	}
 ?>
@@ -35,12 +34,17 @@ include_once("layout/header_innerPages.php");
 		<h1 class="hide">Create New Admin User</h1>
 		
 		<div class="row">
-			<div class="small-12 columns">
+
+			<?php
+			include("layout/sideNav.php");
+			?>
+
+			<div class="small-12 medium-7 columns">
+
+				<p>Hello <?php echo $_SESSION['users_name']; ?>. You can edit your details below:</p>
 
 				<?php if(!empty($message)){echo $message;} ?>
 				<form action="admin_edituser.php" method="post">
-					<label>Username:</label>
-					<input class="inputAddEdit" name="name" type="text" value="<?php echo $popForm['user_name']; ?>">
 					
 					<label>Email Address:</label>
 					<input class="inputAddEdit" name="email" type="text" value="<?php echo $popForm['user_email']; ?>">
@@ -48,11 +52,11 @@ include_once("layout/header_innerPages.php");
 					<label>Password:</label>
 					<input class="inputAddEdit hideChar" name="password" type="password" value="<?php echo $popForm['user_pass']; ?>">
 					
-					<div class="small-12 medium-9 columns">
+					<div class="small-12 columns">
 						<p>NOTE: Once you click 'Edit User' the effects are immediate.</p>
 					</div>
 					
-					<div class="small-12 medium-3 columns">
+					<div class="small-12 columns">
 						<input type="submit" name="submit" value="Edit User" id="addEditSubmit">
 					</div>
 					

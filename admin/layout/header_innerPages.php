@@ -6,7 +6,7 @@
     <title>Chantry Island | <?=$strPageTitle?> </title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/admin.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   </head>
   <body class="body-<?=strtolower(str_replace(' ', '-', $strPageTitle))?>">
 	  
@@ -30,7 +30,12 @@
 			    <ul class="menu topBarDropdownMenu">
 			      <li><a href="admin_index.php">Edit Content</a></li>
 			      <li><a href="admin_edituser.php">Edit Account</a></li>
-			      <li><a href="admin_createuser.php">Add User</a></li>
+			      <?php
+			      if($_SESSION['users_level']<="1") {
+			      	echo '<li><a href="admin_createuser.php">Add User</a></li>';
+			        echo '<li><a href="admin_deleteuser.php">Delete User</a></li>';
+			  	  }
+			      ?>
 			      <li><a href="phpscripts/caller.php?caller_id=logout">Log Out</a></li>
 			    </ul>
 			  </li>

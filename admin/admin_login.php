@@ -34,7 +34,7 @@ include_once("layout/header.php");
 		<h2 class="hide">Content Management System Login</h2>
 		<div class="small-10 small-offset-1 medium-6 medium-offset-3 columns end">
 			
-			<img src="../images/header_logo.svg" alt="logo" id="adminLoginLogo">
+			<img src="../images/chantry_island_header.svg" alt="logo" id="adminLoginLogo">
 			
 			<div id="CMSLoginBox">
 				<h2>Admin Login</h2>
