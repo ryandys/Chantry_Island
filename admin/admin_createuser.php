@@ -35,8 +35,15 @@ include_once("layout/header_innerPages.php");
 		<h1 class="hide">Create New Admin User</h1>
 		
 		<div class="row">
-			<div class="small-12 columns">
+
+			<?php
+			include("layout/sideNav.php");
+			?>
+
+			<div class="small-12 medium-7 columns">
 				
+				<p>NOTE: Only a Web Master has the ability to add new users.</p>
+
 				<?php if(!empty($message)){echo $message;} ?>
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 					<label>Username:</label>
@@ -51,11 +58,11 @@ include_once("layout/header_innerPages.php");
 						<option value="1">Web Master</option>
 					</select>
 					
-					<div class="small-12 medium-9 columns">
+					<div class="small-12 columns">
 						<p>NOTE: A temporary password for the user will automatically be generated and emailed to them upon submission.</p>
 					</div>
 					
-					<div class="small-12 medium-3 columns">
+					<div class="small-12 columns">
 						<input type="submit" name="submit" value="Create User" id="addEditSubmit">
 					</div>
 					

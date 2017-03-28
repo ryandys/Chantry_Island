@@ -6,7 +6,7 @@
     <title>Chantry Island | <?=$strPageTitle?> </title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/admin.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   </head>
   <body class="body-<?=strtolower(str_replace(' ', '-', $strPageTitle))?>">
 	  
