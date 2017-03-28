@@ -5,15 +5,16 @@ include_once("layout/header.php");
     
     
     
-    <!--START BODY CONTENT HERE-->         
+    <!--START BODY CONTENT HERE-->
+    <h1 class="hide">Chantry Island | About</h1>     
     
     
 	<div id="aboutTopBarWrapper"><!--Open topBar-->  
 		<div class="row">
 			
 			<div class="small-12 columns" id="aboutTopBar">
-				<h1>About Chantry Island</h1>
-				<h2>Marine Heritage Society</h2>
+				<h2>About Chantry Island</h2>
+				<h3>Marine Heritage Society</h3>
 			</div>
 		</div>
 	</div><!--Close topBar-->
@@ -28,8 +29,8 @@ include_once("layout/header.php");
 		
 		<div class="small-12 medium-4 columns" id="aboutBook">  
 			<div data-equalizer-watch>
-				<h1>Book a tour</h1>
-				<h2 class="heading">Experience Beauty</h2>
+				<h2>Book a tour</h2>
+				<h3 class="heading">Experience Beauty</h3>
 				<p><a href="booking.php">GET STARTED</a></p>
 			</div>
 		</div>
@@ -38,8 +39,8 @@ include_once("layout/header.php");
 	<div id="restorWrapper"><!--Open restoration-->
 		<div class="row">
 			<div class="small-12 medium-8 columns">
-				<h1>Lighthouse Restoration</h1>
-				<h2>learn about the rebuilding of the lightkeeper’s cottage</h2>
+				<h2>Lighthouse Restoration</h2>
+				<h3>learn about the rebuilding of the lightkeeper’s cottage</h3>
 			</div>
 			
 			<div class="small-12 medium-4 columns">
@@ -71,7 +72,7 @@ include_once("layout/header.php");
 	<div id="lightHouseHisTitle">
 		<div class="row">
 			<div class="small-12 columns">
-				<h1>The Lighthouse History</h1>
+				<h2>The Lighthouse History</h2>
 			</div>
 		</div>
 	</div>
@@ -91,7 +92,7 @@ include_once("layout/header.php");
 	<div id="birdSancWrapper"><!--Open Birds-->
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<h1>Federal Bird Sanctuary</h1>
+				<h2>Federal Bird Sanctuary</h2>
 			</div>
 			
 			<div class="small-12 medium-6 columns">
