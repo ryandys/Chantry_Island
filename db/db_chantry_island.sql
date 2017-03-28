@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 10, 2017 at 12:12 AM
+-- Generation Time: Mar 29, 2017 at 01:00 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -19,6 +19,83 @@ SET time_zone = "+00:00";
 --
 -- Database: db_chantry_island
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_arrive
+--
+
+CREATE TABLE tbl_arrive (
+  arrive_id tinyint(3) unsigned NOT NULL,
+  arrive_desc text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_arrive
+--
+
+INSERT INTO tbl_arrive (arrive_id, arrive_desc) VALUES
+(1, 'Come to the Chantry Island Tour Base and Gift Shop located at the south side of the Saugeen River at the harbour in Southampton (see map) and arrive 15 minutes ahead of your scheduled tour. Check in and receive your ticket. You will be directed to the dock for the Peerless II.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_birds
+--
+
+CREATE TABLE tbl_birds (
+  birds_id tinyint(3) unsigned NOT NULL,
+  birds_desc text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_birds
+--
+
+INSERT INTO tbl_birds (birds_id, birds_desc) VALUES
+(1, 'In 1957 the Canadian Wildlife Service declared Chantry Island a Federal Migratory Bird Sanctuary to protect the migratory and nesting birds of the island. It is the largest Federal Migratory Bird Sanctuary between James Bay and Point Pelee. There are approximately fifty thousand birds (including chicks) on the island during the breeding season. It is home to nesting colonies of Great Blue Heron, Great Egret, Black-crowned Night-Heron, Herring Gull, Ring-billed Gull and Double-crested Cormorant. Water fowl such as Mallard, American Black Duck, Gadwall, Blue-winged Teal, Green-winged Teal, Northern Pintail, and American Wigeon are also known nesters on the island.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_bookInfo
+--
+
+CREATE TABLE tbl_bookInfo (
+  bookInfo_id tinyint(3) unsigned NOT NULL,
+  bookInfo_desc text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_bookInfo
+--
+
+INSERT INTO tbl_bookInfo (bookInfo_id, bookInfo_desc) VALUES
+(1, 'We offer tours throughout the summer season from late May to mid-September. During June and July, we offer the tour daily, check below for the exact schedule. Note, it does change on a yearly basis.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_events
+--
+
+CREATE TABLE tbl_events (
+  events_id tinyint(3) unsigned NOT NULL,
+  events_title varchar(100) NOT NULL,
+  events_date varchar(50) NOT NULL,
+  events_content text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_events
+--
+
+INSERT INTO tbl_events (events_id, events_title, events_date, events_content) VALUES
+(1, 'Christmas Parade Southampton 2016', 'December 2nd, 2016', 'The Southampton Christmas Parade always takes place on the First Friday in December. We will be preparing the Peerless II for this annual tradition. Decoration and theme will take place in the Southampton Boathouse the week before. Come and join us and get to be a part of a great group of volunteers sailing down High Street'),
+(2, 'Marine Heritage Society / Propeller Club AGM 2016', 'September 30th, 2016', 'The Annual Marine Heritage Society and Propeller Club AGM will take place on Friday, November 25, 2016. Location will be at the Walker House in Southampton. Roast Beef or Chicken are the choices for food. Tickets will be on sale at the Propeller Club meetings and through Marine Heritage Board members. Continue to check postings for further information.'),
+(3, 'Doug Johnsons 91st Birthday', 'January 10th, 2017', 'Doug is one of the oldest supporters of the Chantry Island project.'),
+(4, 'Retiring from Marine Heritage Board', 'February 28th, 2017', 'Don Nicholson informed the Marine Heritage Board of Directors that he will be stepping aside, as a board member, effective February 28, 2017. Thank you for the opportunity to serve the community of Saugeen Shores by working and volunteering for the Marine Heritage Society,  Chantry Island Tours, and the Propeller Club.    I wish you all the best and continued success in the operation of the Chantry Island Tours. I plan to continue volunteering and support the restoration, tours, projects and help in the transition as past President and Chair.');
 
 -- --------------------------------------------------------
 
@@ -61,6 +138,74 @@ INSERT INTO tbl_gallery (gallery_id, gallery_img, gallery_desc) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table tbl_hours
+--
+
+CREATE TABLE tbl_hours (
+  hours_id tinyint(3) unsigned NOT NULL,
+  hours_month varchar(50) NOT NULL,
+  hours_tours_1 varchar(150) NOT NULL,
+  hours_tours_2 varchar(150) NOT NULL,
+  hours_shop_1 varchar(150) NOT NULL,
+  hours_shop_2 varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_hours
+--
+
+INSERT INTO tbl_hours (hours_id, hours_month, hours_tours_1, hours_tours_2, hours_shop_1, hours_shop_2) VALUES
+(1, 'MAY', '27th-28th: 1:00pm, 3:00pm', '', '27th-28th: 12:00pm - 5:30pm', ''),
+(2, 'JUNE', 'Weekends: 1:00pm, 3:00pm', '', '17th-18th: 12:00pm - 5:30pm', '24th-25th: 12:00pm - 5:30pm'),
+(3, 'JULY', 'Weekdays: 1:00pm, 3:00pm', 'Weekends: 9:30am, 1:00pm, 3:00pm', 'Weekdays: 9:00am - 5:30pm', 'Weekends: 9:00am - 5:30pm'),
+(4, 'AUGUST', 'Weekdays: 9:30am, 1:00pm, 3:00pm', 'Weekends: 9:30am, 1:00pm, 3:00pm', 'Weekdays: 9:00am - 5:30pm', 'Weekends: 9:00am - 5:30pm'),
+(5, 'SEPTEMBER', '1st-4th: 1:00pm, 3:00pm', '', '1st-4th: 9:00am - 5:30pm', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_news
+--
+
+CREATE TABLE tbl_news (
+  news_id tinyint(3) unsigned NOT NULL,
+  news_title varchar(150) NOT NULL,
+  news_date varchar(50) NOT NULL,
+  news_thumb varchar(200) NOT NULL,
+  news_content text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_news
+--
+
+INSERT INTO tbl_news (news_id, news_title, news_date, news_thumb, news_content) VALUES
+(1, 'Southampton Christmas Parade', 'December 2nd, 2016', 'news_img_4.jpg', 'The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.'),
+(2, 'Chantry Island Tour Base', 'January 8th, 2017', 'news_img_3.jpg', 'Inside the Chantry Island Tour Base, where tickets can be purchased for the tours to Chantry Island. The Tour Base will open again in June.'),
+(3, 'Doug Johnsons 91st Birthday', 'January 10th, 2017', 'news_img_2.jpg', 'Doug Johnson is giving a short talk about his history with the Propeller Club. He is one of our strongest supporters.'),
+(4, 'Doug Johnson Proudly Displays the Famous Saying', 'January 18th, 2017', 'news_img_1.jpg', 'Doug Johnson proudly displays the famous ''Don''t give up the ship'' saying on his hat.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_rates
+--
+
+CREATE TABLE tbl_rates (
+  rates_id tinyint(3) unsigned NOT NULL,
+  rates_info varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_rates
+--
+
+INSERT INTO tbl_rates (rates_id, rates_info) VALUES
+(1, '30.00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table tbl_user
 --
 
@@ -80,11 +225,85 @@ CREATE TABLE tbl_user (
 --
 
 INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin) VALUES
-(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 9, 2017, 6:11 pm');
+(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 28, 2017, 1:31 pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_video
+--
+
+CREATE TABLE tbl_video (
+  video_id tinyint(3) unsigned NOT NULL,
+  video_desc varchar(400) NOT NULL,
+  video_link varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_video
+--
+
+INSERT INTO tbl_video (video_id, video_desc, video_link) VALUES
+(1, 'Come out to breathtaking Southampton Ontario and take in the sights and sounds of Chantry Island. Take a tour of the Light Keeper''s Cottage and climb the 106 steps to the top of the lighthouse tower for an unparalleled view of the area.\r\n\r\nThe island is also a Federal Migratory Bird Sanctuary. With approximately 50,000 birds on the island during the breeding season, it is surely a sight to behold.', 'https://www.youtube.com/watch?v=7AGUaUcupss');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_volunteer
+--
+
+CREATE TABLE tbl_volunteer (
+  volunteer_id tinyint(3) unsigned NOT NULL,
+  volunteer_name varchar(100) NOT NULL,
+  volunteer_pos varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_volunteer
+--
+
+INSERT INTO tbl_volunteer (volunteer_id, volunteer_name, volunteer_pos) VALUES
+(1, 'Don Nicholson', 'Chairman'),
+(2, 'Pat O-Connor', 'Vice Chairman'),
+(3, 'John Rigby', 'Treasurer'),
+(4, 'Stan Young', 'Secretary'),
+(5, 'Rick Smith', 'Past Chairman'),
+(6, 'Ali Kelly', 'Chantry Island Volunteer'),
+(7, 'Jane Kramer', 'Chantry Island Volunteer'),
+(8, 'Vicki Tomori', 'Chantry Island Volunteer'),
+(9, 'Dan Holmes', 'Chantry Island Volunteer'),
+(10, 'Dave Wenn', 'Chantry Island Volunteer'),
+(11, 'Ed Braun', 'Chantry Island Volunteer'),
+(12, 'John Willetts', 'Chantry Island Volunteer'),
+(13, 'Peter Williamson', 'Observer');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table tbl_arrive
+--
+ALTER TABLE tbl_arrive
+  ADD PRIMARY KEY (arrive_id);
+
+--
+-- Indexes for table tbl_birds
+--
+ALTER TABLE tbl_birds
+  ADD PRIMARY KEY (birds_id);
+
+--
+-- Indexes for table tbl_bookInfo
+--
+ALTER TABLE tbl_bookInfo
+  ADD PRIMARY KEY (bookInfo_id);
+
+--
+-- Indexes for table tbl_events
+--
+ALTER TABLE tbl_events
+  ADD PRIMARY KEY (events_id);
 
 --
 -- Indexes for table tbl_gallery
@@ -93,25 +312,100 @@ ALTER TABLE tbl_gallery
   ADD PRIMARY KEY (gallery_id);
 
 --
+-- Indexes for table tbl_hours
+--
+ALTER TABLE tbl_hours
+  ADD PRIMARY KEY (hours_id);
+
+--
+-- Indexes for table tbl_news
+--
+ALTER TABLE tbl_news
+  ADD PRIMARY KEY (news_id);
+
+--
+-- Indexes for table tbl_rates
+--
+ALTER TABLE tbl_rates
+  ADD PRIMARY KEY (rates_id);
+
+--
 -- Indexes for table tbl_user
 --
 ALTER TABLE tbl_user
   ADD PRIMARY KEY (user_id);
 
 --
+-- Indexes for table tbl_video
+--
+ALTER TABLE tbl_video
+  ADD PRIMARY KEY (video_id);
+
+--
+-- Indexes for table tbl_volunteer
+--
+ALTER TABLE tbl_volunteer
+  ADD PRIMARY KEY (volunteer_id);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table tbl_arrive
+--
+ALTER TABLE tbl_arrive
+  MODIFY arrive_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_birds
+--
+ALTER TABLE tbl_birds
+  MODIFY birds_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_bookInfo
+--
+ALTER TABLE tbl_bookInfo
+  MODIFY bookInfo_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_events
+--
+ALTER TABLE tbl_events
+  MODIFY events_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table tbl_gallery
 --
 ALTER TABLE tbl_gallery
   MODIFY gallery_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table tbl_hours
+--
+ALTER TABLE tbl_hours
+  MODIFY hours_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_news
+--
+ALTER TABLE tbl_news
+  MODIFY news_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_rates
+--
+ALTER TABLE tbl_rates
+  MODIFY rates_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table tbl_user
 --
 ALTER TABLE tbl_user
   MODIFY user_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_video
+--
+ALTER TABLE tbl_video
+  MODIFY video_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_volunteer
+--
+ALTER TABLE tbl_volunteer
+  MODIFY volunteer_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
