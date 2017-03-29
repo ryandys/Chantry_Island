@@ -1,4 +1,16 @@
 <?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	$tbl_volunteer = "tbl_volunteer";
+	$getVol = getAll($tbl_volunteer);
+	
+?>
+
+<?php
 $strPageTitle = 'Volunteers';
 include_once("layout/header.php");
 ?>
@@ -34,45 +46,21 @@ include_once("layout/header.php");
 	<div class="small-10 small-centered columns volunteersConBlack">
 		<h2 class="whiteTxt">Volunteers</h2>
 	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Don Nicholson</span>&emsp;&emsp;-&emsp;&emsp;Chairman</p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>Pat O-Connor</span>&emsp;&emsp;-&emsp;&emsp;Vice Chairman</p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>John Rigby</span>&emsp;&emsp;-&emsp;&emsp;Treasurer</p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>Stan Young</span>&emsp;&emsp;-&emsp;&emsp;Secretary</p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Rick Smith</span>&emsp;&emsp;-&emsp;&emsp;Past Chairman</p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>Ali Kelly</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Jane Kramer</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>Vicki Tomori</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Dan Holmes</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>Dave Wenn</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Ed Braun</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConGrey">
-		<p><span>John Willetts</span></p>
-	</div>
-	<div class="small-10 small-centered columns volunteersConWhite">
-		<p><span>Peter Williamson</span>&emsp;&emsp;-&emsp;&emsp;Observer</p>
-	</div>
+
+	<?php
+
+		if(!is_string($getVol)){
+			while($row = mysqli_fetch_array($getVol)){
+				echo "<div class=\"small-10 small-centered columns volunteersConWhite\">";
+				echo "<p><span>{$row['volunteer_name']}</span>&emsp;&emsp;-&emsp;&emsp;{$row['volunteer_pos']}</p>";
+				echo "</div>";
+			}
+		}else{
+			echo "<p>{$getVol}</p>";
+		}
+
+	?>
+
 </div>
 <!--end volunteers-->
 	

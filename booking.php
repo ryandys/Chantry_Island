@@ -1,4 +1,25 @@
 <?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	$tbl_bookInfo = "tbl_bookInfo";
+	$getBookInfo = getAll($tbl_bookInfo);
+
+	$tbl_rates = "tbl_rates";
+	$getRates = getAll($tbl_rates);
+
+	$tbl_hours = "tbl_hours";
+	$getHours = getAll($tbl_hours);
+
+	$tbl_arrive = "tbl_arrive";
+	$getArrive = getAll($tbl_arrive);
+	
+?>
+
+<?php
 $strPageTitle = 'Booking';
 include_once("layout/header.php");
 ?>
@@ -33,18 +54,40 @@ include_once("layout/header.php");
 <div class="row" id="generalBookingInfo">
 	<div class="small-12 medium-8 columns">
 		<h2 class="heading">General Booking Information</h2>
-		<p class="paragraph">We offer tours throughout the summer season from late May to mid-September. During June and July, we offer the tour daily, check below for the exact schedule. Note, it does change on a yearly basis.</p>
+
+		<?php
+
+			if(!is_string($getBookInfo)){
+				while($row = mysqli_fetch_array($getBookInfo)){
+					echo "<p class=\"paragraph\">{$row['bookInfo_desc']}</p>";
+				}
+			}else{
+				echo "<p>{$getBookInfo}</p>";
+			}
+
+		?>
+
 	</div>
 
 	<div class="small-12 medium-4 columns" id="bookingRates">
 	<h3 class="heading">Rates</h3>
 		<div id="ratesInfo">
-			<ul>
-				<li>$30.00 per person (includes HST)</li>
-				<li>Children &amp; adults same price</li>
-				<li>Special group rates are available</li>
-				<li>MasterCard, Visa and Debit accepted</li>
-			</ul>
+				<?php
+
+					if(!is_string($getRates)){
+						while($row = mysqli_fetch_array($getRates)){
+							echo "<ul>";
+							echo "<li>&#36;{$row['rates_info']} per person (includes HST)</li>";
+							echo "<li>Children &amp; adults same price</li>";
+							echo "<li>Special group rates are available</li>";
+							echo "<li>MasterCard, Visa and Debit accepted</li>";
+							echo "</ul>";
+						}
+					}else{
+						echo "<p>{$getRates}</p>";
+					}
+
+				?>
 		</div>			
 	</div>
 </div>
@@ -58,56 +101,29 @@ include_once("layout/header.php");
 
 <!--start schedule-->
 <div class="row" data-equalizer>
-	<div class="monthCardCon small-12 medium-6 large-4 columns">
-		<div class="monthCard" data-equalizer-watch>
-			<h2 class="heading whiteTxt">MAY</h2>
-				<h3>Tours</h3>
-					<p><span>27th-28th: </span>1:00pm, 3:00pm</p>
-				<h3>Tour Base &amp; Gift Shop</h3>
-					<p><span>27th-28th: </span>12:00pm - 5:30pm</p>
-		</div>
-	</div>
-	<div class="monthCardCon small-12 medium-6 large-4 columns">
-		<div class="monthCard" data-equalizer-watch>
-			<h2 class="heading whiteTxt">JUNE</h2>
-				<h3>Tours</h3>
-					<p><span>Weekends: </span>1:00pm, 3:00pm</p>
-				<h3>Tour Base &amp; Gift Shop</h3>
-					<p><span>17th-18th: </span>12:00pm - 5:30pm</p>
-					<p><span>24th-25th: </span>12:00pm - 5:30pm</p>
-		</div>
-	</div>
-	<div class="monthCardCon small-12 medium-6 large-4 columns">
-		<div class="monthCard" data-equalizer-watch>
-			<h2 class="heading whiteTxt">JULY</h2>
-				<h3>Tours</h3>
-					<p><span>Weekdays: </span>1:00pm, 3:00pm</p>
-					<p><span>Weekends: </span>9:30am, 1:00pm, 3:00pm</p>
-				<h3>Tour Base &amp; Gift Shop</h3>
-					<p><span>Weekdays: </span>9:00am - 5:30pm</p>
-					<p><span>Weekends: </span>9:00am - 5:30pm</p>
-		</div>
-	</div>
-	<div class="monthCardCon small-12 medium-6 large-4 columns">
-		<div class="monthCard" data-equalizer-watch>
-			<h2 class="heading whiteTxt">AUGUST</h2>
-				<h3>Tours</h3>
-					<p><span>Weekdays: </span>9:30am, 1:00pm, 3:00pm</p>
-					<p><span>Weekends: </span>9:30am, 1:00pm, 3:00pm</p>
-				<h3>Tour Base &amp; Gift Shop</h3>
-					<p><span>Weekdays: </span>9:00am - 5:30pm</p>
-					<p><span>Weekends: </span>9:00am - 5:30pm</p>
-		</div>
-	</div>
-	<div class="monthCardCon small-12 medium-6 large-4 columns end">
-		<div class="monthCard" data-equalizer-watch>
-			<h2 class="heading whiteTxt">SEPTEMBER</h2>
-				<h3>Tours</h3>
-					<p><span>1st-4th: </span>1:00pm, 3:00pm</p>
-				<h3>Tour Base &amp; Gift Shop</h3>
-					<p><span>1st-4th: </span>9:00am - 5:30pm</p>
-		</div>
-	</div>
+	
+	<?php
+
+		if(!is_string($getHours)){
+			while($row = mysqli_fetch_array($getHours)){
+				echo "<div class=\"monthCardCon small-12 medium-6 large-4 columns end\">";
+				echo "<div class=\"monthCard\" data-equalizer-watch>";
+				echo "<h2 class=\"heading whiteTxt\">{$row['hours_month']}</h2>";
+				echo "<h3>Tours</h3>";
+				echo "<p>{$row['hours_tours_1']}</p>";
+				echo "<p>{$row['hours_tours_2']}</p>";
+				echo "<h3>Tour Base &amp; Gift Shop </h3>";
+				echo "<p>{$row['hours_shop_2']}</p>";
+				echo "<p>{$row['hours_shop_2']}</p>";
+				echo "</div>";
+				echo "</div>";
+			}
+		}else{
+			echo "<p>{$getHours}</p>";
+		}
+
+	?>
+
 </div>
 <!--end schedule-->
 
@@ -123,7 +139,17 @@ include_once("layout/header.php");
 <div id="whereAndWhenFull">
 	<div class="row" id="whereAndWhen">
 		<h2 class="heading whiteTxt">where and when to arrive</h2>
-		<p class="paragraph whiteTxt">Come to the Chantry Island Tour Base and Gift Shop located at the south side of the Saugeen River at the harbour in Southampton (<a href="contact.php">see map</a>) and arrive 15 minutes ahead of your scheduled tour. Check in and receive your ticket. You will be directed to the dock for the Peerless II.</p>
+		<?php
+
+			if(!is_string($getArrive)){
+				while($row = mysqli_fetch_array($getArrive)){
+					echo "<p class=\"paragraph whiteTxt\">{$row['arrive_desc']}</p>";
+				}
+			}else{
+				echo "<p>{$getArrive}</p>";
+			}
+
+		?>
 	</div>
 </div>
 <!--end whereAndWhen-->
@@ -140,7 +166,7 @@ include_once("layout/header.php");
 		<h2 class="heading">the fine print</h2>
 		<ul>
 			<li><span class="blackTxt">The 2 hour tour must be pre-booked and prepaid</span></li>
-			<li><span class="blackTxt">There are 9 seats on the boat. The cost is $30.00 per person (includes HST)</span></li>
+			<li><span class="blackTxt">There are 9 seats on the boat</span></li>
 			<li><span class="blackTxt">For refunds, cancellations must be received 24 hours before the scheduled departure</span></li>
 			<li><span class="blackTxt">Chantry Island is a Federal Migratory Bird Sanctuary and no pets are allowed on the island</span></li>
 			<li><span class="blackTxt">Cancellation can be caused by weather conditions but light rain is fine</span></li>
