@@ -10,7 +10,7 @@
 
 	function sendUserMessage($name, $email, $password) {
 		$to = $email;
-		$subj = "Organ Donor Admin Login Info";
+		$subj = "Chantry Island Admin Login Info";
 		$extra = "Do not reply to this email.\n\nPlease login to your account at: someURL.com/admin/admin_login.php\n\nPlease login and change your temporary password.";
 		$body = "Name: {$name}\n\nTemporary password: {$password}\n\n";
 		//echo $body;

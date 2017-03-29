@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 29, 2017 at 01:00 AM
+-- Generation Time: Mar 29, 2017 at 02:45 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -217,15 +217,17 @@ CREATE TABLE tbl_user (
   user_level varchar(100) NOT NULL DEFAULT '1',
   user_email varchar(100) NOT NULL,
   user_loginAttempt varchar(10) NOT NULL DEFAULT '0',
-  user_lastlogin varchar(100) NOT NULL
+  user_lastlogin varchar(100) NOT NULL,
+  user_logins int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table tbl_user
 --
 
-INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin) VALUES
-(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 28, 2017, 1:31 pm');
+INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin, user_logins) VALUES
+(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 28, 2017, 8:43 pm', 0),
+(2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0);
 
 -- --------------------------------------------------------
 

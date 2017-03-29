@@ -100,15 +100,21 @@
 
 /* Admin general */
 
+#CMSlogoSideBar
+{
+	max-width: 200px;
+	margin-bottom: 30px;
+}
+
 #CMSTopBar
 {
-	background-color: #c2c2c2;
+	background-color: #303030;
 	padding: 5px 0px;
 }
 
 #CMSTopBar h1
 {
-	color: #303030;
+	color: #fff;
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
@@ -118,7 +124,7 @@
 
 #CMSTopBar p
 {
-	color: #303030;
+	color: #fff;
 	font-size: .75em;
 	margin: 0;
 	padding: 0;
@@ -133,25 +139,25 @@
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after
 {
-	border-color: #303030 transparent transparent;
+	border-color: #fff transparent transparent;
 }
 
 .CMSnav a
 {
-	color: #303030;
+	color: #fff;
 	transition: .3s ease-in-out all;
 }
 
 .CMSnav a:hover
 {
-	color: #303030;
-	border-left: 3px solid #303030;
+	color: #fff;
+	border-left: 3px solid #fff;
 	padding-left: 5px;
 }
 
 .topBarDropdownMenu
 {
-	background-color: #c2c2c2;
+	background-color: #303030;
 	border: none;
 	border-bottom: 4px solid #303030;
 }
@@ -164,7 +170,7 @@
 .CMSConDropdown
 {
 	padding: 5px;
-	background-color: #c2c2c2;
+	background-color: #303030;
 	width: 210px;
 	margin-bottom: 30px;
 }
@@ -176,7 +182,7 @@
 
 .CMSoptions a
 {
-	color: #303030;
+	color: #fff;
 	transition: .3s ease-in-out all;
 }
 
@@ -187,13 +193,13 @@
 
 .CMSoptions ul li ul 
 {
-	background-color: #c2c2c2;
+	background-color: #303030;
 	border: none;
 	list-style: none;
 	padding: 10px;
 	width: 175px;
 	margin: 0;
-	border-right: 4px solid #303030;
+	border-right: 4px solid #981b1e;
 }
 
 .CMSleft h2
@@ -361,6 +367,36 @@
 	font-size: 1em;
 	margin-top: 25px;
 	font-family: 'Overpass', Arial, Times, Serif;
+}
+
+/* Delete Box */
+
+.delCon {
+	background-color: #303030;
+	padding: 5px;
+	color: #fff;
+	font-family: 'Overpass', Arial, Times, Serif;
+	font-size: .875em;
+	text-align: center;
+}
+
+.delConBut {
+	background-color: #981b1e;
+	margin-bottom: 20px;
+	font-family: 'Overpass', Arial, Times, Serif;
+	font-size: .875em;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.delConBut a {
+	color: #fff;
+	transition: .3s ease-in-out all;
+	font-weight: 700;
+}
+
+.delConBut a:hover {
+	opacity: .5;
 }
 
 /* Success Page */
