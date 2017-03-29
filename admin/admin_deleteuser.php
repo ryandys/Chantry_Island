@@ -39,13 +39,13 @@ include_once("layout/header_innerPages.php");
 		    	<?php
 					while($row=mysqli_fetch_array($users)){
 						echo "<div class=\"small-12 medium-12 large-6 columns end\">";
-						echo "<div class=\"DellandImgCon\" data-equalizer-watch>";
+						echo "<div class=\"delCon\" data-equalizer-watch>";
 						echo "{$row['user_name']}<br>";
 						echo "{$row['user_email']}";
 						echo "</div>";
 
 						echo "<div class=\"delConBut\">";
-						echo "<a href=\"phpscripts/caller.php?caller_id=deleteUsers&id={$row['user_id']}\"><br>Delete User</a>";
+						echo "<a href=\"phpscripts/caller.php?caller_id=deleteUsers&id={$row['user_id']}\">Delete User</a>";
 						echo "</div>";
 						echo "</div>";
 					}
