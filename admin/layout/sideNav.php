@@ -33,9 +33,9 @@
       <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Gallery Images</a></li>
+          <li><a href="admin_addNews.php">News</a></li>
+          <li><a href="admin_addEvent.php">Events</a></li>
+          <li><a href="admin_addImage.php">Gallery Images</a></li>
           <li><a href="#">Volunteers</a></li>
         </ul>
       </li>

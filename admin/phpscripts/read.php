@@ -13,6 +13,32 @@
 		}
 	}
 
+	function getAllNews($tbl) {
+		include('connect.php');
+		$queryAll = "SELECT * FROM {$tbl} ORDER BY news_id DESC";
+		$runAll = mysqli_query($link, $queryAll);
+		
+		if($runAll){
+			return $runAll;	
+		}else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
+	}
+
+	function getAllEvents($tbl) {
+		include('connect.php');
+		$queryAll = "SELECT * FROM {$tbl} ORDER BY events_id DESC";
+		$runAll = mysqli_query($link, $queryAll);
+		
+		if($runAll){
+			return $runAll;	
+		}else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
+	}
+
 	function getUsers($tbl) {
 		include('connect.php');
 		$queryAll = "SELECT * FROM tbl_user WHERE user_name!='admin'";
