@@ -36,7 +36,7 @@
           <li><a href="admin_addNews.php">News</a></li>
           <li><a href="admin_addEvent.php">Events</a></li>
           <li><a href="admin_addImage.php">Gallery Images</a></li>
-          <li><a href="#">Volunteers</a></li>
+          <li><a href="admin_addVolunteer.php">Volunteers</a></li>
         </ul>
       </li>
     </ul>
