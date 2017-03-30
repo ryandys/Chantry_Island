@@ -1,4 +1,16 @@
 <?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	$tbl_birds = "tbl_birds";
+	$getBirds = getAll($tbl_birds);
+	
+?>
+
+<?php
 $strPageTitle = 'About';
 include_once("layout/header.php");
 ?>
@@ -100,7 +112,17 @@ include_once("layout/header.php");
 			</div>
 			
 			<div class="small-12 columns">
-				<p>In 1957 the Canadian Wildlife Service declared Chantry Island a Federal Migratory Bird Sanctuary to protect the migratory and nesting birds of the island. It is the largest Federal Migratory Bird Sanctuary between James Bay and Point Pelee. There are approximately fifty thousand birds (including chicks) on the island during the breeding season. It is home to nesting colonies of Great Blue Heron, Great Egret, Black-crowned Night-Heron, Herring Gull, Ring-billed Gull and Double-crested Cormorant. Water fowl such as Mallard, American Black Duck, Gadwall, Blue-winged Teal, Green-winged Teal, Northern Pintail, and American Wigeon are also known nesters on the island.</p>
+				<?php
+
+			if(!is_string($getBirds)){
+				while($row = mysqli_fetch_array($getBirds)){
+					echo "<p>{$row['birds_desc']}</p>";
+				}
+			}else{
+				echo "<p>{$getBirds}</p>";
+			}
+
+		?>
 				<p>Because the island is a migratory bird sanctuary, the number of people on the island on any given day is strictly
 limited and tours must be booked through the Chantry Island Tour Base.</p>
 			</div>

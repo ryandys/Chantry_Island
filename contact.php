@@ -1,4 +1,28 @@
 <?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	if(isset($_POST['name'])) {
+		//echo $_POST['name'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subj = ($_POST['subject']);
+		$message = $_POST['msg'];
+		$direct = "#";
+		$add = $_POST['address'];
+		if(empty($add)) {
+			sendMessage($name, $email, $subj, $message, $direct);
+		}else{
+			redirect_to("404.shtml");
+		}
+	}
+	
+?>
+
+<?php
 $strPageTitle = 'Contact';
 include_once("layout/header.php");
 ?>
@@ -65,7 +89,7 @@ include_once("layout/header.php");
 		    <div class="small-12 medium-6 columns">
 			    <div class="formCon">
 				    <p>TO: email@chantryisland.com</p>
-				    <form action="" method="post">
+				    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 						
 						<label>Your name:</label>
 						<input id="inputName" name="name" type="text">

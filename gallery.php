@@ -1,4 +1,16 @@
 <?php
+    
+    //ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+    
+    require_once('admin/phpscripts/init.php');
+
+    $tbl_galleryThumb = "tbl_gallery";
+    $getGalleryThumb = getAll($tbl_galleryThumb);
+    
+?>
+
+<?php
 $strPageTitle = 'Gallery';
 include_once("layout/header.php");
 ?>
@@ -38,7 +50,7 @@ include_once("layout/header.php");
     <div id="mainImgCon">
       <p id="imgNo"><span id="firstNo">1</span>/<span id="secondNo">20</span></p>
       <div id="mainImg">
-        <img src="images/img-1.jpg" alt="Current Image">
+        <img src="images/uploads/img-1.jpg" alt="Current Image">
       </div>
         <p id="imgDesc">Photo by Karen Smith.</p>
         <img src="images/chevron2.svg" alt="left" id="prev">
@@ -49,26 +61,19 @@ include_once("layout/header.php");
 </div>
 
 <div class="row hide" id="thumbnailCon">
-    <div class="thumb"><img src="images/img-1.jpg" id="1"></div>
-    <div class="thumb nonActive"><img src="images/img-2.jpg" id="2"></div>
-    <div class="thumb nonActive"><img src="images/img-3.jpg" id="3"></div>
-    <div class="thumb nonActive"><img src="images/img-4.jpg" id="4"></div>
-    <div class="thumb nonActive"><img src="images/img-5.jpg" id="5"></div>
-    <div class="thumb nonActive"><img src="images/img-6.jpg" id="6"></div>
-    <div class="thumb nonActive"><img src="images/img-7.jpg" id="7"></div>
-    <div class="thumb nonActive"><img src="images/img-8.jpg" id="8"></div>
-    <div class="thumb nonActive"><img src="images/img-9.jpg" id="9"></div>
-    <div class="thumb nonActive"><img src="images/img-10.jpg" id="10"></div>
-    <div class="thumb nonActive"><img src="images/img-11.jpg" id="11"></div>
-    <div class="thumb nonActive"><img src="images/img-12.jpg" id="12"></div>
-    <div class="thumb nonActive"><img src="images/img-13.jpg" id="13"></div>
-    <div class="thumb nonActive"><img src="images/img-14.jpg" id="14"></div>
-    <div class="thumb nonActive"><img src="images/img-15.jpg" id="15"></div>
-    <div class="thumb nonActive"><img src="images/img-16.jpg" id="16"></div>
-    <div class="thumb nonActive"><img src="images/img-17.jpg" id="17"></div>
-    <div class="thumb nonActive"><img src="images/img-18.jpg" id="18"></div>
-    <div class="thumb nonActive"><img src="images/img-19.jpg" id="19"></div>
-    <div class="thumb nonActive"><img src="images/img-20.jpg" id="20"></div>
+    
+    <?php
+
+        if(!is_string($getGalleryThumb)){
+            while($row = mysqli_fetch_array($getGalleryThumb)){
+                echo "<div class=\"thumb nonActive\"><img src=\"images/uploads/{$row['gallery_img']}\" id=\"{$row['gallery_id']}\"></div>";
+            }
+        }else{
+            echo "<p>{$getGalleryThumb}</p>";
+        }
+
+    ?>
+    
 </div>
 <!--end gallery-->
 
