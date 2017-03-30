@@ -25,7 +25,7 @@ include_once("layout/header.php");
 
 	<div class="row">
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
-			<h2 class="heading whiteTxt">Marine Heritage Society</h2>
+			<h1 class="heading whiteTxt">Marine Heritage Society</h1>
 			<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The goal of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
 		</div>
 	</div>

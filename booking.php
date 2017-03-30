@@ -26,14 +26,15 @@ include_once("layout/header.php");
     
     
     
-    <!--START BODY CONTENT HERE-->         
+    <!--START BODY CONTENT HERE-->
+ <h1 class="hide">Booking</h1>       
     
     
 <!--start bookingHeaderCon-->
 <div id="bookingHeaderImg">
 	<div class="row">
 		<div class="small-12 columns">
-			<h2 class="heading whiteTxt">booking &amp;<br>schedule</h2>
+			<h2 class="heading whiteTxt">booking &amp; <br>schedule</h2>
 		</div>
 	</div>
 </div>
@@ -113,7 +114,7 @@ include_once("layout/header.php");
 				echo "<p>{$row['hours_tours_1']}</p>";
 				echo "<p>{$row['hours_tours_2']}</p>";
 				echo "<h3>Tour Base &amp; Gift Shop </h3>";
-				echo "<p>{$row['hours_shop_2']}</p>";
+				echo "<p>{$row['hours_shop_1']}</p>";
 				echo "<p>{$row['hours_shop_2']}</p>";
 				echo "</div>";
 				echo "</div>";

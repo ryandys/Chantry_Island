@@ -32,7 +32,7 @@ include_once("layout/header.php");
     
     
     
-    <!--START BODY CONTENT HERE-->         
+    <!--START BODY CONTENT HERE-->     
     
     
 	<div id="pageTitle">
@@ -79,7 +79,7 @@ include_once("layout/header.php");
 			    <p>86 Saugeen St. Southampton, Ontario Canada   -  N0H 2L0</p>
 			    <p>Call: <span>519-797-5862</span> Toll Free: <span>1-866-797-5862 </span></p>
 			    <p>Mailing Address: <span>Marine Heritage Society - Southampton, Ontario Canada  -  N0H 2L0</span></p>
-			    <h1><a href="#formWrapper">SEND US A MESSAGE</a></h1>
+			    <h2><a href="#formWrapper">SEND US A MESSAGE</a></h2>
 		    </div>
 	    </div>
     </div><!--Close General Info-->
@@ -117,7 +117,7 @@ include_once("layout/header.php");
 		    </div>
 		    
 		    <div class="small-12 medium-6 columns">
-			    <h1>Directions</h1>
+			    <h2>Directions</h2>
 			    <p>From Highway 21 in Southampton, turn west on Clarendon and follow the signs, or From High Street, (the main street), turn north on Huron or Grosvenor Street and look for the signs.</p>
 		    </div>
 	    </div>
