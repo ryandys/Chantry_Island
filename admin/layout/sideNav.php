@@ -48,10 +48,10 @@
         <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Gallery Images</a></li>
-          <li><a href="#">Volunteers</a></li>
+          <li><a href="admin_deleteNews.php">News</a></li>
+          <li><a href="admin_deleteEvent.php">Events</a></li>
+          <li><a href="admin_deleteImage.php">Gallery Images</a></li>
+          <li><a href="admin_deleteVolunteer.php">Volunteers</a></li>
         </ul>
       </li>
     </ul>

@@ -10,14 +10,22 @@
 			
 			$id = $_GET['id'];
 			deleteUsers($id);
+		}else if($dir == "deleteNews"){
+			
+			$id = $_GET['id'];
+			deleteNews($id);
+		}else if($dir == "deleteEvent"){
+			
+			$id = $_GET['id'];
+			deleteEvent($id);
 		}else if($dir == "deleteImage"){
 			
 			$id = $_GET['id'];
-			deleteLandImage($id);
-		}else if($dir == "deletePhotos"){
+			deleteImage($id);
+		}else if($dir == "deleteVol"){
 			
 			$id = $_GET['id'];
-			deletePhotos($id);
+			deleteVol($id);
 		}
 	}
 ?>
