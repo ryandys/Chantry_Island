@@ -18,7 +18,7 @@ include_once("layout/header.php");
     
     
     <!--START BODY CONTENT HERE-->
-    <h1 class="hide">Chantry Island | About</h1>     
+    <h1 class="hide">about</h1>     
     
     
 	<div id="aboutTopBarWrapper"><!--Open topBar-->  
