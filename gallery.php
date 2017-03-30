@@ -50,7 +50,7 @@ include_once("layout/header.php");
     <div id="mainImgCon">
       <p id="imgNo"><span id="firstNo">1</span>/<span id="secondNo">20</span></p>
       <div id="mainImg">
-        <img src="images/img-1.jpg" alt="Current Image">
+        <img src="images/uploads/img-1.jpg" alt="Current Image">
       </div>
         <p id="imgDesc">Photo by Karen Smith.</p>
         <img src="images/chevron2.svg" alt="left" id="prev">
@@ -66,7 +66,7 @@ include_once("layout/header.php");
 
         if(!is_string($getGalleryThumb)){
             while($row = mysqli_fetch_array($getGalleryThumb)){
-                echo "<div class=\"thumb nonActive\"><img src=\"images/{$row['gallery_img']}\" id=\"{$row['gallery_id']}\"></div>";
+                echo "<div class=\"thumb nonActive\"><img src=\"images/uploads/{$row['gallery_img']}\" id=\"{$row['gallery_id']}\"></div>";
             }
         }else{
             echo "<p>{$getGalleryThumb}</p>";

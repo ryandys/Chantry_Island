@@ -6,7 +6,7 @@
 	require_once('admin/phpscripts/init.php');
 
 	$tbl_events = "tbl_events";
-	$getEvents = getAll($tbl_events);
+	$getEvents = getAllEvents($tbl_events);
 	
 ?>
 

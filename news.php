@@ -6,7 +6,7 @@
 	require_once('admin/phpscripts/init.php');
 
 	$tbl_news = "tbl_news";
-	$getNews = getAll($tbl_news);
+	$getNews = getAllNews($tbl_news);
 	
 ?>
 
@@ -36,7 +36,7 @@ include_once("layout/header.php");
 					echo "<div class=\"newsWrapper\">";
 					echo "<div class=\"row\">";
 						echo "<div class=\"small-12 medium-6 large-4 columns\">";
-						echo "<img src=\"images/{$row['news_thumb']}\" alt=\"news thumb\">";
+						echo "<img src=\"images/uploads/{$row['news_thumb']}\" alt=\"news thumb\">";
 						echo "</div>";
 
 						echo "<div class=\"small-12 medium-6 large-8 columns\">";
