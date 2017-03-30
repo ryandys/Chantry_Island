@@ -84,5 +84,23 @@
 		
 		mysqli_close($link);
 	}
+
+
+	function addVolunteer($name,$pos) {
+		include('connect.php');
+
+			$qstring = "INSERT INTO tbl_volunteer VALUES(NULL,'{$name}','{$pos}')";
+			//echo $qstring;
+			$result = mysqli_query($link,$qstring);
+			
+			if($result) {	
+				redirect_to("admin_success.php");
+			}else{
+				$message = "Sorry, unable to add this volunteer.";
+				echo $message;
+			}
+		
+		mysqli_close($link);
+	}
 	
 ?>
