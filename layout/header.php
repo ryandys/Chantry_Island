@@ -1,3 +1,26 @@
+<?php
+	
+	//ini_set('display_errors',1);
+    //error_reporting(E_ALL);
+	
+	require_once('admin/phpscripts/init.php');
+
+	if(isset($_POST['name'])) {
+		//echo $_POST['name'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['msg'];
+		$direct = "#";
+		$add = $_POST['address'];
+		if(empty($add)) {
+			sendMessage($name, $email, $message, $direct);
+		}else{
+			redirect_to("404.shtml");
+		}
+	}
+	
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>

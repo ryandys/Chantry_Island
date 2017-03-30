@@ -13,10 +13,27 @@
 		$subj = "Chantry Island Admin Login Info";
 		$extra = "Do not reply to this email.\n\nPlease login to your account at: someURL.com/admin/admin_login.php\n\nPlease login and change your temporary password.";
 		$body = "Name: {$name}\n\nTemporary password: {$password}\n\n";
-		//echo $body;
-		//This will not work on MAMP...
 		mail($to, $subj, $body, $extra);
-		//.............................
+	}
+
+
+	function sendMessage($name, $email, $subj, $message, $direct) {
+		$to = "N/A";
+		$subj = "Chantry Island Contact Form - {$subj}";
+		$extra = "Reply to: {$email}";
+		$body = "Subject: {$subj}\n\nName: {$name}\n\Email: {$email}\n\nMessage: {$message}";
+		mail($to, $subj, $body, $extra);
+		redirect_to($direct);
+	}
+
+
+	function sendFooterMessage($name, $email, $message, $direct) {
+		$to = "N/A";
+		$subj = "Chantry Island Contact Form - General Inquiry";
+		$extra = "Reply to: {$email}";
+		$body = "Name: {$name}\n\Email: {$email}\n\nMessage: {$message}";
+		mail($to, $subj, $body, $extra);
+		redirect_to($direct);
 	}
 
 
