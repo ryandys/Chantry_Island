@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 29, 2017 at 02:45 AM
+-- Generation Time: Mar 30, 2017 at 08:01 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -183,7 +183,8 @@ INSERT INTO tbl_news (news_id, news_title, news_date, news_thumb, news_content) 
 (1, 'Southampton Christmas Parade', 'December 2nd, 2016', 'news_img_4.jpg', 'The Peerless II outside the Boathouse in southampton. Photo courtesy Eric Rogers.'),
 (2, 'Chantry Island Tour Base', 'January 8th, 2017', 'news_img_3.jpg', 'Inside the Chantry Island Tour Base, where tickets can be purchased for the tours to Chantry Island. The Tour Base will open again in June.'),
 (3, 'Doug Johnsons 91st Birthday', 'January 10th, 2017', 'news_img_2.jpg', 'Doug Johnson is giving a short talk about his history with the Propeller Club. He is one of our strongest supporters.'),
-(4, 'Doug Johnson Proudly Displays the Famous Saying', 'January 18th, 2017', 'news_img_1.jpg', 'Doug Johnson proudly displays the famous ''Don''t give up the ship'' saying on his hat.');
+(4, 'Doug Johnson Proudly Displays the Famous Saying', 'January 18th, 2017', 'news_img_1.jpg', 'Doug Johnson proudly displays the famous ''Don''t give up the ship'' saying on his hat.'),
+(5, 'Paddles and Pieces', 'March 1st, 2017', 'news_img_5.jpg', 'Oars, paddles and pieces of the Tilbury are currently being painted and repaired in preparation of an early Spring and Island work.');
 
 -- --------------------------------------------------------
 
@@ -226,7 +227,7 @@ CREATE TABLE tbl_user (
 --
 
 INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin, user_logins) VALUES
-(1, 'admin', 'cf06d2b4550802f1f8d8473b6812172b42fc662479e8e6f2fe70d9c58f30629f', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 28, 2017, 8:43 pm', 0),
+(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'March 30, 2017, 2:01 pm', 0),
 (2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0);
 
 -- --------------------------------------------------------
