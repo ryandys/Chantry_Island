@@ -44,6 +44,22 @@
 	}
 
 
+	function deleteNews($id) {
+		include('connect.php');
+
+		$delstring = "DELETE FROM tbl_news WHERE news_id={$id}";
+		$delquery = mysqli_query($link, $delstring);
+
+		if($delquery){
+			redirect_to("../admin_success.php");
+		}else{
+			$message = "Sorry, unable to delete this news article.";
+			echo $message;
+		}
+		mysqli_close($link);
+	}
+
+
 	function addEvent($title,$date,$content) {
 		include('connect.php');
 
@@ -58,6 +74,22 @@
 				echo $message;
 			}
 		
+		mysqli_close($link);
+	}
+
+
+	function deleteEvent($id) {
+		include('connect.php');
+
+		$delstring = "DELETE FROM tbl_events WHERE events_id={$id}";
+		$delquery = mysqli_query($link, $delstring);
+
+		if($delquery){
+			redirect_to("../admin_success.php");
+		}else{
+			$message = "Sorry, unable to delete this event.";
+			echo $message;
+		}
 		mysqli_close($link);
 	}
 
@@ -86,6 +118,22 @@
 	}
 
 
+	function deleteImage($id) {
+		include('connect.php');
+
+		$delstring = "DELETE FROM tbl_gallery WHERE gallery_id={$id}";
+		$delquery = mysqli_query($link, $delstring);
+
+		if($delquery){
+			redirect_to("../admin_success.php");
+		}else{
+			$message = "Sorry, unable to delete this image.";
+			echo $message;
+		}
+		mysqli_close($link);
+	}
+
+
 	function addVolunteer($name,$pos) {
 		include('connect.php');
 
@@ -100,6 +148,22 @@
 				echo $message;
 			}
 		
+		mysqli_close($link);
+	}
+
+
+	function deleteVol($id) {
+		include('connect.php');
+
+		$delstring = "DELETE FROM tbl_volunteer WHERE volunteer_id={$id}";
+		$delquery = mysqli_query($link, $delstring);
+
+		if($delquery){
+			redirect_to("../admin_success.php");
+		}else{
+			$message = "Sorry, unable to delete this volunteer.";
+			echo $message;
+		}
 		mysqli_close($link);
 	}
 	
