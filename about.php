@@ -60,6 +60,17 @@ include_once("layout/header.php");
 			</div>
 		</div>
 	</div><!--Close restoration-->
+
+	<div class="row">
+		<div class="small-12 medium-8 large-6 medium-centered columns">
+			<video id="vidCon" width="100%" height="100%" poster="videos/chantry_promo_thumb.png" controls>
+				<source id="mp4Src" src="videos/chantry_promo.mp4" type="video/mp4">
+				<source id="webmSrc" src="videos/chantry_promo.webm" type="video/webm">
+				<source id="oggSrc" src="videos/chantry_promo.ogv" type="video/ogg">
+					Your browser does not support HTML5 video.
+			</video>
+		</div>
+	</div>
 	
 	<div id="extraDesc"><!--Open extraDesc-->
 		<div class="row" id="extraDescCon">

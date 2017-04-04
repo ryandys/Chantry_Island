@@ -973,6 +973,10 @@
 	background-color: #6c1315;
 }
 
+#vidCon {
+	margin: 40px auto 40px auto;
+}
+
 #restorWrapper {
 	background-color: #981b1e;
 	padding: 20px 0px;
