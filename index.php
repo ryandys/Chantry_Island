@@ -57,7 +57,7 @@ include_once("layout/header.php");
 <!--start links-->
 <div class="linksCon row">
 	<div class="iconCon small-12 medium-4 columns">
-		<a href="gallery.php"><img src="images/camera_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+		<a href="gallery.php"><img src="images/camera_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns" alt="icon"></a>
 		<div class="small-8 medium-12 large-8 columns">
 			<h3>Photo Gallery</h3>
 			<p>View a collection of amazing photographs of Chantry Island and related things.</p>
@@ -65,7 +65,7 @@ include_once("layout/header.php");
 	</div>
 
 	<div class="iconCon small-12 medium-4 columns">
-		<a href="contact.php"><img src="images/contact_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+		<a href="contact.php"><img src="images/contact_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns" alt="icon"></a>
 		<div class="small-8 medium-12 large-8 columns">
 			<h3>Contact Us</h3>
 			<p>Looking for more information about Chantry Island? Contact us to learn more!</p>
@@ -73,7 +73,7 @@ include_once("layout/header.php");
 	</div>
 
 	<div class="iconCon small-12 medium-4 columns">
-		<a href="about.php"><img src="images/info_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns"></a>
+		<a href="about.php"><img src="images/info_icon.svg" class="small-4 medium-8 medium-centered large-uncentered large-4 columns" alt="icon"></a>
 			<div class="small-8 medium-12 large-8 columns">
 			<h3>About Us</h3>
 			<p>Learn more about our rich history and see the restoration project.</p>
@@ -133,28 +133,28 @@ include_once("layout/header.php");
 			</div>
 
 			<div class="large-2 affiliatesCard columns">
-				<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png"></a>
+				<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
 				</div>
 			</div>
 
 			<div class="large-2 affiliatesCard columns">
-				<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png"></a>
+				<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
 				</div>
 			</div>
 
 			<div class="large-2 affiliatesCard columns">
-				<a href="http://explorethebruce.com/" target="_blank"><img src="images/explore_the_bruce.png"></a>
+				<a href="http://explorethebruce.com/" target="_blank"><img src="images/explore_the_bruce.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Explore The Bruce</h3>
 				</div>
 			</div>
 
 			<div class="large-2 affiliatesCard columns end">
-				<a href="http://www.southamptontennisclub.ca/" target="_blank"><img src="images/southampton_tennis_club.png"></a>
+				<a href="http://www.southamptontennisclub.ca/" target="_blank"><img src="images/southampton_tennis_club.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Southampton Tennis Club</h3>
 				</div>
@@ -164,7 +164,7 @@ include_once("layout/header.php");
 	<div class="affiliatesConMed hide-for-large row">
 	<h2 class="heading redTxt">Affiliate Partners</h2>
 		<div class="small-12 medium-6 medium-offset-3 affiliatesCard columns end" id="affiliateCardMed">
-			<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
+			<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png" alt="affiliate"></a>
 			<div class="affiliatesInfo" data-equalizer-watch>
 				<h3 class="paragraph redTxt">Saugeen Shores</h3>
 			</div>
