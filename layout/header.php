@@ -72,7 +72,7 @@
 
         	<p id="offCanvFormTitle">TO: email@chantryisland.com</p>
 
-        	<form action="" method="post">
+        	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 						
 				<div class="small-12 columns">
 				<label>Your name:</label>
