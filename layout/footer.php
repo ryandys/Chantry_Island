@@ -82,7 +82,7 @@
 			
 			<div class="small-12 medium-6 columns">
 				<img data-interchange="[images/lockIcon.png, small], [images/lockIcon.svg, retina]" alt="lock icon" id="footerLock">
-				<p id="lowerFooterRight"><a href="#">administrator login</a></p>
+				<p id="lowerFooterRight"><a href="admin/admin_login.php">administrator login</a></p>
 			</div>
 		</div>
 	</div>
@@ -93,7 +93,6 @@
 	<!-- close off canvas (3 divs below) -->
       </div>
     </div>
-  </div>
 
 	
 	<script src="js/vendor/jquery.js"></script>
