@@ -5,15 +5,17 @@
 	
 	require_once('admin/phpscripts/init.php');
 
-	if(isset($_POST['name'])) {
+	if(isset($_POST['send'])) {
 		//echo $_POST['name'];
-		$name = $_POST['name'];
 		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$name = $_POST['name'];
+		$subj = $_POST['subject'];
 		$message = $_POST['msg'];
 		$direct = "#";
 		$add = $_POST['address'];
 		if(empty($add)) {
-			sendMessage($name, $email, $message, $direct);
+			sendMessage($email, $phone, $name, $subj, $message, $direct);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -53,16 +55,14 @@
 
         <!-- Menu -->
         <div id="sideBarWhite">
-        <div id="sideBarMenuItems">
-	        <a href="index.php"><img data-interchange="[images/chantry_island_header.png, small], [images/chantry_island_header.svg, retina]" alt="logo" id="smallConMenuLogo"></a>
-        </div>
         
         <div id="offCanvText">
+        <h2>Contact Us</h2>
 	        <p><span>Call: </span><a href="tel:519-797-5862">519-797-5862</a></p>
 	        <p><span>toll free: </span><a href="tel:1-866-797-5862">1-866-797-5862</a></p>
 	        <p><span>mailing address:</span></p>
 	        <p>Marine Heritage Society</p>
-	        <p>Box 421</p>
+	        <p>86 Saugeen St.</p>
 	        <p>Southhampton, Ontario</p>
 	        <p>Canada, NOH 2L0</p>
         </div>
@@ -70,30 +70,41 @@
 
         <div id="offCanvFormCon">
 
-        	<p id="offCanvFormTitle">TO: email@chantryisland.com</p>
-
         	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 						
 				<div class="small-12 columns">
-				<label>Your name:</label>
-				<input id="inputfName" name="name" type="text">
+				<label>Email:</label>
+				<input class="sideInput" id="inputEmail" name="email" type="email" required>
 				</div>
-						
+
 				<div class="small-12 columns">
-				<label>Your email:</label>
-				<input id="inputEmail" name="email" type="email">
+				<label>Phone number:</label>
+				<input class="sideInput" id="inputPhone" name="phone" type="text">
 				</div>
-						
-				<label class="address">Address:</label>
+
+				<div class="small-12 columns">
+				<label>Name:</label>
+				<input class="sideInput" id="inputfName" name="name" type="text" required>
+				</div>
+
+				<div class="small-12 columns">
+				<label>Subject:</label>
+				<select class="sideInput" id="inputSubject" name="subject">
+					<option value="inquiry">General Inquiry</option>
+						<option value="booking">Booking</option>
+						<option value="feedback">Feedback</option>
+				</select>
+				</div>
+				
 				<input id="inputAddress" class="address" name="address" type="text">
-						
+				
 				<div class="small-12 columns">
-				<label>Your message:</label>
-				<textarea name="msg"></textarea>
+				<label>Message:</label>
+				<textarea id="sideMsg" class="sideInput" name="msg" required></textarea>
 				</div>
-						
+				
 				<div class="small-12 columns">
-				<input id="submit" type="submit" value="submit">
+				<input id="sideSubmit" type="submit" name="send" value="send">
 				</div>
 						
 			</form>

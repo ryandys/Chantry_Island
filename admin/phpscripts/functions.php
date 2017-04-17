@@ -17,22 +17,11 @@
 	}
 
 
-	function sendMessage($name, $email, $subj, $message, $direct) {
-		$to = "N/A";
+	function sendMessage($name, $email, $phone, $subj, $message, $direct) {
 		$subj = "Chantry Island Contact Form - {$subj}";
 		$extra = "Reply to: {$email}";
-		$body = "Subject: {$subj}\n\nName: {$name}\n\Email: {$email}\n\nMessage: {$message}";
-		mail($to, $subj, $body, $extra);
-		redirect_to($direct);
-	}
-
-
-	function sendFooterMessage($name, $email, $message, $direct) {
-		$to = "N/A";
-		$subj = "Chantry Island Contact Form - General Inquiry";
-		$extra = "Reply to: {$email}";
-		$body = "Name: {$name}\n\Email: {$email}\n\nMessage: {$message}";
-		mail($to, $subj, $body, $extra);
+		$body = "Subject: {$subj}\n\nName: {$name}\n\Email: {$email}\n\nPhone: {$phone}\n\nMessage: {$message}";
+		mail($subj, $body, $extra);
 		redirect_to($direct);
 	}
 

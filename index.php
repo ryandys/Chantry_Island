@@ -47,7 +47,7 @@ include_once("layout/header.php");
 			<h3 id="dontWait">DON'T WAIT</h3>
 		</div>
 		<div class="small-6 medium-6 large-5 columns end" id="bookingInfo">
-			<p class="whiteTxt show-for-medium">We offer tours throughout the summer season from late May to mid-September. During June and July, we offer the tour daily.</p>
+			<p class="whiteTxt show-for-medium">We offer tours throughout the summer season from late May to mid-September. During July and August, we offer the tour daily.</p>
 			<a href="booking.php" class="whiteTxt">BOOK NOW</a>
 		</div>
 	</div>
