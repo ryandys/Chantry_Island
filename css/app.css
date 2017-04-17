@@ -523,15 +523,16 @@
 	display: none;
 }
 
-#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress, #yourAddress {
+.contactInput, #yourAddress {
 	border: 0px;
 	height: 35px;
 	background-color: #fff;
 	margin-bottom: 8px;
 }
 
-#inputName, #inputEmailAddress, #inputSubject, #inputHouseAddress, #yourAddress:focus {
+.contactInput:focus, #yourAddress:focus {
 	box-shadow: none;
+	border: none;
 }
 
 #contactMsg {
@@ -560,7 +561,7 @@
 }
 
 #submitContact:hover {
-	color: #252525;
+	background-color: #6e1214;
 }
 
 /*-----Booking-----*/
@@ -1181,12 +1182,16 @@
 }
 
 #donateCon {
-	background-color: #252525;
-	padding: 50px 20px 50px 20px;
+	background-color: #981b1e;
+	padding: 20px;
+}
+
+#donateCon p {
+	text-align: left;
 }
 
 #donateAddressCon {
-	margin-left: 40px;
+	margin-left: 30px;
 	margin-bottom: 40px;
 }
 
@@ -1198,29 +1203,8 @@
 	margin-bottom: -5px;
 }
 
-#paypalCon {
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 10px;
-}
-
-#paypalCon p {
-	text-align: center;
-	font-family: 'Overpass', sans-serif;
-	font-size: 1.5em;
-	font-weight: 300;
-	font-style: italic;
-}
-
-#paypalCon img {
-	width: 50%;
-	max-width: 200px;
-	display: block;
-	margin: 50px auto 20px auto;
-}
-
 #donorCategories {
-	padding: 80px 10px 80px 10px;
+	margin: 50px 0px 60px 0px;
 }
 
 .donorCategoryBlack, .donorCategoryWhite, .donorCategoryGrey {
@@ -1249,7 +1233,7 @@
 
 .donorCategoryWhite p, .donorCategoryGrey p {
 	font-family: 'Overpass', sans-serif;
-	font-size: 0.65em;
+	font-size: 0.85em;
 	margin: 0;
 }
 
@@ -1304,7 +1288,6 @@
 }
 
 /*-----Header-----*/
-
 #offCanvas {
 	background-color: #e3e3e3;;
 }
@@ -1312,6 +1295,16 @@
 #sideBarWhite
 {
 	background-color: #fff;
+}
+
+#sideBarWhite h2 {
+	font-family: 'Overpass', sans-serif;
+	color: #252525;
+	font-size: 1.5em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	text-align: center;
 }
 
 #closeButtonColor {
@@ -1334,6 +1327,40 @@
 
 #offCanvText {
 	padding: 20px;
+}
+
+.sideInput {
+	border: 0px;
+	height: 35px;
+	background-color: #cccccc;
+	margin-bottom: 8px;
+	color: #252525;
+	font-size: 0.9em;
+	box-shadow: none;
+}
+
+.sideInput:focus {
+	box-shadow: none;
+	border: solid 1px #981b1e;
+	background-color: #ffffff;
+}
+
+#sideMsg {
+	height: 150px;
+}
+
+#sideSubmit {
+	float: right;
+	border: 0px;
+	background-color: #981b1e;
+	color: #fff;
+	padding: 6px 14px;
+	cursor: pointer;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	transition: .2s ease-in-out all;
+	margin: 10px 0px 20px 0px;
 }
 
 #offCanvas a {
@@ -1656,30 +1683,34 @@ label {
 	display: none;
 }
 
-#inputfName, #inputlName, #inputEmail, #inputPhone, #inputAddress {
+.footerInput {
 	border: 0px;
 	height: 35px;
 	background-color: #cccccc;
 	margin-bottom: 8px;
+	color: #252525;
+	font-size: 0.9em;
 }
 
-#inputfName, #inputlName, #inputEmail, #inputPhone, #inputAddress:focus {
+.footerInput:focus {
 	box-shadow: none;
+	border: none;
+	background-color: #d9d9d9;
 }
 
-textarea {
+#footerMsg {
 	height: 55px;
 	border: 0px;
 	background-color: #cccccc;
 }
 
-textarea:focus {
-	background-color: #cccccc;
+#footerMsg:focus {
+	background-color: #d9d9d9;
 	border: none;
 	box-shadow: none;
 }
 
-#submit {
+#footerSubmit {
 	float: right;
 	border: 0px;
 	background-color: transparent;
@@ -1691,7 +1722,7 @@ textarea:focus {
 	transition: .2s ease-in-out all;
 }
 
-#submit:hover {
+#footerSubmit:hover {
 	color: #252525;
 }
 
@@ -1699,7 +1730,7 @@ textarea:focus {
 	float: left;
 	max-width: 25px;
 	margin-right: 8px;
-	margin-top: 8px;
+	margin-top: 20px;
 	transition: .3s ease-in-out all;
 }
 
@@ -1716,7 +1747,6 @@ textarea:focus {
 		font-size: .7em;
 		margin-top: 2px;
 	}
-	
 }
 
 
@@ -1822,6 +1852,10 @@ textarea:focus {
 	
 	#formWrapper h1 {
 		text-align: left;
+		margin-top: 0px;
+	}
+
+	#formWrapper h2 {
 		margin-top: 0px;
 	}
 	
@@ -2058,7 +2092,6 @@ textarea:focus {
 	#mobileNav li a {
 		font-size: 1.2em;
 	}
-	
 }
 
 @media screen and (min-width: 64em) {
@@ -2067,9 +2100,19 @@ textarea:focus {
 		padding-left: 40px;
 	}
   
-  .iconCon h3, .iconCon p {
+  	.iconCon h3, .iconCon p {
 		text-align: left;	
 	}
+
+	/*-----Donate-----*/
+	#donateCon {
+		margin-bottom: 50px;
+	}
+
+	#donorCategories {
+		margin: 0;
+	}
+}
 
 
 @media screen and (min-width: 82.5em) {
@@ -2077,11 +2120,9 @@ textarea:focus {
 	#sideSocIconsCon {
 		display: block;
 	}
-
 }	
 
 @media screen and (min-width: 96.562em) {
-	
 	/*-----Header-----*/
 	#headerWrapper {
 		background: #ffffff;
@@ -2090,7 +2131,6 @@ textarea:focus {
 		background: linear-gradient(to right, #ffffff 0%,#ffffff 20%,#dfdfdf 20%,#dfdfdf 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dfdfdf',GradientType=1 );
 	}
-	
 }
 
 @media screen and (min-width: 120em) {
@@ -2103,5 +2143,4 @@ textarea:focus {
 		background: linear-gradient(to right, #ffffff 0%,#ffffff 27%,#dfdfdf 27%,#dfdfdf 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dfdfdf',GradientType=1 );
 	}
-	
 }

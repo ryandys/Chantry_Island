@@ -38,7 +38,7 @@ $('#thumbnailCon img, #next, #prev').on('click', function() {
 	}
 	
 	$.getJSON('admin/ajaxQueryGallery.php', {gallery_id : currentImg}, function(data) {
-		//console.log(data);
+		console.log(data);
 
 		$('#mainImg img').attr('src',"images/uploads/" + data.gallery_img);
 		TweenMax.from(mainImg, 0.6, {opacity:0, ease:Power2.easeInOut});

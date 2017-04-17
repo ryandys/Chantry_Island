@@ -44,7 +44,7 @@ include_once("layout/header.php");
 			<h3><span>Call:</span> <a href="tel:519-797-5862" id="bookingPhone">519-797-5862</a></h3>
 			<h3><span>Toll Free:</span> <a href="tel:1-866-797-5862" id="bookingPhone">1-866-797-5862</a></h3>
 			<div id="emailButCon">
-				<a id="emailBut" href="contact.php">Book Now</a>
+				<a id="emailBut" href="contact.php#formWrapper">Email Us</a>
 			</div>
 		</div>
 	</div>
