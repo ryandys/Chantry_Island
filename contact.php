@@ -5,16 +5,17 @@
 	
 	require_once('admin/phpscripts/init.php');
 
-	if(isset($_POST['name'])) {
+	if(isset($_POST['send'])) {
 		//echo $_POST['name'];
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$subj = ($_POST['subject']);
 		$message = $_POST['msg'];
+		$phone = $_POST['phone'];
 		$direct = "#";
 		$add = $_POST['address'];
 		if(empty($add)) {
-			sendMessage($name, $email, $subj, $message, $direct);
+			sendMessage($name, $email, $phone, $subj, $message, $direct);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -79,7 +80,6 @@ include_once("layout/header.php");
 			    <p>86 Saugeen St. Southampton, Ontario Canada   -  N0H 2L0</p>
 			    <p>Call: <span>519-797-5862</span> Toll Free: <span>1-866-797-5862 </span></p>
 			    <p>Mailing Address: <span>Marine Heritage Society - Southampton, Ontario Canada  -  N0H 2L0</span></p>
-			    <h2><a href="#formWrapper">SEND US A MESSAGE</a></h2>
 		    </div>
 	    </div>
     </div><!--Close General Info-->
@@ -88,17 +88,19 @@ include_once("layout/header.php");
 	    <div class="row">
 		    <div class="small-12 medium-6 columns">
 			    <div class="formCon">
-				    <p>TO: email@chantryisland.com</p>
 				    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 						
-						<label>Your name:</label>
-						<input id="inputName" name="name" type="text">
+						<label>Name:</label>
+						<input class="contactInput" id="inputName" name="name" type="text">
 						
-						<label>Your email:</label>
-						<input id="inputEmailAddress" name="email" type="email">
+						<label>Email:</label>
+						<input class="contactInput" id="inputEmailAddress" name="email" type="email">
+
+						<label>Phone number:</label>
+						<input class="contactInput" name="phone" type="text">
 						
 						<label>Subject:</label>
-						<select id="inputSubject" name="subject">
+						<select class="contactInput" id="inputSubject" name="subject">
 							<option value="inquiry">General Inquiry</option>
   							<option value="booking">Booking</option>
   							<option value="feedback">Feedback</option>
@@ -107,10 +109,10 @@ include_once("layout/header.php");
 						<label class="address">Address:</label>
 						<input id="inputHouseAddress" class="address" name="address" type="text">
 						
-						<label>Your message:</label>
-						<textarea name="msg" id="contactMsg"></textarea>
+						<label>Message:</label>
+						<textarea class="contactInput" name="msg" id="contactMsg"></textarea>
 						
-						<input id="submitContact" type="submit" value="send">
+						<input id="submitContact" name="send" type="submit" value="send">
 						
 					</form>
 			    </div>
