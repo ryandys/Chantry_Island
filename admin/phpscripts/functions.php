@@ -66,19 +66,25 @@
 	}
 
 
-	function addEvent($title,$date,$content) {
+	function addEvent($title,$date,$mainImg,$content) {
 		include('connect.php');
+		$mainImg = mysqli_real_escape_string($link,$mainImg);
 
-			$qstring = "INSERT INTO tbl_events VALUES(NULL,'{$title}','{$date}','{$content}')";
-			//echo $qstring;
-			$result = mysqli_query($link,$qstring);
+		if($_FILES['event_thumb']['type'] == "image/jpg" || $_FILES['event_thumb']['type'] == "image/jpeg") {
 			
-			if($result) {	
+			$targetpath = "../images/uploads/{$mainImg}";
+			
+			if(move_uploaded_file($_FILES['event_thumb']['tmp_name'],$targetpath)) {
+				
+				$orig = "../images/uploads/".$mainImg;
+				
+				$qstring = "INSERT INTO tbl_events VALUES(NULL,'{$title}','{$date}','{$mainImg}','{$content}')";
+				//echo $qstring;
+				$result = mysqli_query($link,$qstring);
+				
 				redirect_to("admin_success.php");
-			}else{
-				$message = "Sorry, unable to add an event";
-				echo $message;
 			}
+		}
 		
 		mysqli_close($link);
 	}
