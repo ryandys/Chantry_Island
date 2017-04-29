@@ -25,8 +25,8 @@ include_once("layout/header.php");
 
 	<div class="row">
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
-			<h1 class="heading whiteTxt">Marine Heritage Society</h1>
-			<p class="paragraph whiteTxt">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The goal of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
+			<h1 class="heading whiteTxt">Discover Chantry Island…  Book your tour today!</h1>
+			<p class="paragraph whiteTxt"> Stroll back in time with a visit to the Keeper's Cottage, restored to it's original 1800s condition, and decorated with period furnishings from private donors, and the Bruce County Museum and Cultural Center. Marvel at the wonders of nature with a walk through the protected bird sanctuary, and surrounding gardens.</p>
 		</div>
 	</div>
 

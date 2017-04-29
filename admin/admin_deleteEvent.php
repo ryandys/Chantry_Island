@@ -39,6 +39,7 @@ include_once("layout/header_innerPages.php");
 		    	<?php
 					while($row=mysqli_fetch_array($events)){
 						echo "<div class=\"small-6 columns end\">";
+						echo "<img src=\"../images/uploads/{$row['events_thumb']}\" alt=\"{$row['news_title']}\">";
 						echo "<div class=\"delCon\" data-equalizer-watch>";
 						echo "{$row['events_title']}<br>";
 						echo "{$row['news_date']}";

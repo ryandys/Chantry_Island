@@ -7,12 +7,13 @@
     //error_reporting(E_ALL);
 	
 	if(isset($_POST['submit'])) {
-
+		$mainImg = $_FILES['event_thumb']['name'];
+		//echo $fimg;
 		$title = $_POST['events_title'];
 		$date = $_POST['events_date'];
 		$content = $_POST['events_content'];
 		
-		$uploadEvent = addEvent($title,$date,$content);
+		$uploadEvent = addEvent($title,$date,$mainImg,$content);
 		
 		$message = $uploadEvent;
 	}
@@ -40,9 +41,14 @@ include_once("layout/header_innerPages.php");
 
 			<div class="small-12 medium-7 columns">
 
+			<p>Recomended Image Dimensions: 700px x 450px</p>
+
 		    <?php if(!empty($message)){echo $message;} ?>
 			<form action="admin_addEvent.php" method="post" enctype="multipart/form-data">
 				
+				<label>Event Image:</label>
+				<input type="file" name="event_thumb" value="" size="32">
+
 				<label>Title:</label>
 				<input class="inputAddEdit" type="text" name="events_title" value="" size="32">
 
