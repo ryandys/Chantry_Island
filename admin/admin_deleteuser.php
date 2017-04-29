@@ -32,7 +32,7 @@ include_once("layout/header_innerPages.php");
 
 			<div class="small-12 medium-7 columns">
 
-			<p>NOTE: The master admin account can not be deleted and does not show up.</p>
+			<p>NOTE: The master admin account cannot be deleted and does not show up.</p>
 
 	    <div class="row" data-equalizer>
 
