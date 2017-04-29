@@ -32,7 +32,7 @@ include_once("layout/header_innerPages.php");
 
 			<div class="small-12 medium-7 columns">
 
-			<p>NOTE: These effects are permanent and can not be undone.</p>
+			<p>NOTE: These effects are permanent and cannot be undone.</p>
 
 	    <div class="row" data-equalizer>
 

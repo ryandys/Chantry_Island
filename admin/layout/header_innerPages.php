@@ -24,7 +24,7 @@
 		</div>
 		
 		<div class="small-4 medium-6 columns" id="CMSoptions">
-			<ul class="dropdown menu CMSnav" data-dropdown-menu>
+			<ul class="dropdown menu CMSnav" data-dropdown-menu data-close-on-click-inside>
 			  <li>
 			    <a href="#">Control Hub</a>
 			    <ul class="menu topBarDropdownMenu">
