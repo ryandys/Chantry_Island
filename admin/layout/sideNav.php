@@ -4,7 +4,7 @@
 
   <h2>Edit Content</h2>
     <div class="CMSConDropdown">
-      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside>
+      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside="false">
         <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
@@ -29,7 +29,7 @@
 
   <h2>Add Content</h2>
     <div class="CMSConDropdown">
-      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside>
+      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside="false">
       <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
@@ -44,7 +44,7 @@
 
   <h2>Delete Content</h2>
     <div class="CMSConDropdown">
-      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside>
+      <ul class="dropdown menu CMSoptions" data-dropdown-menu data-close-on-click-inside="false">
         <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
