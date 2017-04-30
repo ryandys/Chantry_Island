@@ -38,7 +38,7 @@ include_once("layout/header.php");
 		</div>
 		
 		<div class="small-4 medium-6 columns" id="CMSoptions">
-			<ul class="dropdown menu CMSnav" data-dropdown-menu>
+			<ul class="dropdown menu CMSnav" data-dropdown-menu data-close-on-click-inside="false">
 			  <li>
 			    <a href="#">Control Hub</a>
 			    <ul class="menu topBarDropdownMenu">
