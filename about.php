@@ -27,6 +27,8 @@ include_once("layout/header.php");
 			<div class="small-12 columns" id="aboutTopBar">
 				<h2>About Chantry Island</h2>
 				<h3>Marine Heritage Society</h3>
+				<div id="aboutTopBarLine"></div>
+				<p>The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The objective of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors.</p>
 			</div>
 		</div>
 	</div><!--Close topBar-->

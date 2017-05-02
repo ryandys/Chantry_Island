@@ -12,7 +12,7 @@
 		$subj = ($_POST['subject']);
 		$message = $_POST['msg'];
 		$phone = $_POST['phone'];
-		$direct = "#";
+		$direct = "success.php";
 		$add = $_POST['address'];
 		if(empty($add)) {
 			sendMessage($name, $email, $phone, $subj, $message, $direct);
@@ -76,9 +76,8 @@ include_once("layout/header.php");
     <div id="contactGeneralWrapper"><!--Open General Info--> 
 	    <div class="row">
 		    <div class="small-12 columns" id="contactGeneral">
-			    <p>86 Saugeen St. Southampton, Ontario Canada   -  N0H 2L0</p>
+			    <p>Mailing Address: <span>Marine Heritage Society, 86 Saugeen St., Southampton, Ontario, Canada N0H 2L0</span></p>
 			    <p>Call: <span>519-797-5862</span> Toll Free: <span>1-866-797-5862 </span></p>
-			    <p>Mailing Address: <span>Marine Heritage Society - Southampton, Ontario Canada  -  N0H 2L0</span></p>
 		    </div>
 	    </div>
     </div><!--Close General Info-->
@@ -87,7 +86,7 @@ include_once("layout/header.php");
 	    <div class="row">
 		    <div class="small-12 medium-6 columns">
 			    <div class="formCon">
-				    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+				    <form action="contact.php" method="post">
 						
 						<label>Name:</label>
 						<input class="contactInput" id="inputName" name="name" type="text">

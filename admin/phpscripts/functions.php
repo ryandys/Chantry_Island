@@ -9,21 +9,25 @@
 
 
 	function sendUserMessage($name, $email, $password) {
-		$to = $email;
+		$to = "{$email}";
 		$subj = "Chantry Island Admin Login Info";
-		$extra = "Do not reply to this email.\n\nPlease login to your account at: someURL.com/admin/admin_login.php\n\nPlease login and change your temporary password.";
+		$extra = "Do not reply to this email.\n\nPlease login to your account at: chantryisland.com/admin/admin_login.php\n\nPlease login and change your temporary password.";
 		$body = "Name: {$name}\n\nTemporary password: {$password}\n\n";
 		mail($to, $subj, $body, $extra);
 	}
 
 
 	function sendMessage($name, $email, $phone, $subj, $message, $direct) {
+		$to = "info@ourexpressionstudio.com";
 		$subj = "Chantry Island Contact Form - {$subj}";
 		$extra = "Reply to: {$email}";
-		$body = "Subject: {$subj}\n\nName: {$name}\n\Email: {$email}\n\nPhone: {$phone}\n\nMessage: {$message}";
-		mail($subj, $body, $extra);
-		redirect_to($direct);
-	}
+		$body = "Subject: {$subj}\n\nName: {$name}\n\nEmail: {$email}\n\nPhone: {$phone}\n\nMessage: {$message}";
+		if(mail($to, $subj, $body)) {
+          redirect_to($direct);
+        }else {
+          redirect_to("404.shtml");
+        }
+    }
 
 
 	function addNews($title,$date,$mainImg,$content) {

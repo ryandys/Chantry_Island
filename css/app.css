@@ -98,7 +98,7 @@
 }
 
 #bookATour {
-	color: #650f11;
+	color: #fff;
 	font-size: 1.1em;
 	font-weight: 300;
 	font-family: 'Overpass', sans-serif;
@@ -933,6 +933,27 @@
 	font-weight: 400;
 	text-align: center;
 	text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+	margin-bottom: 20px;
+}
+
+#aboutTopBarLine
+{
+	background-color: #fff;
+	box-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+	height: 4px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+#aboutTopBar p {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 0px 0px 3px rgba(150, 150, 150, 1);
+	margin-top: 20px;
 }
 
 #aboutDesc {

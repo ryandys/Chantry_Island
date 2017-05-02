@@ -12,7 +12,7 @@
 		$name = $_POST['name'];
 		$subj = $_POST['subject'];
 		$message = $_POST['msg'];
-		$direct = "#";
+		$direct = "success.php";
 		$add = $_POST['address'];
 		if(empty($add)) {
 			sendMessage($email, $phone, $name, $subj, $message, $direct);
