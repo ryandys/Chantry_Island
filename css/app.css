@@ -1763,6 +1763,39 @@ label {
 	opacity: .7;
 }
 
+/*-----Success Page-----*/
+#successCon {
+	height: 100vh;
+	background-image: url(../images/success_bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 30vh;
+}
+
+#successCon h1 {
+	text-align: center;
+	color: #981b1e;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+}
+
+#successCon h2 {
+	text-align: center;
+	color: #981b1e;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+#successCon h3 {
+	text-align: center;
+	color: #fff;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+}
 
 @media (min-width: 23.4375em) {
 	
