@@ -34,7 +34,7 @@
 		include('connect.php');
 		$mainImg = mysqli_real_escape_string($link,$mainImg);
 		
-		if($_FILES['news_thumb']['type'] == "image/jpg" || $_FILES['news_thumb']['type'] == "image/jpeg") {
+		if($_FILES['news_thumb']['type'] == "image/jpg" || $_FILES['news_thumb']['type'] == "image/jpeg" || $_FILES['news_thumb']['type'] == "image/png") {
 			
 			$targetpath = "../images/uploads/{$mainImg}";
 			
@@ -74,7 +74,7 @@
 		include('connect.php');
 		$mainImg = mysqli_real_escape_string($link,$mainImg);
 
-		if($_FILES['event_thumb']['type'] == "image/jpg" || $_FILES['event_thumb']['type'] == "image/jpeg") {
+		if($_FILES['event_thumb']['type'] == "image/jpg" || $_FILES['event_thumb']['type'] == "image/jpeg" || $_FILES['event_thumb']['type'] == "image/png") {
 			
 			$targetpath = "../images/uploads/{$mainImg}";
 			
@@ -114,7 +114,7 @@
 		include('connect.php');
 		$mainImg = mysqli_real_escape_string($link,$mainImg);
 		
-		if($_FILES['gallery_img']['type'] == "image/jpg" || $_FILES['gallery_img']['type'] == "image/jpeg") {
+		if($_FILES['gallery_img']['type'] == "image/jpg" || $_FILES['gallery_img']['type'] == "image/jpeg" || $_FILES['gallery_img']['type'] == "image/png") {
 			
 			$targetpath = "../images/uploads/{$mainImg}";
 			

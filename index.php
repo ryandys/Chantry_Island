@@ -7,6 +7,12 @@
 
 	$tbl_video = "tbl_video";
 	$getVideo = getAll($tbl_video);
+
+	$tbl_homeHeader = "tbl_homeHeader";
+	$gethomeHeader = getAll($tbl_homeHeader);
+
+	$tbl_breakingBar = "tbl_breakingBar";
+	$getbreakingBar = getAll($tbl_breakingBar);
 	
 ?>
 
@@ -25,8 +31,18 @@ include_once("layout/header.php");
 
 	<div class="row">
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
-			<h1 class="heading whiteTxt">Discover Chantry Island…  Book your tour today!</h1>
-			<p class="paragraph whiteTxt"> Stroll back in time with a visit to the Keeper's Cottage, restored to it's original 1800s condition, and decorated with period furnishings from private donors, and the Bruce County Museum and Cultural Center. Marvel at the wonders of nature with a walk through the protected bird sanctuary, and surrounding gardens.</p>
+			<?php
+
+				if(!is_string($gethomeHeader)){
+					while($row = mysqli_fetch_array($gethomeHeader)){
+						echo "<h1 class=\"heading whiteTxt\">{$row['homeHeader_title']}</h1>";
+						echo "<h1 class=\"paragraph whiteTxt\">{$row['homeHeader_desc']}</h1>";
+					}
+				}else{
+					echo "<p>{$gethomeHeader}</p>";
+				}
+
+			?>
 		</div>
 	</div>
 
@@ -42,13 +58,19 @@ include_once("layout/header.php");
 <!--start bookingBar-->
 <div id="bookingBarFull">
 	<div class="bookingBar row">
-		<div class="small-6 medium-6 medium-offset-0 large-5 large-offset-1 columns" id="bookingCon">
-			<h3 id="bookATour">Book a Tour</h3>
-			<h3 id="dontWait">DON'T WAIT</h3>
-		</div>
-		<div class="small-6 medium-6 large-5 columns end" id="bookingInfo">
-			<p class="whiteTxt show-for-medium">We offer tours throughout the summer season from late May to mid-September. During July and August, we offer the tour daily.</p>
-			<a href="booking.php" class="whiteTxt">BOOK NOW</a>
+		<div class="small-12 columns">
+			<?php
+
+				if(!is_string($getbreakingBar)){
+					while($row = mysqli_fetch_array($getbreakingBar)){
+						echo "<p class=\"heading whiteTxt\">{$row['breakingBar_title']}</p>";
+						echo "<p><a href=\"{$row['breakingBar_link']}\">Learn More</a></p>";
+					}
+				}else{
+					echo "<p>{$getbreakingBar}</p>";
+				}
+
+			?>
 		</div>
 	</div>
 </div>

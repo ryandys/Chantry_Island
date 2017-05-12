@@ -77,7 +77,7 @@
 						</div>
 						
 						<div class="small-12 columns">
-						<input id="footerSubmit" type="submit" name="send" value="send to email@chantryisland.com">
+						<input id="footerSubmit" type="submit" name="send" value="send to chantryisland@bmts.com">
 						</div>
 						
 					</form>
