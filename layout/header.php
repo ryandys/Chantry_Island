@@ -5,17 +5,50 @@
 	
 	require_once('admin/phpscripts/init.php');
 
-	if(isset($_POST['send'])) {
-		//echo $_POST['name'];
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$subj = ($_POST['subject']);
-		$message = $_POST['msg'];
-		$phone = $_POST['phone'];
-		$direct = "success.php";
-		$add = $_POST['address'];
-		if(empty($add)) {
-			sendMessage($name, $email, $phone, $subj, $message, $direct);
+	//form1 = off canvas
+	//form2 = footer
+	//form3 = contact page
+
+	if(isset($_POST['send1'])) {
+		$name1 = $_POST['name1'];
+		$email1 = $_POST['email1'];
+		$subject1 = $_POST['subject1'];
+		$message1 = $_POST['msg1'];
+		$phone1 = $_POST['phone1'];
+		$direct1 = "success.php";
+		$add1 = $_POST['address1'];
+		if(empty($add1)) {
+			sendMessage1($name1, $email1, $phone1, $subj1, $message1, $direct1);
+		}else{
+			redirect_to("404.shtml");
+		}
+	}
+
+	if(isset($_POST['send2'])) {
+		$name2 = $_POST['name2'];
+		$email2 = $_POST['email2'];
+		$subject2 = $_POST['subject2'];
+		$message2 = $_POST['msg2'];
+		$phone2 = $_POST['phone2'];
+		$direct2 = "success.php";
+		$add2 = $_POST['address2'];
+		if(empty($add2)) {
+			sendMessage2($name2, $email2, $phone2, $subj2, $message2, $direct2);
+		}else{
+			redirect_to("404.shtml");
+		}
+	}
+
+	if(isset($_POST['send3'])) {
+		$name3 = $_POST['name3'];
+		$email3 = $_POST['email3'];
+		$subject3 = $_POST['subject3'];
+		$message3 = $_POST['msg3'];
+		$phone3 = $_POST['phone3'];
+		$direct3 = "success.php";
+		$add3 = $_POST['address3'];
+		if(empty($add3)) {
+			sendMessage3($name3, $email3, $phone3, $subj3, $message3, $direct3);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -64,7 +97,7 @@
 	        <p><span>mailing address:</span></p>
 	        <p>Marine Heritage Society</p>
 	        <p>86 Saugeen St.</p>
-	        <p>Southhampton, Ontario</p>
+	        <p>Southampton, Ontario</p>
 	        <p>Canada, NOH 2L0</p>
         </div>
         </div>
@@ -75,37 +108,37 @@
 						
 				<div class="small-12 columns">
 				<label>Email:</label>
-				<input class="sideInput" id="inputEmail" name="email" type="email" required>
+				<input class="sideInput" name="email1" type="email" required>
 				</div>
 
 				<div class="small-12 columns">
 				<label>Phone number:</label>
-				<input class="sideInput" id="inputPhone" name="phone" type="text">
+				<input class="sideInput" name="phone1" type="text">
 				</div>
 
 				<div class="small-12 columns">
 				<label>Name:</label>
-				<input class="sideInput" id="inputfName" name="name" type="text" required>
+				<input class="sideInput" name="name1" type="text" required>
 				</div>
 
 				<div class="small-12 columns">
 				<label>Subject:</label>
-				<select class="sideInput" id="inputSubject" name="subject">
+				<select class="sideInput" name="subject1">
 					<option value="inquiry">General Inquiry</option>
-						<option value="booking">Booking</option>
-						<option value="feedback">Feedback</option>
+					<option value="booking">Booking</option>
+					<option value="feedback">Feedback</option>
 				</select>
 				</div>
 				
-				<input id="inputAddress" class="address" name="address" type="text">
+				<input class="address" name="address1" type="text">
 				
 				<div class="small-12 columns">
 				<label>Message:</label>
-				<textarea id="sideMsg" class="sideInput" name="msg" required></textarea>
+				<textarea id="sideMsg" class="sideInput" name="msg1" required></textarea>
 				</div>
 				
 				<div class="small-12 columns">
-				<input id="sideSubmit" type="submit" name="send" value="send">
+				<input id="sideSubmit" type="submit" name="send1" value="send">
 				</div>
 						
 			</form>
@@ -126,7 +159,7 @@
 		<div class="row expanded">
 			<div class="small-9 medium-6 columns">
 				<img data-interchange="[images/phoneIcon.png, small], [images/phoneIcon.svg, retina]" alt="phone icon" id="topNavBarPhone">
-				<h1><a href="tel:519-797-5862">519-797-5862</a> <span> TOLL FREE: 1-866-797-5862</span></h1>
+				<h3><a href="tel:519-797-5862">519-797-5862</a> <span> TOLL FREE: 1-866-797-5862</span></h3>
 			</div>
 			
 			<div class="small-3 medium-6 columns">
@@ -148,7 +181,7 @@
 	  	</div>
 	  	
 	  	<nav class="medium-8 large-9 columns">
-		  	<h1 class="hide">Main Navigation</h1>
+		  	<h2 class="hide">Main Navigation</h2>
 		  	
 		  	<div id="smallContactIconCon">
 			  	<img data-toggle="offCanvas" data-interchange="[images/contact.png, small], [images/contact.svg, retina]" alt="contact icon" id="smallContactIcon">

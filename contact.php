@@ -5,24 +5,6 @@
 	
 	require_once('admin/phpscripts/init.php');
 
-	if(isset($_POST['send'])) {
-		//echo $_POST['name'];
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$subj = ($_POST['subject']);
-		$message = $_POST['msg'];
-		$phone = $_POST['phone'];
-		$direct = "success.php";
-		$add = $_POST['address'];
-		if(empty($add)) {
-			sendMessage($name, $email, $phone, $subj, $message, $direct);
-		}else{
-			redirect_to("404.shtml");
-		}
-	}
-	
-?>
-
 <?php
 $strPageTitle = 'Contact';
 include_once("layout/header.php");
@@ -86,31 +68,30 @@ include_once("layout/header.php");
 	    <div class="row">
 		    <div class="small-12 medium-6 columns">
 			    <div class="formCon">
-				    <form action="contact.php" method="post">
+				   <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 						
 						<label>Name:</label>
-						<input class="contactInput" id="inputName" name="name" type="text">
+						<input class="contactInput" name="name3" type="text" required>
 						
 						<label>Email:</label>
-						<input class="contactInput" id="inputEmailAddress" name="email" type="email">
+						<input class="contactInput" name="email3" type="email" required>
 
 						<label>Phone number:</label>
-						<input class="contactInput" name="phone" type="text">
+						<input class="contactInput" name="phone3" type="text">
 						
 						<label>Subject:</label>
-						<select class="contactInput" id="inputSubject" name="subject">
+						<select class="contactInput" name="subject3">
 							<option value="inquiry">General Inquiry</option>
   							<option value="booking">Booking</option>
   							<option value="feedback">Feedback</option>
 						</select>
 						
-						<label class="address">Address:</label>
-						<input id="inputHouseAddress" class="address" name="address" type="text">
+						<input class="address" name="address3" type="text">
 						
 						<label>Message:</label>
-						<textarea class="contactInput" name="msg" id="contactMsg"></textarea>
+						<textarea class="contactInput" name="msg3" id="contactMsg" required></textarea>
 						
-						<input id="submitContact" name="send" type="submit" value="send">
+						<input class="submitContact" name="send3" type="submit" value="send">
 						
 					</form>
 			    </div>
