@@ -23,7 +23,7 @@ include_once("layout/header.php");
     
     
     
-    <!--START BODY CONTENT HERE-->         
+    <!--START BODY CONTENT HERE-->
     
     
 <!--start homeRotatorCon-->
@@ -35,8 +35,8 @@ include_once("layout/header.php");
 
 				if(!is_string($gethomeHeader)){
 					while($row = mysqli_fetch_array($gethomeHeader)){
-						echo "<h1 class=\"heading whiteTxt\">{$row['homeHeader_title']}</h1>";
-						echo "<h1 class=\"paragraph whiteTxt\">{$row['homeHeader_desc']}</h1>";
+						echo "<h2 class=\"heading whiteTxt\">{$row['homeHeader_title']}</h2>";
+						echo "<p class=\"paragraph whiteTxt\">{$row['homeHeader_desc']}</p>";
 					}
 				}else{
 					echo "<p>{$gethomeHeader}</p>";
@@ -147,38 +147,31 @@ include_once("layout/header.php");
 	<div class="affiliatesConLarge show-for-large row" data-equalizer>
 		<h2 class="heading redTxt">Affiliate Partners</h2>
 
-			<div class="large-2 large-offset-1 affiliatesCard columns">
+			<div class="large-3 affiliatesCard columns">
 				<a href="http://www.saugeenshores.ca/en/index.asp" target="_blank"><img src="images/saugeen_shores.png"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Saugeen Shores</h3>
 				</div>
 			</div>
 
-			<div class="large-2 affiliatesCard columns">
+			<div class="large-3 affiliatesCard columns">
 				<a href="http://www.brucemuseum.ca/" target="_blank"><img src="images/bruce_county_museum.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce County Museum &amp; Cultural Centre</h3>
 				</div>
 			</div>
 
-			<div class="large-2 affiliatesCard columns">
+			<div class="large-3 affiliatesCard columns">
 				<a href="http://www.brucecoastlighthouses.com/" target="_blank"><img src="images/bruce_coast_lighthouse_tour.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Bruce Coast Lighthouse Tour</h3>
 				</div>
 			</div>
 
-			<div class="large-2 affiliatesCard columns">
+			<div class="large-3 affiliatesCard columns">
 				<a href="http://explorethebruce.com/" target="_blank"><img src="images/explore_the_bruce.png" alt="affiliate"></a>
 				<div class="affiliatesInfo" data-equalizer-watch>
 					<h3 class="paragraph redTxt">Explore The Bruce</h3>
-				</div>
-			</div>
-
-			<div class="large-2 affiliatesCard columns end">
-				<a href="http://www.southamptontennisclub.ca/" target="_blank"><img src="images/southampton_tennis_club.png" alt="affiliate"></a>
-				<div class="affiliatesInfo" data-equalizer-watch>
-					<h3 class="paragraph redTxt">Southampton Tennis Club</h3>
 				</div>
 			</div>
 	</div>

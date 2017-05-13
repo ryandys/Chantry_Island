@@ -3,7 +3,7 @@ $strPageTitle = 'Success';
 include_once("layout/header.php");
 ?>
 
-<meta http-equiv="refresh" content="3;index.php"/>
+<meta http-equiv="refresh" content="5;index.php"/>
     
     
     <!--START BODY CONTENT HERE-->         

@@ -3,7 +3,7 @@
 	
 	<div id="mainFooterWrapper">
 		<footer id="mainFooter"><!--Open mainFooter-->
-			<h1 class="hide">Main Footer</h1>
+			<h2 class="hide">Main Footer</h2>
 			
 			<div class="row" data-equalizer>
 				<div class="small-6 medium-2 columns" data-equalizer-watch>
@@ -47,37 +47,37 @@
 						
 						<div class="small-12 large-6 columns">
 						<label>Email:</label>
-						<input class="footerInput" id="inputEmail" name="email" type="email" required>
+						<input class="footerInput" name="email2" type="email" required>
 						</div>
 
 						<div class="small-12 large-6 columns">
 						<label>Phone number:</label>
-						<input class="footerInput" id="inputPhone" name="phone" type="text">
+						<input class="footerInput" name="phone2" type="text">
 						</div>
 
 						<div class="small-12 columns">
 						<label>Name:</label>
-						<input class="footerInput" id="inputName" name="name" type="text" required>
+						<input class="footerInput" name="name2" type="text" required>
 						</div>
 
 						<div class="small-12 columns">
 						<label>Subject:</label>
-						<select class="footerInput" id="inputSubject" name="subject">
+						<select class="footerInput"  name="subject2">
 							<option value="inquiry">General Inquiry</option>
   							<option value="booking">Booking</option>
   							<option value="feedback">Feedback</option>
 						</select>
 						</div>
 						
-						<input id="inputAddress" class="address" name="address" type="text">
+						<input class="address" name="address2" type="text">
 						
 						<div class="small-12 columns">
 						<label>Message:</label>
-						<textarea id="footerMsg" class="footerInput" name="msg" required></textarea>
+						<textarea id="footerMsg" class="footerInput" name="msg2" required></textarea>
 						</div>
 						
 						<div class="small-12 columns">
-						<input id="footerSubmit" type="submit" name="send" value="send to chantryisland@bmts.com">
+						<input id="footerSubmit" type="submit" name="send2" value="send to chantryisland@bmts.com">
 						</div>
 						
 					</form>

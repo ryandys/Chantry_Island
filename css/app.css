@@ -532,7 +532,7 @@
 	box-shadow: none;
 }
 
-#submitContact {
+.submitContact {
 	float: right;
 	border: 0px;
 	background-color: #981b1e;
@@ -545,7 +545,7 @@
 	transition: .2s ease-in-out all;
 }
 
-#submitContact:hover {
+.submitContact:hover {
 	background-color: #6e1214;
 }
 
@@ -1417,7 +1417,7 @@
 	display: none;
 }
 
-#topNavBar h1 {
+#topNavBar h3 {
 	font-family: 'Overpass', sans-serif;
 	color: #fff;
 	font-size: .5em;
