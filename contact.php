@@ -5,9 +5,9 @@
 	
 	require_once('admin/phpscripts/init.php');
 
-<?php
-$strPageTitle = 'Contact';
-include_once("layout/header.php");
+	$strPageTitle = 'Contact';
+	include_once("layout/header.php");
+	
 ?>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhOUr_37CzgsVIt0tYI-KyOV6FlsRAP4"></script>
@@ -81,9 +81,9 @@ include_once("layout/header.php");
 						
 						<label>Subject:</label>
 						<select class="contactInput" name="subject3">
-							<option value="inquiry">General Inquiry</option>
-  							<option value="booking">Booking</option>
-  							<option value="feedback">Feedback</option>
+							<option value="General Inquiry">General Inquiry</option>
+  							<option value="Booking">Booking</option>
+  							<option value="Feedback">Feedback</option>
 						</select>
 						
 						<input class="address" name="address3" type="text">

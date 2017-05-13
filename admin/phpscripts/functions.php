@@ -23,18 +23,16 @@
 		$extra = "Reply to: {$email1}";
 		$body = "Subject: {$subj}\n\nName: {$name1}\n\nEmail: {$email1}\n\nPhone: {$phone1}\n\nMessage: {$message1}";
 		mail($to, $subj, $body);
-		//.......................
         redirect_to($direct1);
     }
 
 
-	function sendMessage2($name2, $email2, $phone2, $subject, $message2, $direct2) {
+	function sendMessage2($name2, $email2, $phone2, $subject2, $message2, $direct2) {
 		$to = "info@ourexpressionstudio.com";
 		$subj = "Chantry Island Contact Form - {$subject2}";
 		$extra = "Reply to: {$email2}";
 		$body = "Subject: {$subj}\n\nName: {$name2}\n\nEmail: {$email2}\n\nPhone: {$phone2}\n\nMessage: {$message2}";
 		mail($to, $subj, $body);
-		//.......................
         redirect_to($direct2);
     }
 
@@ -45,7 +43,6 @@
 		$extra = "Reply to: {$email3}";
 		$body = "Subject: {$subj}\n\nName: {$name3}\n\nEmail: {$email3}\n\nPhone: {$phone3}\n\nMessage: {$message3}";
 		mail($to, $subj, $body);
-		//.......................
         redirect_to($direct3);
     }
 

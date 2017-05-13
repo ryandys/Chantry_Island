@@ -1,18 +1,16 @@
 <?php
     
-    //ini_set('display_errors',1);
-    //error_reporting(E_ALL);
+  //ini_set('display_errors',1);
+  //error_reporting(E_ALL);
     
-    require_once('admin/phpscripts/init.php');
+  require_once('admin/phpscripts/init.php');
 
-    $tbl_galleryThumb = "tbl_gallery";
-    $getGalleryThumb = getAll($tbl_galleryThumb);
-    
-?>
+  $tbl_galleryThumb = "tbl_gallery";
+  $getGalleryThumb = getAll($tbl_galleryThumb);
 
-<?php
-$strPageTitle = 'Gallery';
-include_once("layout/header.php");
+  $strPageTitle = 'Gallery';
+  include_once("layout/header.php");
+
 ?>
     
     

@@ -14,11 +14,9 @@
 	$tbl_breakingBar = "tbl_breakingBar";
 	$getbreakingBar = getAll($tbl_breakingBar);
 	
-?>
+	$strPageTitle = 'Home';
+	include_once("layout/header.php");
 
-<?php
-$strPageTitle = 'Home';
-include_once("layout/header.php");
 ?>
     
     
