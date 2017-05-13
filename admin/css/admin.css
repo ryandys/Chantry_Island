@@ -322,6 +322,11 @@
 	
 }
 
+.inputTaller
+{
+	height: 200px;
+}
+
 #addEditUserWrapper select
 {
 	border: 0px;
