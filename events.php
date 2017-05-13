@@ -40,7 +40,6 @@ include_once("layout/header.php");
 							echo "<div class=\"eventsCon\" data-equalizer-watch>";
 							echo "<img src=\"images/uploads/{$row['events_thumb']}\" alt=\"event thumb\" class=\"eventThumbImg\">";
 							echo "<h1>{$row['events_title']}</h1>";
-							echo "<h2>{$row['events_date']}</h2>";
 							echo "<p>{$row['events_content']}</p>";
 							echo "</div>";
 						echo "</div>";

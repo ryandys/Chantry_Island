@@ -7,15 +7,15 @@
 
 	if(isset($_POST['send'])) {
 		//echo $_POST['name'];
-		$email = $_POST['email'];
-		$phone = $_POST['phone'];
 		$name = $_POST['name'];
-		$subj = $_POST['subject'];
+		$email = $_POST['email'];
+		$subj = ($_POST['subject']);
 		$message = $_POST['msg'];
+		$phone = $_POST['phone'];
 		$direct = "success.php";
 		$add = $_POST['address'];
 		if(empty($add)) {
-			sendMessage($email, $phone, $name, $subj, $message, $direct);
+			sendMessage($name, $email, $phone, $subj, $message, $direct);
 		}else{
 			redirect_to("404.shtml");
 		}
