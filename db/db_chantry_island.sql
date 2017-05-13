@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Apr 19, 2017 at 05:46 PM
+-- Generation Time: May 12, 2017 at 06:34 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -77,6 +77,25 @@ INSERT INTO tbl_bookInfo (bookInfo_id, bookInfo_desc) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table tbl_breakingBar
+--
+
+CREATE TABLE tbl_breakingBar (
+  breakingBar_id tinyint(3) unsigned NOT NULL,
+  breakingBar_title varchar(100) NOT NULL,
+  breakingBar_link text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_breakingBar
+--
+
+INSERT INTO tbl_breakingBar (breakingBar_id, breakingBar_title, breakingBar_link) VALUES
+(1, 'Marine Heritage Festival', 'https://ourexpressionstudio.com/chantryIsland2017/events.php');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table tbl_events
 --
 
@@ -135,6 +154,25 @@ INSERT INTO tbl_gallery (gallery_id, gallery_img, gallery_desc) VALUES
 (18, 'img-18.jpg', 'Photo by Wayne MacDonald.'),
 (19, 'img-19.jpg', 'Photo by James Swartz.'),
 (20, 'img-20.jpg', 'Photo by Karen Smith.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table tbl_homeHeader
+--
+
+CREATE TABLE tbl_homeHeader (
+  homeHeader_id tinyint(3) unsigned NOT NULL,
+  homeHeader_title varchar(100) NOT NULL,
+  homeHeader_desc text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table tbl_homeHeader
+--
+
+INSERT INTO tbl_homeHeader (homeHeader_id, homeHeader_title, homeHeader_desc) VALUES
+(1, 'Discover Chantry Island - Book your tour today!', 'Stroll back in time with a visit to the Keeper''s Cottage, restored to its original 1800s condition, and decorated with period furnishings. Marvel at the wonders of nature with a walk through the protected bird sanctuary, and surrounding gardens. Chantry Island Tours are brought to you by The Southampton Marine Heritage Society, a tireless group of dedicated volunteers.');
 
 -- --------------------------------------------------------
 
@@ -228,9 +266,8 @@ CREATE TABLE tbl_user (
 --
 
 INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin, user_logins) VALUES
-(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'April 19, 2017, 11:45 am', 0),
-(2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0),
-(3, 'rdyson', '329378daa8fb9d235bb82cf9ae75f2a1f581c741a50f82e37bb633e6120cb230', '0', '2', 'dyson_ryan@hotmail.com', '0', '0', 0);
+(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'May 12, 2017, 12:32 pm', 0),
+(2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0);
 
 -- --------------------------------------------------------
 
@@ -305,6 +342,12 @@ ALTER TABLE tbl_bookInfo
   ADD PRIMARY KEY (bookInfo_id);
 
 --
+-- Indexes for table tbl_breakingBar
+--
+ALTER TABLE tbl_breakingBar
+  ADD PRIMARY KEY (breakingBar_id);
+
+--
 -- Indexes for table tbl_events
 --
 ALTER TABLE tbl_events
@@ -315,6 +358,12 @@ ALTER TABLE tbl_events
 --
 ALTER TABLE tbl_gallery
   ADD PRIMARY KEY (gallery_id);
+
+--
+-- Indexes for table tbl_homeHeader
+--
+ALTER TABLE tbl_homeHeader
+  ADD PRIMARY KEY (homeHeader_id);
 
 --
 -- Indexes for table tbl_hours
@@ -372,6 +421,11 @@ ALTER TABLE tbl_birds
 ALTER TABLE tbl_bookInfo
   MODIFY bookInfo_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table tbl_breakingBar
+--
+ALTER TABLE tbl_breakingBar
+  MODIFY breakingBar_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table tbl_events
 --
 ALTER TABLE tbl_events
@@ -381,6 +435,11 @@ ALTER TABLE tbl_events
 --
 ALTER TABLE tbl_gallery
   MODIFY gallery_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table tbl_homeHeader
+--
+ALTER TABLE tbl_homeHeader
+  MODIFY homeHeader_id tinyint(3) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table tbl_hours
 --

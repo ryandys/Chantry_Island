@@ -95,41 +95,22 @@
 
 .bookingBar {
 	padding: 10px;
+	text-align: center;
 }
 
-#bookATour {
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: 300;
-	font-family: 'Overpass', sans-serif;
-}
-
-#dontWait {
-	color: #fff;
-	font-size: 1.35em;
-	font-weight: 700;
-	margin-top: -10px;
-}
-
-#bookingCon h3 {
-	font-family: 'Overpass', sans-serif;
-}
-
-#bookingInfo p {
-	font-family: 'Overpass', sans-serif;
-}
-
-#bookingInfo a {
-	font-size: 1.85em;
-	font-weight: 700;
-	font-style: italic;
-	margin-top: 10px;
-	font-family: 'Overpass', sans-serif;
+.bookingBar a
+{
+	color: #981b1e;
+	background-color: #fff;
+	padding: 6px 12px;
+	border-radius: 5px;
 	transition: .3s ease-in-out all;
 }
 
-#bookingInfo a:hover {
-	color: #650f11;
+.bookingBar a:hover
+{
+	color: #fff;
+	background-color: #252525;
 }
 
 .linksCon {
@@ -2135,6 +2116,11 @@ label {
 	right: 10px;
 	opacity: 0.2;
 	filter: invert(0%) brightness(100%);
+	}
+
+	.bookingBar {
+		padding: 10px;
+		text-align: left;
 	}
 }
 

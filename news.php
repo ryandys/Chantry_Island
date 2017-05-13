@@ -41,7 +41,6 @@ include_once("layout/header.php");
 
 						echo "<div class=\"small-12 medium-6 large-8 columns\">";
 						echo "<h2>{$row['news_title']}</h2>";
-						echo "<h3>{$row['news_date']}</h3>";
 						echo "<p>{$row['news_content']}</p>";
 						echo "</div>";
 						echo "</div>";
