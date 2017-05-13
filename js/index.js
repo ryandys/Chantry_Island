@@ -48,8 +48,7 @@ var affiliatesContent = [
 	{img:"images/saugeen_shores.png", desc:"Saugeen Shores", link:"http://www.saugeenshores.ca/en/index.asp"},
 	{img:"images/bruce_county_museum.png", desc:"Bruce County Museum &amp; Cultural Centre", link:"http://www.brucemuseum.ca/"},
 	{img:"images/bruce_coast_lighthouse_tour.png", desc:"Bruce Coast Lighthouse Tour", link:"http://www.brucecoastlighthouses.com/"},
-	{img:"images/explore_the_bruce.png", desc:"Explore The Bruce", link:"http://explorethebruce.com/"},
-	{img:"images/southampton_tennis_club.png", desc:"Southampton Tennis Club", link:"http://www.southamptontennisclub.ca/"}
+	{img:"images/explore_the_bruce.png", desc:"Explore The Bruce", link:"http://explorethebruce.com/"}
 ];
 
 function affiliatesSwitch(e) {
