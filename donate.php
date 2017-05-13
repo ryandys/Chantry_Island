@@ -1,6 +1,8 @@
 <?php
-$strPageTitle = 'Donate';
-include_once("layout/header.php");
+
+	$strPageTitle = 'Donate';
+	include_once("layout/header.php");
+	
 ?>
     
     

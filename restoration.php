@@ -1,6 +1,8 @@
 <?php
-$strPageTitle = 'Restoration';
-include_once("layout/header.php");
+
+	$strPageTitle = 'Restoration';
+	include_once("layout/header.php");
+
 ?>
     
     

@@ -7,12 +7,10 @@
 
 	$tbl_events = "tbl_events";
 	$getEvents = getAllEvents($tbl_events);
-	
-?>
 
-<?php
-$strPageTitle = 'Events';
-include_once("layout/header.php");
+	$strPageTitle = 'Events';
+	include_once("layout/header.php");
+	
 ?>
     
     

@@ -7,12 +7,10 @@
 
 	$tbl_volunteer = "tbl_volunteer";
 	$getVol = getAll($tbl_volunteer);
-	
-?>
 
-<?php
-$strPageTitle = 'Volunteers';
-include_once("layout/header.php");
+	$strPageTitle = 'Volunteers';
+	include_once("layout/header.php");
+
 ?>
     
     

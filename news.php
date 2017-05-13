@@ -7,12 +7,10 @@
 
 	$tbl_news = "tbl_news";
 	$getNews = getAllNews($tbl_news);
-	
-?>
 
-<?php
-$strPageTitle = 'News';
-include_once("layout/header.php");
+	$strPageTitle = 'News';
+	include_once("layout/header.php");
+
 ?>
     
     

@@ -7,12 +7,10 @@
 
 	$tbl_birds = "tbl_birds";
 	$getBirds = getAll($tbl_birds);
-	
-?>
 
-<?php
-$strPageTitle = 'About';
-include_once("layout/header.php");
+	$strPageTitle = 'About';
+	include_once("layout/header.php");
+	
 ?>
     
     
