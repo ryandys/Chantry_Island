@@ -1,6 +1,8 @@
 <?php
-$strPageTitle = 'Success';
-include_once("layout/header.php");
+
+	$strPageTitle = 'Success';
+	include_once("layout/header.php");
+
 ?>
 
 <meta http-equiv="refresh" content="5;index.php"/>

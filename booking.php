@@ -16,12 +16,10 @@
 
 	$tbl_arrive = "tbl_arrive";
 	$getArrive = getAll($tbl_arrive);
-	
-?>
 
-<?php
-$strPageTitle = 'Booking';
-include_once("layout/header.php");
+	$strPageTitle = 'Booking';
+	include_once("layout/header.php");
+
 ?>
     
     

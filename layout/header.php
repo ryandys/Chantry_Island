@@ -12,13 +12,13 @@
 	if(isset($_POST['send1'])) {
 		$name1 = $_POST['name1'];
 		$email1 = $_POST['email1'];
-		$subject1 = $_POST['subject1'];
+		$subject1 = ($_POST['subject1']);
 		$message1 = $_POST['msg1'];
 		$phone1 = $_POST['phone1'];
 		$direct1 = "success.php";
 		$add1 = $_POST['address1'];
 		if(empty($add1)) {
-			sendMessage1($name1, $email1, $phone1, $subj1, $message1, $direct1);
+			sendMessage1($name1, $email1, $phone1, $subject1, $message1, $direct1);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -27,13 +27,13 @@
 	if(isset($_POST['send2'])) {
 		$name2 = $_POST['name2'];
 		$email2 = $_POST['email2'];
-		$subject2 = $_POST['subject2'];
+		$subject2 = ($_POST['subject2']);
 		$message2 = $_POST['msg2'];
 		$phone2 = $_POST['phone2'];
 		$direct2 = "success.php";
 		$add2 = $_POST['address2'];
 		if(empty($add2)) {
-			sendMessage2($name2, $email2, $phone2, $subj2, $message2, $direct2);
+			sendMessage2($name2, $email2, $phone2, $subject2, $message2, $direct2);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -42,13 +42,13 @@
 	if(isset($_POST['send3'])) {
 		$name3 = $_POST['name3'];
 		$email3 = $_POST['email3'];
-		$subject3 = $_POST['subject3'];
+		$subject3 = ($_POST['subject3']);
 		$message3 = $_POST['msg3'];
 		$phone3 = $_POST['phone3'];
 		$direct3 = "success.php";
 		$add3 = $_POST['address3'];
 		if(empty($add3)) {
-			sendMessage3($name3, $email3, $phone3, $subj3, $message3, $direct3);
+			sendMessage3($name3, $email3, $phone3, $subject3, $message3, $direct3);
 		}else{
 			redirect_to("404.shtml");
 		}
@@ -124,9 +124,9 @@
 				<div class="small-12 columns">
 				<label>Subject:</label>
 				<select class="sideInput" name="subject1">
-					<option value="inquiry">General Inquiry</option>
-					<option value="booking">Booking</option>
-					<option value="feedback">Feedback</option>
+					<option value="General Inquiry">General Inquiry</option>
+					<option value="Booking">Booking</option>
+					<option value="Feedback">Feedback</option>
 				</select>
 				</div>
 				

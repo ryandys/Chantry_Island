@@ -63,9 +63,9 @@
 						<div class="small-12 columns">
 						<label>Subject:</label>
 						<select class="footerInput"  name="subject2">
-							<option value="inquiry">General Inquiry</option>
-  							<option value="booking">Booking</option>
-  							<option value="feedback">Feedback</option>
+							<option value="General Inquiry">General Inquiry</option>
+  							<option value="Booking">Booking</option>
+  							<option value="Feedback">Feedback</option>
 						</select>
 						</div>
 						
