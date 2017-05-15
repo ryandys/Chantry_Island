@@ -56,7 +56,7 @@ include_once("layout/header_innerPages.php");
 				<input class="inputAddEdit" type="text" name="events_date" value="" size="32">
 
 				<label>News Content:</label>
-				<input class="inputAddEdit" type="text" name="events_content" value="" size="32">
+				<input class="inputAddEdit inputTaller" type="text" name="events_content" value="" size="32">
 
 				<input type="submit" name="submit" value="Add" id="addEditSubmit">
 			</form>

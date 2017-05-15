@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: May 12, 2017 at 06:34 PM
+-- Generation Time: May 14, 2017 at 01:18 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -91,7 +91,7 @@ CREATE TABLE tbl_breakingBar (
 --
 
 INSERT INTO tbl_breakingBar (breakingBar_id, breakingBar_title, breakingBar_link) VALUES
-(1, 'Marine Heritage Festival', 'https://ourexpressionstudio.com/chantryIsland2017/events.php');
+(1, 'Marine Heritage Festival!', 'https://ourexpressionstudio.com/chantryIsland2017/events.php');
 
 -- --------------------------------------------------------
 
@@ -266,7 +266,7 @@ CREATE TABLE tbl_user (
 --
 
 INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin, user_logins) VALUES
-(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'May 12, 2017, 12:32 pm', 0),
+(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'May 13, 2017, 7:03 pm', 0),
 (2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0);
 
 -- --------------------------------------------------------
@@ -277,7 +277,7 @@ INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_e
 
 CREATE TABLE tbl_video (
   video_id tinyint(3) unsigned NOT NULL,
-  video_desc varchar(400) NOT NULL,
+  video_desc text NOT NULL,
   video_link varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
