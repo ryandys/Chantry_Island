@@ -8,7 +8,7 @@
         <li>
         <a href="#">Page Options...</a>
         <ul class="menu topBarDropdownMenu">
-          <li><a href="admin_index.php?tbl=tbl_homeHeader&col=homeHeader_id&id=1">Home Header</a></li>
+          <li><a href="admin_index.php?tbl=tbl_header&col=header_id&id=1">Home Header</a></li>
           <li><a href="admin_index.php?tbl=tbl_breakingBar&col=breakingBar_id&id=1">Home Breaking Bar</a></li>
           <li><a href="admin_index.php?tbl=tbl_video&col=video_id&id=1">Home Video</a></li>
           <li><a href="admin_index.php?tbl=tbl_birds&col=birds_id&id=1">Bird Sanctuary</a></li>
