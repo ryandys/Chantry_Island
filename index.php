@@ -8,12 +8,12 @@
 	$tbl_video = "tbl_video";
 	$getVideo = getAll($tbl_video);
 
-	$tbl_homeHeader = "tbl_homeHeader";
-	$gethomeHeader = getAll($tbl_homeHeader);
+	$tbl_header = "tbl_header";
+	$getHeader = getAll($tbl_header);
 
 	$tbl_breakingBar = "tbl_breakingBar";
 	$getbreakingBar = getAll($tbl_breakingBar);
-	
+
 	$strPageTitle = 'Home';
 	include_once("layout/header.php");
 
@@ -31,13 +31,13 @@
 		<div class="small-12 medium-5 columns" id="homeRotatorText">
 			<?php
 
-				if(!is_string($gethomeHeader)){
-					while($row = mysqli_fetch_array($gethomeHeader)){
-						echo "<h2 class=\"heading whiteTxt\">{$row['homeHeader_title']}</h2>";
-						echo "<p class=\"paragraph whiteTxt\">{$row['homeHeader_desc']}</p>";
+				if(!is_string($getHeader)){
+					while($row = mysqli_fetch_array($getHeader)){
+						echo "<h2 class=\"heading whiteTxt\">{$row['header_title']}</h2>";
+						echo "<p class=\"paragraph whiteTxt\">{$row['header_desc']}</p>";
 					}
 				}else{
-					echo "<p>{$gethomeHeader}</p>";
+					echo "<p>{$getHeader}</p>";
 				}
 
 			?>
