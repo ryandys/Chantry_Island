@@ -61,10 +61,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marine Heritage Society - Chantry Island">
+    <meta property="og:image" content="images/facebook_photo.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:url" content="http://www.chantryisland.com/">
+    <meta property="og:description" content="Chantry Island is a Federal Bird Sanctuary that is home to a fully restored 1800s Imperial Lighthouse and Keeper's Cottage. Come out to breathtaking Southampton Ontario and experience the beauty today!">
     <title>Chantry Island | <?=$strPageTitle?> </title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
