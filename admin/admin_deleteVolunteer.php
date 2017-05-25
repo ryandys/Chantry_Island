@@ -39,6 +39,7 @@ include_once("layout/header_innerPages.php");
 		    	<?php
 					while($row=mysqli_fetch_array($vol)){
 						echo "<div class=\"small-12 medium-12 large-6 columns end\">";
+						echo "<img src=\"../images/uploads/{$row['volunteer_img']}\" alt=\"{$row['volunteer_name']}\">";
 						echo "<div class=\"delCon\" data-equalizer-watch>";
 						echo "{$row['volunteer_name']}<br>";
 						echo "{$row['volunteer_pos']}";

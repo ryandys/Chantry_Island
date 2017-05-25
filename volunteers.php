@@ -39,28 +39,29 @@
 		</div>
 	</div>
 
-<!--start volunteers-->
-<div class="row" id="volunteersCon">
-	<div class="small-10 small-centered columns volunteersConBlack">
-		<h2 class="whiteTxt">Volunteers</h2>
+	<!--start volunteers-->
+	<div class="row" id="volunteersCon">
+
+		<?php
+
+				if(!is_string($getVol)){
+					while($row = mysqli_fetch_array($getVol)){
+						echo "<div class=\"small-12 medium-4 columns end\">";
+							echo "<div class=\"eventsCon\" data-equalizer-watch>";
+							echo "<img src=\"images/uploads/{$row['volunteer_img']}\" alt=\"event thumb\" class=\"eventThumbImg\">";
+							echo "<h1>{$row['volunteer_name']}</h1>";
+							echo "<p>{$row['volunteer_pos']}</p>";
+							echo "</div>";
+							echo "</div>";
+					}
+				}else{
+					echo "<p>{$getVol}</p>";
+				}
+
+			?>
+
 	</div>
-
-	<?php
-
-		if(!is_string($getVol)){
-			while($row = mysqli_fetch_array($getVol)){
-				echo "<div class=\"small-10 small-centered columns volunteersConWhite\">";
-				echo "<p><span>{$row['volunteer_name']}</span>&emsp;&emsp;-&emsp;&emsp;{$row['volunteer_pos']}</p>";
-				echo "</div>";
-			}
-		}else{
-			echo "<p>{$getVol}</p>";
-		}
-
-	?>
-
-</div>
-<!--end volunteers-->
+	<!--end volunteers-->
 	
     
     

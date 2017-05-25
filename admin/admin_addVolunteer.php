@@ -7,11 +7,12 @@
     //error_reporting(E_ALL);
 	
 	if(isset($_POST['submit'])) {
-
+		$mainImg = $_FILES['volunteer_img']['name'];
+		//echo $fimg;
 		$name = $_POST['volunteer_name'];
 		$pos = $_POST['volunteer_pos'];
 		
-		$uploadVolunteer = addVolunteer($name,$pos);
+		$uploadVolunteer = addVolunteer($name,$pos,$mainImg);
 		
 		$message = $uploadVolunteer;
 	}
@@ -41,6 +42,9 @@ include_once("layout/header_innerPages.php");
 
 		    <?php if(!empty($message)){echo $message;} ?>
 			<form action="admin_addVolunteer.php" method="post" enctype="multipart/form-data">
+
+				<label>Image:</label>
+				<input type="file" name="volunteer_img" value="" size="32">
 				
 				<label>Name:</label>
 				<input class="inputAddEdit" type="text" name="volunteer_name" value="" size="32">
