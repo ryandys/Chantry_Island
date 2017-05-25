@@ -99,6 +99,10 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="siteDesigners">
+		<p>Site design by <a href="http://ourexpressionstudio.com/" target="_blank">ourExpression</a> and <a href="http://jordanmcgavin.com/" target="_blank">Jordan McGavin</a>.</p>
+	</div>
 		
 	
 	<!--CLOSE FOOTER CONTENT HERE-->
