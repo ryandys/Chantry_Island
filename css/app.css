@@ -270,6 +270,7 @@
 
 .newsWrapper img {
 	margin-bottom: 15px;
+	width: 100%;
 }
 
 .newsWrapper h2 {
@@ -311,6 +312,7 @@
 
 .eventThumbImg {
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 .eventsCon {
@@ -1742,6 +1744,28 @@ label {
 
 .footerSocIcon:hover {
 	opacity: .7;
+}
+
+#siteDesigners {
+	width: 100%;
+	padding: 5px;
+	background-color: #650f11;
+}
+
+#siteDesigners p {
+	font-size: 0.75em;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+#siteDesigners a {
+	color: #fff;
+	margin: 0;
+}
+
+#siteDesigners a:hover {
+	text-decoration: underline;
 }
 
 /*-----Success Page-----*/
