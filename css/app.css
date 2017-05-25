@@ -291,7 +291,7 @@
 
 .newsWrapper p {
 	font-family: 'Overpass', sans-serif;
-	font-size: .875em;
+	font-size: 1em;
 	font-weight: 400;
 	color: #252525;
 }
@@ -340,7 +340,7 @@
 
 .eventsCon p {
 	font-family: 'Overpass', sans-serif;
-	font-size: .875em;
+	font-size: 1em;
 	font-weight: 600;
 	color: #252525;
 }
@@ -1143,40 +1143,6 @@
 
 #volunteersCon {
 	padding: 50px 10px 50px 10px;
-}
-
-.volunteersConBlack, .volunteersConWhite, .volunteersConGrey {
-	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.volunteersConBlack {
-	background-color: #252525;
-}
-
-.volunteersConWhite {
-	background-color: #fff;
-}
-
-.volunteersConGrey {
-	background-color: #eee;
-}
-
-.volunteersConBlack h2 {
-	font-family: 'Overpass', sans-serif;
-	font-size: 1.25em;
-	margin: 0;
-}
-
-.volunteersConWhite p, .volunteersConGrey p {
-	font-family: 'Overpass', sans-serif;
-	font-size: 0.65em;
-	margin: 0;
-}
-
-.volunteersConWhite span, .volunteersConGrey span {
-	font-weight: 700;
 }
 
 /*-----Donate-----*/

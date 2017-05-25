@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: May 15, 2017 at 02:38 AM
+-- Generation Time: May 25, 2017 at 04:43 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -266,7 +266,7 @@ CREATE TABLE tbl_user (
 --
 
 INSERT INTO tbl_user (user_id, user_name, user_pass, user_ip, user_level, user_email, user_loginAttempt, user_lastlogin, user_logins) VALUES
-(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'May 14, 2017, 8:02 pm', 0),
+(1, 'admin', '31d667fd3527c8e884774c1104ab3bc43cd7b0c7c3ff4bc238527d21906d8879', '::1', '1', 'dyson_ryan@hotmail.com', '0', 'May 24, 2017, 10:35 pm', 0),
 (2, 'rdyson', '7d49dacaef90b0ab95cf69a1ff4a1de1636bb33137b9da70874bb757d7cc73f8', '0', '2', 'rdyson@uwo.ca', '0', '0', 0);
 
 -- --------------------------------------------------------
@@ -297,27 +297,28 @@ INSERT INTO tbl_video (video_id, video_desc, video_link) VALUES
 CREATE TABLE tbl_volunteer (
   volunteer_id tinyint(3) unsigned NOT NULL,
   volunteer_name varchar(100) NOT NULL,
-  volunteer_pos varchar(100) NOT NULL
+  volunteer_pos varchar(100) NOT NULL,
+  volunteer_img varchar(100) NOT NULL DEFAULT 'eventDefault.jpg'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table tbl_volunteer
 --
 
-INSERT INTO tbl_volunteer (volunteer_id, volunteer_name, volunteer_pos) VALUES
-(1, 'Don Nicholson', 'Chairman'),
-(2, 'Pat O-Connor', 'Vice Chairman'),
-(3, 'John Rigby', 'Treasurer'),
-(4, 'Stan Young', 'Secretary'),
-(5, 'Rick Smith', 'Past Chairman'),
-(6, 'Ali Kelly', 'Chantry Island Volunteer'),
-(7, 'Jane Kramer', 'Chantry Island Volunteer'),
-(8, 'Vicki Tomori', 'Chantry Island Volunteer'),
-(9, 'Dan Holmes', 'Chantry Island Volunteer'),
-(10, 'Dave Wenn', 'Chantry Island Volunteer'),
-(11, 'Ed Braun', 'Chantry Island Volunteer'),
-(12, 'John Willetts', 'Chantry Island Volunteer'),
-(13, 'Peter Williamson', 'Observer');
+INSERT INTO tbl_volunteer (volunteer_id, volunteer_name, volunteer_pos, volunteer_img) VALUES
+(1, 'Don Nicholson', 'Chairman', 'eventDefault.jpg'),
+(2, 'Pat O-Connor', 'Vice Chairman', 'eventDefault.jpg'),
+(3, 'John Rigby', 'Treasurer', 'eventDefault.jpg'),
+(4, 'Stan Young', 'Secretary', 'eventDefault.jpg'),
+(5, 'Rick Smith', 'Past Chairman', 'eventDefault.jpg'),
+(6, 'Ali Kelly', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(7, 'Jane Kramer', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(8, 'Vicki Tomori', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(9, 'Dan Holmes', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(10, 'Dave Wenn', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(11, 'Ed Braun', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(12, 'John Willetts', 'Chantry Island Volunteer', 'eventDefault.jpg'),
+(13, 'Peter Williamson', 'Observer', 'eventDefault.jpg');
 
 --
 -- Indexes for dumped tables
