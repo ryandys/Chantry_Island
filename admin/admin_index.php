@@ -66,6 +66,7 @@ include_once("layout/header.php");
 		?>
 
     	<div class="small-12 medium-7 columns CMSright">
+    		<p id="adminDisc">Please note: special characters must be insterted with their proper ASCII codes. These can be found <a href="http://www.ascii-code.com" target="blank">here</a>. Numbers, periods, commas, exclamation points, question marks etc. do not require the codes, however many characters do. If an error comes up upon clicking 'save content', please verify you have used ASCII codes for any characters in question.</p>
     		<?php single_edit($tbl,$col,$id); ?>
     	</div>
     </div>

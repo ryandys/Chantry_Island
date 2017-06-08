@@ -9,8 +9,6 @@
 	include_once("layout/header.php");
 	
 ?>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhOUr_37CzgsVIt0tYI-KyOV6FlsRAP4"></script>
     
     
     
@@ -24,35 +22,11 @@
 			</div>
 		</div>
 	</div>
-	
-
-	<div id="mapArea"><!--Open Google Map--> 
-
-		<div class="preload-wrapper">
-			<i class="fa fa-spinner fa-spin"></i>
-			<span>Loading map, please wait...</span>
-		</div>
-		
-		<div class="map-wrapper"></div>
-
-    </div><!--Close Google Map-->
 
 
-    <div id="mapOptionsArea"><!--Open Map Options--> 
-
-	    <div class="row">
-	    	<div class="small-12 medium-4 columns">
-	    		<div class="formCon">
-					<input type="text" id="yourAddress" placeholder="Your address">
-					<button class="geocode">Get Directions</button>
-				</div>
-	    	</div>
-
-	    	<div class="small-12 medium-8 columns" id="directionsPanel">
-	    	</div>
-	    </div>
-
-    </div><!--Close Map Options--> 
+	<div id="mapArea" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.7405495482944!2d-81.3753064845686!3d44.49998277910138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8829cfb09f75c9ab%3A0x8619c0486fc4016c!2s86+Saugeen+St%2C+Southampton%2C+ON+N0H+2L0!5e0!3m2!1sen!2sca!4v1496934705181" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     
 
     <div id="contactGeneralWrapper"><!--Open General Info--> 

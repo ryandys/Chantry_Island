@@ -18,7 +18,7 @@
 
 
 	function sendMessage1($name1, $email1, $phone1, $subject1, $message1, $direct1) {
-		$to = "info@ourexpressionstudio.com";
+		$to = "chantryisland@bmts.com";
 		$subj = "Chantry Island Contact Form - {$subject1}";
 		$extra = "Reply to: {$email1}";
 		$body = "Subject: {$subj}\n\nName: {$name1}\n\nEmail: {$email1}\n\nPhone: {$phone1}\n\nMessage: {$message1}";
@@ -28,7 +28,7 @@
 
 
 	function sendMessage2($name2, $email2, $phone2, $subject2, $message2, $direct2) {
-		$to = "info@ourexpressionstudio.com";
+		$to = "chantryisland@bmts.com";
 		$subj = "Chantry Island Contact Form - {$subject2}";
 		$extra = "Reply to: {$email2}";
 		$body = "Subject: {$subj}\n\nName: {$name2}\n\nEmail: {$email2}\n\nPhone: {$phone2}\n\nMessage: {$message2}";
@@ -38,7 +38,7 @@
 
 
 	function sendMessage3($name3, $email3, $phone3, $subject3, $message3, $direct3) {
-		$to = "info@ourexpressionstudio.com";
+		$to = "chantryisland@bmts.com";
 		$subj = "Chantry Island Contact Form - {$subject3}";
 		$extra = "Reply to: {$email3}";
 		$body = "Subject: {$subj}\n\nName: {$name3}\n\nEmail: {$email3}\n\nPhone: {$phone3}\n\nMessage: {$message3}";
