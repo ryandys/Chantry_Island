@@ -167,19 +167,25 @@
 	}
 
 
-	function addVolunteer($name,$pos) {
+	function addVolunteer($name,$pos,$mainImg) {
 		include('connect.php');
+		$mainImg = mysqli_real_escape_string($link,$mainImg);
 
-			$qstring = "INSERT INTO tbl_volunteer VALUES(NULL,'{$name}','{$pos}')";
-			//echo $qstring;
-			$result = mysqli_query($link,$qstring);
-			
-			if($result) {	
+		if($_FILES['volunteer_img']['type'] == "image/jpg" || $_FILES['volunteer_img']['type'] == "image/jpeg" || $_FILES['volunteer_img']['type'] == "image/png") {
+
+			$targetpath = "../images/uploads/{$mainImg}";
+
+			if(move_uploaded_file($_FILES['volunteer_img']['tmp_name'],$targetpath)) {
+				
+				$orig = "../images/uploads/".$mainImg;
+				
+				$qstring = "INSERT INTO tbl_volunteer VALUES(NULL,'{$name}','{$pos}','{$mainImg}')";
+				//echo $qstring;
+				$result = mysqli_query($link,$qstring);
+				
 				redirect_to("admin_success.php");
-			}else{
-				$message = "Sorry, unable to add this volunteer.";
-				echo $message;
 			}
+		}
 		
 		mysqli_close($link);
 	}
